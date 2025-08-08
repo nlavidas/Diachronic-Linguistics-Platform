@@ -1,0 +1,73 @@
+name: Auto Corpus Build
+
+on:
+  push:
+    branches: [ main ]
+  schedule:
+- cron: '0 */6 * * *'  # Run every 6 hours
+  workflow_dispatch:  # Allow manual trigger
+
+jobs:
+  build-corpus:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install requests beautifulsoup4 lxml
+    
+    - name: Create directories
+      run: |
+        mkdir -p texts/collected
+        mkdir -p valency/patterns
+        mkdir -p logs
+    
+    - name: Run corpus collector
+      run: |
+        echo "Starting corpus collection..."
+        # Create a simple collector script
+        cat > simple_collector.py << 'EOF'
+        import requests
+        import json
+        from datetime import datetime
+        
+        # Simple test to verify workflow
+        print(f"Corpus build started at {datetime.now()}")
+        
+        # Create a status file
+        status = {
+            "last_run": str(datetime.now()),
+            "status": "success",
+            "texts_collected": 0
+        }
+        
+        with open("corpus_status.json", "w") as f:
+            json.dump(status, f, indent=2)
+            
+        print("Build completed successfully!")
+        EOF
+        
+        python simple_collector.py
+    
+    - name: Commit changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add -A
+        git diff --staged --quiet || git commit -m "Auto-update corpus: $(date +'%Y-%m-%d %H:%M')"
+    
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: main

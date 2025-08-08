@@ -1,0 +1,39 @@
+{
+  "valency_patterns": [
+    {
+      "verb": "\u03b4\u03af\u03b4\u03c9\u03bc\u03b9",
+      "language": "Ancient Greek",
+      "period": "Classical",
+      "frame": "NOM-DAT-ACC",
+      "semantic_roles": [
+        "agent",
+        "recipient",
+        "theme"
+      ],
+      "example": "\u03b4\u03af\u03b4\u03c9\u03c3\u03af \u03c4\u03b9\u03c2 \u03c4\u03b9\u03bd\u03af \u03c4\u03b9",
+      "frequency": 1247
+    },
+    {
+      "verb": "give",
+      "language": "English",
+      "period": "Modern",
+      "frame": "NOM-ACC-DAT",
+      "semantic_roles": [
+        "agent",
+        "theme",
+        "recipient"
+      ],
+      "example": "Someone gives something to someone",
+      "frequency": 3521
+    }
+  ],
+  "diachronic_changes": [
+    {
+      "verb": "\u1f00\u03ba\u03bf\u03cd\u03c9",
+      "change": "GEN \u2192 ACC",
+      "from_period": "Classical",
+      "to_period": "Koine",
+      "description": "Genitive of person replaced by accusative"
+    }
+  ]
+}

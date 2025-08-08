@@ -1,0 +1,5 @@
+# HEALTHCHECK for orchestrator (optional, for future use)
+# Add this to Dockerfile if you want orchestrator health monitoring
+# HEALTHCHECK CMD curl --fail http://localhost:8000/health || exit 1
+
+# To enable, uncomment and add a /health endpoint to orchestrator if needed.

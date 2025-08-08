@@ -1,0 +1,27 @@
+{
+  "corpus_name": "Diachronic Indo-European Valency Super Corpus",
+  "methodologies_integrated": [
+    "valpal",
+    "pavlova_homer",
+    "digrec",
+    "diorisis"
+  ],
+  "features": {
+    "cross_linguistic_patterns": true,
+    "diachronic_tracking": true,
+    "multi_layer_annotation": true,
+    "semantic_role_analysis": true
+  },
+  "statistics": {
+    "total_patterns": 0,
+    "languages": 0,
+    "periods": 0
+  },
+  "visualization_ready": true,
+  "api_endpoints": [
+    "/patterns/crosslinguistic",
+    "/changes/diachronic",
+    "/annotations/multilayer",
+    "/search/semantic"
+  ]
+}

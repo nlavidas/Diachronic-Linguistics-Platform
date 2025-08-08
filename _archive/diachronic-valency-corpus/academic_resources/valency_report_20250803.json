@@ -1,0 +1,29 @@
+{
+  "timestamp": "2025-08-03T04:07:35.650400",
+  "statistics": {
+    "unique_verbs": 3,
+    "crosslinguistic_patterns": 16,
+    "diachronic_changes": 4
+  },
+  "resources_integrated": [
+    "valpal",
+    "ancient_greek_valency",
+    "latin_valency",
+    "pavlova_homer",
+    "digrec",
+    "diorisis"
+  ],
+  "languages": [
+    "Greek",
+    "Latin",
+    "English",
+    "German"
+  ],
+  "time_periods": [
+    "Homeric",
+    "Classical",
+    "Hellenistic",
+    "Koine",
+    "Byzantine"
+  ]
+}

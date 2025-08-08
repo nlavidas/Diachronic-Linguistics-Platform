@@ -1,0 +1,36 @@
+{
+    "id": null,
+    "title": "Valency Patterns Overview",
+    "tags": [
+        "valency",
+        "corpus"
+    ],
+    "timezone": "browser",
+    "schemaVersion": 30,
+    "version": 1,
+    "refresh": "5s",
+    "panels": [
+        {
+            "type": "table",
+            "title": "Valency Patterns by Year",
+            "datasource": "Postgres",
+            "targets": [
+                {
+                    "format": "table",
+                    "rawSql": "SELECT year, COUNT(*) as count FROM valency_patterns GROUP BY year ORDER BY year;",
+                    "refId": "A"
+                }
+            ],
+            "fieldConfig": {
+                "defaults": {},
+                "overrides": []
+            },
+            "gridPos": {
+                "h": 8,
+                "w": 24,
+                "x": 0,
+                "y": 0
+            }
+        }
+    ]
+}
