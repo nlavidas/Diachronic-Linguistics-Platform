@@ -1,17 +1,9 @@
 # Python temporary files
 __pycache__/
 *.pyc
-*.pyo
-*.pyd
 
-# Local environment files
-.env
-venv/
-env/
-
-# Ignore large data folders, logs, and database
-# These belong on the portable drive but not in the code repository.
+# Ignore data and archives
 /corpus_texts/
-/old_repos/
-*.log
+/_archive/
 *.db
+*.log
