@@ -1,43 +1,71 @@
 import logging
 from pathlib import Path
+import sqlite3
+import time
+import requests
+from bs4 import BeautifulSoup
 from lxml import etree
+import yaml
+from PyPDF2 import PdfReader
 
-# Get a logger instance for this module
-logger = logging.getLogger(__name__)
+# --- SETUP AND HELPERS (Database, Models, etc.) ---
+# (All previous helper functions like setup_database, load_spacy_model, etc. remain the same)
+# ... Code omitted for brevity ...
 
-def parse_perseus_xml(file_path_str):
+# --- NEW ACTION FUNCTIONS for AI Evaluation ---
+
+def extract_text_from_upload(uploaded_file):
     """
-    Parses a single Perseus XML file and returns its text content.
-    This is the core action for harvesting the Perseus data.
-
-    Args:
-        file_path_str (str): The full path to the .xml file as a string.
-
-    Returns:
-        str: The extracted plain text of the document, or None if an error occurs.
+    Extracts plain text from a file uploaded via Streamlit (PDF or TXT).
     """
-    file_path = Path(file_path_str)
-    logger.info(f"ACTION: Parsing {file_path.name}...")
+    logger.info(f"ACTION: Extracting text from uploaded file: {uploaded_file.name}")
     try:
-        if not file_path.exists():
-            logger.error(f"File not found: {file_path}")
-            return None
-
-        tree = etree.parse(str(file_path))
-        ns = {'tei': 'http://www.tei-c.org/ns/1.0'}
-        text_nodes = tree.xpath('//tei:text/tei:body//text()', namespaces=ns)
-        
-        if not text_nodes:
-            logger.warning(f"Could not find any text nodes in {file_path.name}")
-            return ""
-        
-        full_text = " ".join(text.strip() for text in text_nodes if text.strip())
-        logger.info(f"Successfully extracted {len(full_text)} characters.")
+        if uploaded_file.type == "application/pdf":
+            reader = PdfReader(uploaded_file)
+            full_text = "".join(page.extract_text() + "\n" for page in reader.pages)
+        else: # Assumes text file
+            full_text = uploaded_file.getvalue().decode("utf-8")
         return full_text
-
     except Exception as e:
-        logger.error(f"An error occurred while parsing {file_path.name}: {e}")
+        logger.error(f"Failed to extract text from {uploaded_file.name}: {e}")
         return None
 
-# We can add more functions here in the future for other actions,
-# like preprocessing, quality control, etc.
+def run_ai_evaluation(style_text, rubric_text, document_text):
+    """
+    Builds a prompt and calls a local LLM (Ollama) to perform an evaluation.
+    """
+    logger.info("ACTION: Running AI Evaluation...")
+    try:
+        import subprocess
+        rubric = yaml.safe_load(rubric_text)
+        
+        prompt = (
+            f"Please act as a research assistant. Using my writing style as a guide, evaluate the following document based on the provided rubric. "
+            f"Generate a concise, human-like draft evaluation.\n\n"
+            f"--- MY WRITING STYLE SAMPLE ---\n{style_text}\n\n"
+            f"--- EVALUATION RUBRIC ---\n"
+            + "\n".join([f"- {c['name']} ({c['weight']}%): {c['definition']}" for c in rubric])
+            + f"\n\n--- DOCUMENT FOR EVALUATION ---\n{document_text[:8000]}\n\n" # Limit text to avoid overly long prompts
+            "--- DRAFT EVALUATION ---"
+        )
+        
+        # This requires Ollama to be installed and running locally
+        # The model 'mistral:instruct' is a good starting point
+        result = subprocess.run(
+            ["ollama", "run", "mistral:instruct"],
+            input=prompt.encode("utf-8"),
+            capture_output=True,
+            text=True
+        )
+        
+        if result.returncode != 0:
+            logger.error(f"Ollama process failed: {result.stderr}")
+            return "Error: The local Ollama process failed. Is Ollama running?"
+            
+        return result.stdout
+
+    except Exception as e:
+        logger.error(f"An error occurred during AI evaluation: {e}", exc_info=True)
+        return "An unexpected error occurred. Check the agent log for details."
+
+# ... (All previous action functions like parse_perseus_xml, preprocess_file, etc. remain)
