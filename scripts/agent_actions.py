@@ -69,3 +69,26 @@ def run_ai_evaluation(style_text, rubric_text, document_text):
         return "An unexpected error occurred. Check the agent log for details."
 
 # ... (All previous action functions like parse_perseus_xml, preprocess_file, etc. remain)
+def sync_to_github(commit_message="Automated sync from platform"):
+    """
+    Action to add, commit, and push all project changes to GitHub.
+    """
+    logger.info("ACTION: Syncing project to GitHub...")
+    try:
+        import subprocess
+        # Run the commands from the project's root directory
+        subprocess.run(["git", "add", "."], cwd=project_root, check=True)
+        subprocess.run(["git", "commit", "-m", commit_message], cwd=project_root, check=True)
+        subprocess.run(["git", "push"], cwd=project_root, check=True)
+        logger.info("SUCCESS: Project synced to GitHub.")
+        return "Project synced successfully!"
+    except subprocess.CalledProcessError as e:
+        # If there are no changes to commit, it's not a real error.
+        if "nothing to commit" in e.stdout:
+            logger.info("No new changes to commit.")
+            return "No new changes to commit."
+        logger.error(f"Git command failed: {e.stderr}")
+        return f"Git command failed: {e.stderr}"
+    except Exception as e:
+        logger.error(f"An error occurred during GitHub sync: {e}")
+        return "An unexpected error occurred."

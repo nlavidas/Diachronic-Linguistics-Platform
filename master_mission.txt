@@ -1,0 +1,8 @@
+
+# --- Approved from Curation Platform ---
+HARVEST_URL:http://www.gutenberg.org/ebooks/37342
+HARVEST_URL:http://www.gutenberg.org/ebooks/43555
+HARVEST_URL:https://www.gutenberg.org/ebooks/37342.html.images
+HARVEST_URL:https://www.gutenberg.org/files/26413/26413-h/26413-h.htm
+HARVEST_URL:http://www.gutenberg.org/ebooks/30851
+HARVEST_URL:http://www.gutenberg.org/ebooks/43195
