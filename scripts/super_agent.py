@@ -4,7 +4,7 @@ import time
 import sys
 import os
 
-# --- PATH SETUP ---
+# Add the project root to the Python path
 project_root = Path(__file__).resolve().parent.parent
 sys.path.append(str(project_root))
 
@@ -12,13 +12,11 @@ sys.path.append(str(project_root))
 # Import all functions from our "toolbox" so the agent can use them.
 from scripts.agent_actions import *
 
-# --- SETUP ---
+# (Setup and other functions remain the same)
 logging.basicConfig(level=logging.INFO, format='%(asctime)s [%(levelname)s] %(message)s', handlers=[logging.StreamHandler(), logging.FileHandler(project_root / "super_agent_log.txt", mode='a', encoding='utf-8')])
 logger = logging.getLogger(__name__)
-
 QUEUE_FILE = project_root / "master_mission.txt"
 
-# --- AGENT ORCHESTRATOR ---
 def process_mission(mission_string):
     logger.info(f"Received mission: '{mission_string}'")
     try:
@@ -28,10 +26,8 @@ def process_mission(mission_string):
             if data == "PERSEUS_GREEK": harvest_perseus_mission()
             elif data == "GUTENBERG_ENGLISH_DIACHRONIC": harvest_gutenberg_english()
         elif command == "PROCESS":
-            if data == "GREEK_CORPUS": preprocess_corpus_mission("corpus_texts/perseus_greek", "greek")
+            if data == "GREEK_CORPUS": preprocess_corpus_mission("corpus_texts/perseus_greek_classics", "greek")
             elif data == "ENGLISH_CORPUS": preprocess_corpus_mission("corpus_texts/gutenberg_english", "english")
-        elif command == "DISCOVER":
-            run_discovery(data)
         else:
             logger.warning(f"Unknown mission: {mission_string}")
     except Exception as e:
@@ -44,7 +40,7 @@ def get_next_mission():
     return next_mission if next_mission else None
 
 def main():
-    logger.info("🚀 Super Agent v3.1 (Autonomous Orchestrator) Initialized...")
+    logger.info("🚀 Super Agent v3.2 (Autonomous Orchestrator) Initialized...")
     while True:
         try:
             mission = get_next_mission()

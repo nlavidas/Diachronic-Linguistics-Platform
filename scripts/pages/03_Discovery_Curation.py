@@ -13,16 +13,16 @@ APPROVED_TASKS_FILE = project_root / "master_mission.txt"
 st.header("Discovered URLs for Review")
 
 if not DISCOVERED_URLS_FILE.exists():
-    st.warning("The Discovery Agent has not found any URLs yet. Run `discovery_agent.py` to begin.")
+    st.warning("The Discovery Agent has not found any URLs yet.")
 else:
     try:
         df = pd.read_csv(DISCOVERED_URLS_FILE)
         df["Approve"] = False
         df = df[["Approve", "Title", "Snippet", "URL"]]
-        
-        st.info(f"Found {len(df)} URLs for review. Check the box to approve a text for harvesting.")
-        
-        edited_df = st.data_editor(df, hide_index=True, use_container_width=True)
+
+        st.info("Check the 'Approve' box for texts you want to harvest, then click the button at the bottom.")
+
+        edited_df = st.data_editor(df, hide_index=True, use_container_width=True, height=500)
         approved_urls = edited_df.loc[edited_df["Approve"] == True]["URL"].tolist()
 
         if st.button("Add Approved URLs to Super Agent's Mission Queue"):
@@ -31,7 +31,7 @@ else:
                     f.write("\n# --- Approved from Curation Platform ---\n")
                     for url in approved_urls:
                         f.write(f"HARVEST_URL:{url}\n")
-                st.success(f"Added {len(approved_urls)} new harvest missions to the queue!")
+                st.success(f"Added {len(approved_urls)} new harvest missions to the agent's queue!")
             else:
                 st.warning("No URLs were selected for approval.")
     except pd.errors.EmptyDataError:
