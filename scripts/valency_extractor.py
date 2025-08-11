@@ -5,7 +5,6 @@ import sqlite3
 import json
 
 # --- SETUP ---
-# Ensure the project root is on the Python path
 project_root = Path(__file__).resolve().parent.parent
 sys.path.append(str(project_root))
 
@@ -16,27 +15,18 @@ DB_PATH = project_root / "corpus.db"
 OUTPUT_FILE = project_root / "output" / "valency_patterns.jsonl"
 OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
 
-# --- VALENCY EXTRACTOR CLASS (from your script) ---
-
+# --- VALENCY EXTRACTOR CLASS (based on your script) ---
 class ValencyExtractor:
-    """
-    Extracts verb argument frames from dependency-parsed sentences stored in our database.
-    """
     def __init__(self, subj_rels=('nsubj',), obj_rels=('obj', 'dobj', 'iobj')):
         self.subj_rels = set(subj_rels)
         self.obj_rels = set(obj_rels)
 
     def extract_frames_from_sentence(self, tokens: list):
-        """
-        Processes a single sentence (represented as a list of token dictionaries).
-        """
-        id_map = {t['token_id_in_sent']: t for t in tokens}
         frames = []
         
         for token in tokens:
             if token['pos'] in ('VERB', 'AUX') or token['dependency'] == 'ROOT':
                 verb = token
-                verb_id = verb['token_id_in_sent']
                 
                 frame = {
                     'verb_lemma': verb['lemma'],
@@ -44,18 +34,14 @@ class ValencyExtractor:
                     'arguments': []
                 }
                 
-                # Find dependents of this verb
                 for dependent in tokens:
-                    if dependent.get('head_text') == verb['text']: # Simple head matching for now
+                    if dependent.get('head_text') == verb['text']:
                         role = None
                         deprel = dependent['dependency']
                         
-                        if deprel in self.subj_rels:
-                            role = 'SUBJ'
-                        elif deprel in self.obj_rels:
-                            role = 'OBJ'
-                        elif deprel.startswith('obl'):
-                            role = 'OBLIQUE'
+                        if deprel in self.subj_rels: role = 'SUBJ'
+                        elif deprel in self.obj_rels: role = 'OBJ'
+                        elif deprel.startswith('obl'): role = 'OBLIQUE'
                         
                         if role:
                             frame['arguments'].append({
@@ -81,7 +67,6 @@ def main():
     conn.row_factory = sqlite3.Row
     cur = conn.cursor()
 
-    # Get all sentences from the database
     cur.execute("SELECT text_id, sentence_id FROM tokens GROUP BY text_id, sentence_id")
     sentences = cur.fetchall()
     
@@ -89,7 +74,10 @@ def main():
 
     with open(OUTPUT_FILE, 'w', encoding='utf-8') as f_out:
         for i, sent in enumerate(sentences):
-            if i > 500: break # Process a sample of 500 sentences for this test
+            # Process a sample for this test run
+            if i > 1000: 
+                logger.info("Processing sample limit reached.")
+                break
             
             cur.execute("SELECT * FROM tokens WHERE text_id = ? AND sentence_id = ?", (sent['text_id'], sent['sentence_id']))
             tokens_in_sent = [dict(row) for row in cur.fetchall()]
