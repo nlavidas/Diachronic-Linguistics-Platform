@@ -1,0 +1,65 @@
+[
+  {
+    "url": "https://www.gutenberg.org/ebooks/100.txt.utf-8",
+    "title": "The Complete Works of William Shakespeare",
+    "period": "early_modern_to_modern",
+    "language": "english",
+    "source": "gutenberg"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/67423.txt.utf-8",
+    "title": "The Elizabethan Stage, Vol. 2",
+    "period": "early_modern_to_modern",
+    "language": "english",
+    "source": "gutenberg"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/53490.txt.utf-8",
+    "title": "William Shakespeare",
+    "period": "early_modern_to_modern",
+    "language": "english",
+    "source": "gutenberg"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/70717.txt.utf-8",
+    "title": "Spenser's Faerie Queene, Vol. 1 (of 2) :  Books I-III",
+    "period": "early_modern_to_modern",
+    "language": "english",
+    "source": "gutenberg"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/70688.txt.utf-8",
+    "title": "Rajah Brooke :  the Englishman as ruler of an eastern state",
+    "period": "early_modern_to_modern",
+    "language": "english",
+    "source": "gutenberg"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/55769.txt.utf-8",
+    "title": "Robert Greene: [Six Plays]",
+    "period": "early_modern_to_modern",
+    "language": "english",
+    "source": "gutenberg"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/31706.txt.utf-8",
+    "title": "Milton: Minor Poems",
+    "period": "early_modern_to_modern",
+    "language": "english",
+    "source": "gutenberg"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/9823.txt.utf-8",
+    "title": "Lives of the Poets, Volume 1",
+    "period": "early_modern_to_modern",
+    "language": "english",
+    "source": "gutenberg"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/34526.txt.utf-8",
+    "title": "Milton's England",
+    "period": "early_modern_to_modern",
+    "language": "english",
+    "source": "gutenberg"
+  }
+]

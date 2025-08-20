@@ -1,0 +1,82 @@
+[
+  {
+    "url": "https://www.gutenberg.org/ebooks/6032.txt.utf-8",
+    "title": "Memoirs or Chronicle of the Fourth Crusade and the Conquest of Constantinople",
+    "language": "greek",
+    "period": "medieval",
+    "source": "gutenberg",
+    "book_id": "6032",
+    "retrieval_date": "2025-08-20T21:59:21.561128",
+    "query_used": "Byzantine chronicle"
+  },
+  {
+    "url": "https://archive.org/stream/greektestament02alfo/greektestament02alfo_djvu.txt",
+    "title": "The Greek Testament:",
+    "language": "greek",
+    "period": "medieval",
+    "source": "archive.org",
+    "identifier": "greektestament02alfo",
+    "retrieval_date": "2025-08-20T21:59:32.295400",
+    "query_used": "Byzantine Greek text"
+  },
+  {
+    "url": "https://archive.org/stream/TheZijAs-sanjariOfGregoryChioniades/TheZijAs-sanjariOfGregoryChioniades_djvu.txt",
+    "title": "The Zij as-Sanjari of Gregory Chioniades",
+    "language": "greek",
+    "period": "medieval",
+    "source": "archive.org",
+    "identifier": "TheZijAs-sanjariOfGregoryChioniades",
+    "retrieval_date": "2025-08-20T21:59:32.295408",
+    "query_used": "Byzantine Greek text"
+  },
+  {
+    "url": "https://archive.org/stream/greektestament03alfo/greektestament03alfo_djvu.txt",
+    "title": "The Greek Testament:",
+    "language": "greek",
+    "period": "medieval",
+    "source": "archive.org",
+    "identifier": "greektestament03alfo",
+    "retrieval_date": "2025-08-20T21:59:32.295414",
+    "query_used": "Byzantine Greek text"
+  },
+  {
+    "url": "https://archive.org/stream/apostolosetoipra0000unse/apostolosetoipra0000unse_djvu.txt",
+    "title": "Apostolos etoi, praxeis kai epistolai ton agion apostolon kath odon to etos en' ekklesiais ananginoskomenai ..",
+    "language": "greek",
+    "period": "medieval",
+    "source": "archive.org",
+    "identifier": "apostolosetoipra0000unse",
+    "retrieval_date": "2025-08-20T21:59:32.295420",
+    "query_used": "Byzantine Greek text"
+  },
+  {
+    "url": "https://archive.org/stream/chronikongeorgio0000phra/chronikongeorgio0000phra_djvu.txt",
+    "title": "Chronikon Georgiou tou Phrantze tou protovestiariou",
+    "language": "greek",
+    "period": "medieval",
+    "source": "archive.org",
+    "identifier": "chronikongeorgio0000phra",
+    "retrieval_date": "2025-08-20T21:59:32.295425",
+    "query_used": "Byzantine Greek text"
+  },
+  {
+    "url": "https://archive.org/stream/LaskarisKananosReseanteckningarFrnDeNordiskaLnderna/LaskarisKananosReseanteckningarFrnDeNordiskaLnderna_djvu.txt",
+    "title": "Laskaris Kananos' Reseanteckningar från de nordiska länderna",
+    "language": "greek",
+    "period": "medieval",
+    "source": "archive.org",
+    "identifier": "LaskarisKananosReseanteckningarFrnDeNordiskaLnderna",
+    "retrieval_date": "2025-08-20T21:59:32.295430",
+    "query_used": "Byzantine Greek text"
+  },
+  {
+    "url": "https://archive.org/stream/bub_gb_f_6xnmASiL4C/bub_gb_f_6xnmASiL4C_djvu.txt",
+    "title": "Prokopiou Kaisareos Ton kat'auton historion tetras deutera. Procopii Caesariensis Historiarum temporis sui tetras altera. Interprete Claudio Maltreto Aniciensi, Societatis Jesu presbytero. Cum supplementis Vaticanis, ..",
+    "language": "greek",
+    "period": "medieval",
+    "source": "archive.org",
+    "identifier": "bub_gb_f_6xnmASiL4C",
+    "retrieval_date": "2025-08-20T21:59:33.197150",
+    "query_used": "Procopius Greek"
+  }
+]

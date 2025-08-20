@@ -1,0 +1,392 @@
+[
+  {
+    "url": "https://www.gutenberg.org/ebooks/6130.txt.utf-8",
+    "title": "The Iliad",
+    "source": "gutenberg",
+    "term": "Greek literature"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/27673.txt.utf-8",
+    "title": "Oedipus King of Thebes",
+    "source": "gutenberg",
+    "term": "Greek literature"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/7700.txt.utf-8",
+    "title": "Lysistrata",
+    "source": "gutenberg",
+    "term": "Greek literature"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/27458.txt.utf-8",
+    "title": "Aeschylus' Prometheus Bound and the Seven Against Thebes",
+    "source": "gutenberg",
+    "term": "Greek literature"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/1727.txt.utf-8",
+    "title": "The Odyssey",
+    "source": "gutenberg",
+    "term": "Greek literature"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/5225.txt.utf-8",
+    "title": "The Satyricon \u2014 Complete",
+    "source": "gutenberg",
+    "term": "Latin literature"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/5611.txt.utf-8",
+    "title": "The Satyricon of Petronius Arbiter",
+    "source": "gutenberg",
+    "term": "Latin literature"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/67961.txt.utf-8",
+    "title": "El arte de amar (Spanish)",
+    "source": "gutenberg",
+    "term": "Latin literature"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/21765.txt.utf-8",
+    "title": "The Metamorphoses of Ovid, Books I-VII",
+    "source": "gutenberg",
+    "term": "Latin literature"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/228.txt.utf-8",
+    "title": "The Aeneid",
+    "source": "gutenberg",
+    "term": "Latin literature"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/100.txt.utf-8",
+    "title": "The Complete Works of William Shakespeare",
+    "source": "gutenberg",
+    "term": "English literature"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/1080.txt.utf-8",
+    "title": "A Modest Proposal",
+    "source": "gutenberg",
+    "term": "English literature"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/2554.txt.utf-8",
+    "title": "Crime and Punishment",
+    "source": "gutenberg",
+    "term": "English literature"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/1259.txt.utf-8",
+    "title": "Twenty years after",
+    "source": "gutenberg",
+    "term": "English literature"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/9070.txt.utf-8",
+    "title": "The Imaginary Invalid",
+    "source": "gutenberg",
+    "term": "English literature"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/19488.txt.utf-8",
+    "title": "The Life of Joan of Arc, Vol. 1 and 2",
+    "source": "gutenberg",
+    "term": "Medieval French"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/831.txt.utf-8",
+    "title": "Four Arthurian Romances",
+    "source": "gutenberg",
+    "term": "Medieval French"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/18575.txt.utf-8",
+    "title": "One Hundred Merrie And Delightsome Stories",
+    "source": "gutenberg",
+    "term": "Medieval French"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/30785.txt.utf-8",
+    "title": "Dictionnaire raisonn\u00e9 de l'architecture fran\u00e7aise du XIe au XVIe si\u00e8cle - Tome 5 - (D - E- F) (French)",
+    "source": "gutenberg",
+    "term": "Medieval French"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/54701.txt.utf-8",
+    "title": "Gothic Architecture",
+    "source": "gutenberg",
+    "term": "Medieval French"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/8525.txt.utf-8",
+    "title": "Eve's Diary, Complete",
+    "source": "gutenberg",
+    "term": "Bible"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/28718.txt.utf-8",
+    "title": "Les crimes de l'amour\r (French)",
+    "source": "gutenberg",
+    "term": "Bible"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/43438.txt.utf-8",
+    "title": "Erotika Biblion (German)",
+    "source": "gutenberg",
+    "term": "Bible"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/12242.txt.utf-8",
+    "title": "Poems by Emily Dickinson, Three Series, Complete",
+    "source": "gutenberg",
+    "term": "Bible"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/10.txt.utf-8",
+    "title": "The King James Version of the Bible",
+    "source": "gutenberg",
+    "term": "Bible"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/398.txt.utf-8",
+    "title": "The First Book of Adam and Eve",
+    "source": "gutenberg",
+    "term": "Testament"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/8300.txt.utf-8",
+    "title": "The Bible, Douay-Rheims, Complete",
+    "source": "gutenberg",
+    "term": "Testament"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/48247.txt.utf-8",
+    "title": "Prayers of the Early Church",
+    "source": "gutenberg",
+    "term": "Testament"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/1581.txt.utf-8",
+    "title": "The Bible, Douay-Rheims, Complete",
+    "source": "gutenberg",
+    "term": "Testament"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/62383.txt.utf-8",
+    "title": "A Biblia Sagrada, Contendo o Velho e o Novo Testamento (Portuguese)",
+    "source": "gutenberg",
+    "term": "Testament"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/30191.txt.utf-8",
+    "title": "A Critic in Pall Mall: Being Extracts from Reviews and Miscellanies",
+    "source": "gutenberg",
+    "term": "Gospel"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/36264.txt.utf-8",
+    "title": "A Harmony of the Gospels for Students of the Life of Christ",
+    "source": "gutenberg",
+    "term": "Gospel"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/58.txt.utf-8",
+    "title": "Paradise Regained",
+    "source": "gutenberg",
+    "term": "Gospel"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/20755.txt.utf-8",
+    "title": "Short Studies on Great Subjects",
+    "source": "gutenberg",
+    "term": "Gospel"
+  },
+  {
+    "url": "https://archive.org/download/u_20240818/u_20240818.txt",
+    "title": "\u039c. \u039a\u03b1\u03c1\u03b1\u03b3\u03ac\u03c4\u03c3\u03b7\u03c2 - \u039f \u039a\u03bf\u03c4\u03b6\u03ac\u03bc\u03c0\u03b1\u03c3\u03b7\u03c2 \u03c4\u03bf\u03c5 \u039a\u03b1\u03c3\u03c4\u03c1\u03cc\u03c0\u03c5\u03c1\u03b3\u03bf\u03c5",
+    "source": "archive_org",
+    "term": "greek literature"
+  },
+  {
+    "url": "https://archive.org/download/tenorationsofcic00cice_202507/tenorationsofcic00cice_202507.txt",
+    "title": "Ten Orations and Selected Letters of Cicero: Statesmanship, Rhetoric, and Republican Ideals",
+    "source": "archive_org",
+    "term": "greek literature"
+  },
+  {
+    "url": "https://archive.org/download/worldsgreatclas42hawtgoog/worldsgreatclas42hawtgoog.txt",
+    "title": "The World's great classics",
+    "source": "archive_org",
+    "term": "greek literature"
+  },
+  {
+    "url": "https://archive.org/download/jstor-288428/jstor-288428.txt",
+    "title": "Recognition Scenes in Greek Literature",
+    "source": "archive_org",
+    "term": "greek literature"
+  },
+  {
+    "url": "https://archive.org/download/karlotfriedmlle05mlgoog/karlotfriedmlle05mlgoog.txt",
+    "title": "Karl Otfried Mu\u0308ller's Geschichte der griechischen literatur bis auf das zeitalter Alexanders. Nach der handschrift des verfassers herausgegeben",
+    "source": "archive_org",
+    "term": "greek literature"
+  },
+  {
+    "url": "https://archive.org/download/20150912MBPRL/20150912MBPRL.txt",
+    "title": "Mail Bid Sale",
+    "source": "archive_org",
+    "term": "latin literature"
+  },
+  {
+    "url": "https://archive.org/download/the_redemption_of_marie_gordon_number_52/the_redemption_of_marie_gordon_number_52.txt",
+    "title": "the_redemption_of_marie_gordon_number_52",
+    "source": "archive_org",
+    "term": "latin literature"
+  },
+  {
+    "url": "https://archive.org/download/surfinggnarl0000rudy/surfinggnarl0000rudy.txt",
+    "title": "Surfing the Gnarl",
+    "source": "archive_org",
+    "term": "latin literature"
+  },
+  {
+    "url": "https://archive.org/download/cl_000668/cl_000668.txt",
+    "title": "Los Angeles Graphic - 1913-06-07",
+    "source": "archive_org",
+    "term": "latin literature"
+  },
+  {
+    "url": "https://archive.org/download/cl_000562/cl_000562.txt",
+    "title": "Los Angeles Graphic - 1911-05-27",
+    "source": "archive_org",
+    "term": "latin literature"
+  },
+  {
+    "url": "https://archive.org/download/ZOE_A_Story_Of_Honor_Betrayal_And_Redemption_Book_53_/ZOE_A_Story_Of_Honor_Betrayal_And_Redemption_Book_53_.txt",
+    "title": "ZOE_A_Story_Of_Honor_Betrayal_And_Redemption_Book_53_",
+    "source": "archive_org",
+    "term": "english literature"
+  },
+  {
+    "url": "https://archive.org/download/ZOE_A_Story_Of_Honor_Betrayal_And_Redemption_Book_51_/ZOE_A_Story_Of_Honor_Betrayal_And_Redemption_Book_51_.txt",
+    "title": "ZOE_A_Story_Of_Honor_Betrayal_And_Redemption_Book_51_",
+    "source": "archive_org",
+    "term": "english literature"
+  },
+  {
+    "url": "https://archive.org/download/Love_Has_No_Meaning_Without_Her_/Love_Has_No_Meaning_Without_Her_.txt",
+    "title": "Love_Has_No_Meaning_Without_Her_",
+    "source": "archive_org",
+    "term": "english literature"
+  },
+  {
+    "url": "https://archive.org/download/AdobeReduxhtml5AdNauseum/AdobeReduxhtml5AdNauseum.txt",
+    "title": "Adobe Redux (HTML5) Ad Nauseum",
+    "source": "archive_org",
+    "term": "english literature"
+  },
+  {
+    "url": "https://archive.org/download/leromandamadisdegaule/leromandamadisdegaule.txt",
+    "title": "Le roman d'Amadis de Gaule, reconstitution du roman portugais du XIIIe si\u00e8cle par Affonso Lopes-Vieira, traduite en fran\u00e7ais par Phil\u00e9as Lebesgue avec des bois de Ren\u00e9 Blot d'apr\u00e8s d'anciennes gravures",
+    "source": "archive_org",
+    "term": "medieval french"
+  },
+  {
+    "url": "https://archive.org/download/lesadventureshuondebordeauxvi/lesadventureshuondebordeauxvi.txt",
+    "title": "Les aventures merveilleuses de Huon de Bordeaux, chanson de geste du XIIIe si\u00e8cle traduite par Jean Audiau",
+    "source": "archive_org",
+    "term": "medieval french"
+  },
+  {
+    "url": "https://archive.org/download/lesidees898662/lesidees898662.txt",
+    "title": "Les id\u00e9es et les lettres au XIIIe si\u00e8cle : le Roman de la rose",
+    "source": "archive_org",
+    "term": "medieval french"
+  },
+  {
+    "url": "https://archive.org/download/lavieenfranceaulangloisned1/lavieenfranceaulangloisned1.txt",
+    "title": "La vie en France au Moyen \u00c2ge de la fin du XIIe au milieu du XIVe si\u00e8cle d'apr\u00e8s des romans mondains du temps. Nouvelle \u00e9dition, revue",
+    "source": "archive_org",
+    "term": "medieval french"
+  },
+  {
+    "url": "https://archive.org/download/limprimeurcolardmansionetlebomich/limprimeurcolardmansionetlebomich.txt",
+    "title": "L'imprimeur Colard Mansion et le Boccace de la Biblioth\u00e8que d'Amiens",
+    "source": "archive_org",
+    "term": "medieval french"
+  },
+  {
+    "url": "https://archive.org/download/revelation-deconstructed/revelation-deconstructed.txt",
+    "title": "Revelation Deconstructed",
+    "source": "archive_org",
+    "term": "bible"
+  },
+  {
+    "url": "https://archive.org/download/GermanyAndTheEuropeanEastInTheTwentiethCentury/GermanyAndTheEuropeanEastInTheTwentiethCentury.txt",
+    "title": "Germany And The European East In The Twentieth Century",
+    "source": "archive_org",
+    "term": "bible"
+  },
+  {
+    "url": "https://archive.org/download/SharpeningYourViewHowDidThingsGetSoMessedUp/SharpeningYourViewHowDidThingsGetSoMessedUp.txt",
+    "title": "Sharpening Your View ~ How Did Things Get So Messed Up",
+    "source": "archive_org",
+    "term": "bible"
+  },
+  {
+    "url": "https://archive.org/download/surfinggnarl0000rudy/surfinggnarl0000rudy.txt",
+    "title": "Surfing the Gnarl",
+    "source": "archive_org",
+    "term": "bible"
+  },
+  {
+    "url": "https://archive.org/download/jstor-3154458/jstor-3154458.txt",
+    "title": "The Septuagint Rendering of Gen. 4:1",
+    "source": "archive_org",
+    "term": "septuagint"
+  },
+  {
+    "url": "https://archive.org/download/jstor-1450006/jstor-1450006.txt",
+    "title": "The Genesis of the So-Called Septuagint, the First Greek Version of the Pentateuch",
+    "source": "archive_org",
+    "term": "septuagint"
+  },
+  {
+    "url": "https://archive.org/download/communism_-_a_jewish_talmudic_concept/communism_-_a_jewish_talmudic_concept.txt",
+    "title": "Communism of Jewish Talmud concept nwo illuminati freemasons",
+    "source": "archive_org",
+    "term": "septuagint"
+  },
+  {
+    "url": "https://archive.org/download/lenouveautestame00lema/lenouveautestame00lema.txt",
+    "title": "Le Nouveau Testament de notre Seigneur J\u00e9sus-Christ, traduit sur la Vulgate",
+    "source": "archive_org",
+    "term": "vulgate"
+  },
+  {
+    "url": "https://archive.org/download/lasaintebiblepo07vigo/lasaintebiblepo07vigo.txt",
+    "title": "La Sainte Bible Polyglotte, contenant le texte H\u00e9breu original, le texte Grec des septante, le texte Latin de la vulgate et la traduction fran\u00e7aise de l'Abb\u00e9 Glaire, avec les diff\u00e9rences de l'H\u00e9breu, des septante et de la vulgate;",
+    "source": "archive_org",
+    "term": "vulgate"
+  },
+  {
+    "url": "https://archive.org/download/lasaintebibletex15pari/lasaintebibletex15pari.txt",
+    "title": "La Sainte Bible : texte de la Vulgate",
+    "source": "archive_org",
+    "term": "vulgate"
+  },
+  {
+    "url": "https://archive.org/download/AbrahamLincolnFreemasonAnAddressBeforeTheLodge191432Pgs/AbrahamLincolnFreemasonAnAddressBeforeTheLodge191432Pgs.txt",
+    "title": "Abraham Lincoln Rosicrucian Freemason An Address Before The Lodge ( 1914) nwo illuminati freemasons",
+    "source": "archive_org",
+    "term": "vulgate"
+  },
+  {
+    "url": "https://archive.org/download/sacra-biblia-sive-testamentum-vetus-ab-imman.-tremellio-francisco-iunio-ex-hebraeo-1673/sacra-biblia-sive-testamentum-vetus-ab-imman.-tremellio-francisco-iunio-ex-hebraeo-1673.txt",
+    "title": "Sacra Biblia, Sive, Testamentum Vetus, Ab Imman. Tremellio & Francisco Iunio Ex Hebraeo Latine Redditum, Et Testamentum Novum, A Theodoro Beza E Graeco In Latinum Versum 1673",
+    "source": "archive_org",
+    "term": "vulgate"
+  }
+]

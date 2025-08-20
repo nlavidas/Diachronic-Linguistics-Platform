@@ -1,0 +1,41 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+*.class
+*.so
+.Python
+venv/
+ENV/
+env/
+*.egg-info/
+dist/
+build/
+
+# Large files and directories
+corpus.db-journal
+*.log
+*.tmp
+pybor/
+stanza_resources/
+wold/
+*.zip
+*_clean.txt
+agent_checkpoint.json
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data files
+*.db
+*.db-journal
+backups/
+corpus_texts/
+results/
+output/

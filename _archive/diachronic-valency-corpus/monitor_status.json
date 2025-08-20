@@ -1,0 +1,11 @@
+{
+  "timestamp": "2025-08-02T21:40:53.649666",
+  "agent_running": true,
+  "stats": {
+    "agent_restarts": 0,
+    "texts_downloaded": 27,
+    "errors_handled": 0,
+    "last_activity": "2025-08-02T21:40:45.732705",
+    "uptime_hours": 19.614599517222224
+  }
+}

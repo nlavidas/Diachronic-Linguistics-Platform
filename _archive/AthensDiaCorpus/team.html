@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athens Diachronic Corpus | ΕΛΙΔΕΚ Digital Humanities Project</title>
+    <meta name="description" content="Cutting-edge computational linguistics research exploring Greek language evolution through time">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #1a237e;
+            --secondary: #ff6f00;
+            --accent: #00bcd4;
+            --dark: #0d1117;
+            --light: #f8f9fa;
+            --gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --text: #2c3e50;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background: var(--light);
+            overflow-x: hidden;
+        }
+
+        /* Loading Screen */
+        .loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--dark);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            transition: opacity 0.5s, visibility 0.5s;
+        }
+
+        .loader.hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .loader-text {
+            color: white;
+            font-size: 2rem;
+            font-weight: 300;
+            letter-spacing: 0.2em;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 0.4; }
+            50% { opacity: 1; }
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(13, 17, 23, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            transition: all 0.3s;
+        }
+
+        nav.scrolled {
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .logo:hover {
+            color: var(--accent);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            position: relative;
+            transition: color 0.3s;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent);
+            transition: width 0.3s;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: var(--gradient);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.1;
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3Cpattern id='grid' width='20' height='20' patternUnits='userSpaceOnUse'%3E%3Cpath d='M 20 0 L 0 0 0 20' fill='none' stroke='white' stroke-width='0.5'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='100' height='100' fill='url(%23grid)' /%3E%3C/svg%3E");
+        }
+
+        .hero-content {
+            text-align: center;
+            z-index: 1;
+            max-width: 800px;
+            padding: 2rem;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            color: white;
+            margin-bottom: 1rem;
+            animation: fadeInUp 1s;
+        }
+
+        .hero-subtitle {
+            font-size: 1.5rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 2rem;
+            animation: fadeInUp 1s 0.2s both;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            animation: fadeInUp 1s 0.4s both;
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: white;
+            color: var(--primary);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .btn-secondary:hover {
+            background: white;
+            color: var(--primary);
+        }
+
+        /* Sections */
+        section {
+            padding: 5rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            color: var(--text);
+            margin-bottom: 3rem;
+            opacity: 0.8;
+        }
+
+        /* About Section */
+        .about-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .about-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s;
+            text-align: center;
+        }
+
+        .about-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .about-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Team Section */
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .team-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s;
+        }
+
+        .team-card:hover {
+            transform: scale(1.05);
+        }
+
+        .team-avatar {
+            height: 200px;
+            background: var(--gradient);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            color: white;
+        }
+
+        .team-info {
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .team-name {
+            font-size: 1.3rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .team-role {
+            color: var(--secondary);
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        /* Timeline */
+        .timeline {
+            position: relative;
+            padding: 2rem 0;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--primary);
+            transform: translateX(-50%);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin: 2rem 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .timeline-item:nth-child(odd) {
+            flex-direction: row-reverse;
+        }
+
+        .timeline-content {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            width: 45%;
+            position: relative;
+        }
+
+        .timeline-date {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: var(--secondary);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-weight: 600;
+        }
+
+        /* Contact */
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: all 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px rgba(0, 188, 212, 0.1);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .social-links a {
+            color: white;
+            font-size: 1.5rem;
+            transition: all 0.3s;
+        }
+
+        .social-links a:hover {
+            color: var(--accent);
+            transform: translateY(-3px);
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .hero-subtitle { font-size: 1.2rem; }
+            .nav-links { display: none; }
+            .timeline::before { left: 30px; }
+            .timeline-content { width: calc(100% - 60px); margin-left: 60px; }
+            .timeline-item:nth-child(odd) { flex-direction: row; }
+        }
+
+        /* Password Modal */
+        .password-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 10000;
+        }
+
+        .password-box {
+            background: white;
+            padding: 3rem;
+            border-radius: 20px;
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
+        }
+
+        .password-box h2 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .password-input {
+            width: 100%;
+            padding: 1rem;
+            margin: 1rem 0;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            font-size: 1rem;
+        }
+
+        .password-error {
+            color: #f44336;
+            margin-top: 1rem;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Password Protection -->
+    <div class="password-modal" id="passwordModal">
+        <div class="password-box">
+            <h2>🔐 Athens Diachronic Corpus</h2>
+            <p>This is a private development site</p>
+            <input type="password" class="password-input" id="passwordInput" placeholder="Enter password" autofocus>
+            <button class="btn btn-primary" onclick="checkPassword()">Access Site</button>
+            <div class="password-error" id="passwordError">Incorrect password. Please try again.</div>
+        </div>
+    </div>
+
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-text">ATHENS CORPUS</div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">AthensDiaCorpus</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <h1>Athens Diachronic Corpus</h1>
+            <p class="hero-subtitle">Exploring 3,000 Years of Greek Language Evolution Through AI</p>
+            <div class="hero-buttons">
+                <a href="#about" class="btn btn-primary">Explore Project</a>
+                <a href="#resources" class="btn btn-secondary">Access Corpus</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="fade-in">
+        <h2 class="section-title">About the Project</h2>
+        <p class="section-subtitle">ΕΛΙΔΕΚ-funded cutting-edge research in computational diachronic linguistics</p>
+        
+        <div class="about-grid">
+            <div class="about-card">
+                <div class="about-icon">🤖</div>
+                <h3>AI-Powered Analysis</h3>
+                <p>Leveraging state-of-the-art NLP and machine learning to trace semantic shifts, syntactic evolution, and morphological changes across millennia of Greek texts.</p>
+            </div>
+            
+            <div class="about-card">
+                <div class="about-icon">📚</div>
+                <h3>Massive Corpus</h3>
+                <p>Over 10 million tokens spanning from Linear B tablets to contemporary Greek social media, creating the most comprehensive diachronic Greek dataset.</p>
+            </div>
+            
+            <div class="about-card">
+                <div class="about-icon">🌐</div>
+                <h3>Open Science</h3>
+                <p>All data, tools, and findings freely available under CC-BY license. Interactive web interface for researchers worldwide to query and analyze our corpus.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="fade-in" style="background: #f8f9fa;">
+        <h2 class="section-title">Research Team</h2>
+        <p class="section-subtitle">Interdisciplinary experts in linguistics, computer science, and digital humanities</p>
+        
+        <div class="team-grid">
+            <div class="team-card">
+                <div class="team-avatar">👨‍🏫</div>
+                <div class="team-info">
+                    <h3 class="team-name">Dr. [Principal Investigator]</h3>
+                    <p class="team-role">Project Director</p>
+                    <p>Computational linguist specializing in Greek historical morphology and semantic change detection algorithms.</p>
+                </div>
+            </div>
+            
+            <div class="team-card">
+                <div class="team-avatar">👩‍🔬</div>
+                <div class="team-info">
+                    <h3 class="team-name">Dr. [Postdoc Name]</h3>
+                    <p class="team-role">Senior Researcher</p>
+                    <p>Expert in Byzantine Greek and neural language models for historical text analysis.</p>
+                </div>
+            </div>
+            
+            <div class="team-card">
+                <div class="team-avatar">👨‍💻</div>
+                <div class="team-info">
+                    <h3 class="team-name">[PhD Student]</h3>
+                    <p class="team-role">NLP Engineer</p>
+                    <p>Developing transformer-based models for diachronic word embeddings and semantic drift visualization.</p>
+                </div>
+            </div>
+            
+            <div class="team-card">
+                <div class="team-avatar">👩‍🎓</div>
+                <div class="team-info">
+                    <h3 class="team-name">[Research Assistant]</h3>
+                    <p class="team-role">Data Scientist</p>
+                    <p>Corpus annotation, quality control, and development of the web-based query interface.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="fade-in">
+        <h2 class="section-title">Project Timeline</h2>
+        <p class="section-subtitle">Key milestones and deliverables</p>
+        
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Project Launch & Team Assembly</h3>
+                    <p>Recruitment of research team, infrastructure setup, initial corpus design and annotation guidelines.</p>
+                </div>
+                <div class="timeline-date">2024 Q1</div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Corpus Collection Phase I</h3>
+                    <p>Digitization of ancient and medieval texts, OCR optimization for polytonic Greek, initial quality control.</p>
+                </div>
+                <div class="timeline-date">2024 Q3</div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>AI Model Development</h3>
+                    <p>Training diachronic word embeddings, developing semantic change detection algorithms, first research papers.</p>
+                </div>
+                <div class="timeline-date">2025 Q2</div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Public Interface Launch</h3>
+                    <p>Release of web-based corpus query system, API for computational access, first workshops for researchers.</p>
+                </div>
+                <div class="timeline-date">2026 Q1</div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Project Completion</h3>
+                    <p>Final corpus release, comprehensive documentation, sustainability plan for long-term maintenance.</p>
+                </div>
+                <div class="timeline-date">2027 Q4</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources" class="fade-in" style="background: #f8f9fa;">
+        <h2 class="section-title">Resources & Tools</h2>
+        <p class="section-subtitle">Access our corpus, tools, and documentation</p>
+        
+        <div class="about-grid">
+            <div class="about-card">
+                <div class="about-icon">🔍</div>
+                <h3>Corpus Search</h3>
+                <p>Advanced query interface with linguistic annotations, temporal filters, and statistical analysis tools.</p>
+                <a href="#" class="btn btn-primary" style="margin-top: 1rem;">Coming Soon</a>
+            </div>
+            
+            <div class="about-card">
+                <div class="about-icon">⚡</div>
+                <h3>API Access</h3>
+                <p>RESTful API for programmatic access to the corpus, with Python and R client libraries.</p>
+                <a href="#" class="btn btn-primary" style="margin-top: 1rem;">Documentation</a>
+            </div>
+            
+            <div class="about-card">
+                <div class="about-icon">📊</div>
+                <h3>Visualization Tools</h3>
+                <p>Interactive visualizations of semantic change, word frequency evolution, and syntactic patterns.</p>
+                <a href="#" class="btn btn-primary" style="margin-top: 1rem;">Explore</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="fade-in">
+        <h2 class="section-title">Contact Us</h2>
+        <p class="section-subtitle">Interested in collaboration or have questions about the project?</p>
+        
+        <div class="contact-form">
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="5" required></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <h3>Athens Diachronic Corpus</h3>
+            <p>Funded by the Hellenic Foundation for Research and Innovation (ΕΛΙΔΕΚ/ELIDEK)</p>
+            
+            <div class="social-links">
+                <a href="#">📧</a>
+                <a href="#">🐦</a>
+                <a href="#">📚</a>
+                <a href="#">🔗</a>
+            </div>
+            
+            <p style="margin-top: 2rem; opacity: 0.7;">
+                © 2024 Athens Diachronic Corpus Project. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Enhanced Password Protection
+        const PASSWORDS = ['athens2024', 'elidek2024', 'corpus2024']; // Multiple passwords
+        const MAX_ATTEMPTS = 3;
+        let attempts = 0;
+
+        function checkPassword() {
+            const input = document.getElementById('passwordInput').value;
+            const modal = document.getElementById('passwordModal');
+            const error = document.getElementById('passwordError');
+            
+            if (PASSWORDS.includes(input)) {
+                sessionStorage.setItem('athens_auth', 'true');
+                sessionStorage.setItem('auth_time', Date.now());
+                modal.style.display = 'none';
+                initializeSite();
+            } else {
+                attempts++;
+                error.style.display = 'block';
+                
+                if (attempts >= MAX_ATTEMPTS) {
+                    error.textContent = 'Too many attempts. Please contact administrator.';
+                    document.getElementById('passwordInput').disabled = true;
+                }
+            }
+        }
+
+        // Auto-logout after 30 minutes
+        function checkAuthTimeout() {
+            const authTime = sessionStorage.getItem('auth_time');
+            if (authTime && (Date.now() - authTime > 30 * 60 * 1000)) {
+                sessionStorage.removeItem('athens_auth');
+                sessionStorage.removeItem('auth_time');
+                location.reload();
+            }
+        }
+
+        // Check authentication
+        window.onload = function() {
+            if (!sessionStorage.getItem('athens_auth')) {
+                document.getElementById('passwordModal').style.display = 'flex';
+                document.getElementById('passwordInput').focus();
+            } else {
+                document.getElementById('passwordModal').style.display = 'none';
+                initializeSite();
+                setInterval(checkAuthTimeout, 60000); // Check every minute
+            }
+        }
+
+        // Enter key to submit password
+        document.getElementById('passwordInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') checkPassword();
+        });
+
+        // Initialize site after authentication
+        function initializeSite() {
+            // Hide loader
+            setTimeout(() => {
+                document.getElementById('loader').classList.add('hidden');
+            }, 1000);
+
+            // Smooth scrolling
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+
+            // Navbar scroll effect
+            window.addEventListener('scroll', () => {
+                const navbar = document.getElementById('navbar');
+                if (window.scrollY > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            });
+
+            // Fade in animations
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -100px 0px'
+            };
+
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.fade-in').forEach(el => {
+                observer.observe(el);
+            });
+
+            // Contact form
+            document.getElementById('contactForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('Thank you for your message! We will respond within 2 business days.');
+                this.reset();
+            });
+        }
+
+        // Console message
+        console.log('%c🏛️ Athens Diachronic Corpus', 'font-size: 24px; font-weight: bold; color: #1a237e;');
+        console.log('%cELIDEK-funded Digital Humanities Project', 'font-size: 14px; color: #666;');
+        console.log('%cExploring 3,000 years of Greek language evolution', 'font-size: 12px; color: #888;');
+    </script>
+</body>
+</html>

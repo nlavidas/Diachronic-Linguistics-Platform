@@ -1,0 +1,137 @@
+[
+  {
+    "url": "https://www.gutenberg.org/ebooks/6130.txt.utf-8",
+    "title": "The Iliad",
+    "language": "ancient_greek",
+    "source": "gutenberg",
+    "period": "classical",
+    "author": "Homer",
+    "type": "original_text"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/1727.txt.utf-8",
+    "title": "The Odyssey",
+    "language": "ancient_greek",
+    "source": "gutenberg",
+    "period": "classical",
+    "author": "Homer",
+    "type": "original_text"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/2199.txt.utf-8",
+    "title": "The Iliad",
+    "language": "ancient_greek",
+    "source": "gutenberg",
+    "period": "classical",
+    "author": "Homer",
+    "type": "original_text"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/49324.txt.utf-8",
+    "title": "The Authoress of the Odyssey",
+    "language": "ancient_greek",
+    "source": "gutenberg",
+    "period": "classical",
+    "author": "Homer",
+    "type": "original_text"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/348.txt.utf-8",
+    "title": "Hesiod, the Homeric Hymns, and Homerica",
+    "language": "ancient_greek",
+    "source": "gutenberg",
+    "period": "classical",
+    "author": "Hesiod",
+    "type": "original_text"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/57390.txt.utf-8",
+    "title": "Sappho: Memoir, text, selected renderings, and a literal translation",
+    "language": "ancient_greek",
+    "source": "gutenberg",
+    "period": "classical",
+    "author": "Sappho",
+    "type": "original_text"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/40552.txt.utf-8",
+    "title": "Aristotle and Ancient Educational Ideals",
+    "language": "ancient_greek",
+    "source": "gutenberg",
+    "period": "classical",
+    "author": "Aristotle",
+    "type": "original_text"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/27673.txt.utf-8",
+    "title": "Oedipus King of Thebes",
+    "language": "ancient_greek",
+    "source": "gutenberg",
+    "period": "classical",
+    "author": "Sophocles",
+    "type": "original_text"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/31.txt.utf-8",
+    "title": "Plays of Sophocles: Oedipus the King; Oedipus at Colonus; Antigone",
+    "language": "ancient_greek",
+    "source": "gutenberg",
+    "period": "classical",
+    "author": "Sophocles",
+    "type": "original_text"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/35173.txt.utf-8",
+    "title": "The Bacchae of Euripides",
+    "language": "ancient_greek",
+    "source": "gutenberg",
+    "period": "classical",
+    "author": "Euripides",
+    "type": "original_text"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/15081.txt.utf-8",
+    "title": "The Tragedies of Euripides, Volume I.",
+    "language": "ancient_greek",
+    "source": "gutenberg",
+    "period": "classical",
+    "author": "Euripides",
+    "type": "original_text"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/14322.txt.utf-8",
+    "title": "The Electra of Euripides",
+    "language": "ancient_greek",
+    "source": "gutenberg",
+    "period": "classical",
+    "author": "Euripides",
+    "type": "original_text"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/27458.txt.utf-8",
+    "title": "Aeschylus' Prometheus Bound and the Seven Against Thebes",
+    "language": "ancient_greek",
+    "source": "gutenberg",
+    "period": "classical",
+    "author": "Aeschylus",
+    "type": "original_text"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/8714.txt.utf-8",
+    "title": "Four Plays of Aeschylus",
+    "language": "ancient_greek",
+    "source": "gutenberg",
+    "period": "classical",
+    "author": "Aeschylus",
+    "type": "original_text"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/59225.txt.utf-8",
+    "title": "The Lyrical Dramas of Aeschylus Translated into English Verse",
+    "language": "ancient_greek",
+    "source": "gutenberg",
+    "period": "classical",
+    "author": "Aeschylus",
+    "type": "translation"
+  }
+]

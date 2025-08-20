@@ -1,0 +1,7 @@
+stanza==1.9.2
+tensorflow-cpu==2.10.0
+fastapi==0.95.1
+uvicorn==0.22.0
+gradio==3.50.2
+cltk==1.4.0
+numpy==1.23.5

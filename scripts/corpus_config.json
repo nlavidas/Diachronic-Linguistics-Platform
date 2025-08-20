@@ -1,0 +1,42 @@
+{
+  "sources": {
+    "gutenberg": {
+      "base_url": "https://www.gutenberg.org",
+      "languages": ["Greek", "Latin", "French", "English"],
+      "exclude_types": ["Dictionary", "Commentary", "Grammar", "Index"]
+    },
+    "perseus": {
+      "base_url": "http://www.perseus.tufts.edu",
+      "collections": ["Greek", "Latin", "Renaissance"]
+    },
+    "archive_org": {
+      "base_url": "https://archive.org",
+      "collections": ["opensource", "texts", "europeanlibraries"]
+    },
+    "sacred_texts": {
+      "base_url": "https://www.sacred-texts.com",
+      "sections": ["cla", "bib", "chr"]
+    },
+    "wikisource": {
+      "base_url": "https://wikisource.org",
+      "languages": ["el", "la", "fr", "en"]
+    }
+  },
+  "target_texts": {
+    "biblical": [
+      "Septuagint", "Vulgate", "King James", "Douay-Rheims",
+      "Geneva Bible", "Bishops Bible", "Wycliffe"
+    ],
+    "classical": [
+      "Homer", "Plato", "Aristotle", "Sophocles", "Euripides",
+      "Virgil", "Ovid", "Cicero", "Caesar", "Livy"
+    ],
+    "medieval": [
+      "Beowulf", "Canterbury Tales", "Divine Comedy", 
+      "Song of Roland", "Nibelungenlied", "Prose Edda"
+    ],
+    "retranslations": [
+      "Boethius Consolation", "Paradise Lost", "Pilgrim's Progress"
+    ]
+  }
+}

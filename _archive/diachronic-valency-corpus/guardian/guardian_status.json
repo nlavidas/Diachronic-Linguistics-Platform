@@ -1,0 +1,17 @@
+{
+  "timestamp": "2025-08-02T21:40:43.076077",
+  "stats": {
+    "total_restarts": 1,
+    "uptime_hours": 19.510277777777777,
+    "processes_protected": 3,
+    "incidents_prevented": 0
+  },
+  "restart_counts": {
+    "agent_immediate.py": 1
+  },
+  "protected_processes": [
+    "final_complete_agent.py",
+    "agent_immediate.py",
+    "start_now.py"
+  ]
+}
