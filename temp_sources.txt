@@ -1,0 +1,17 @@
+﻿self.sources = {
+    'perseus': {
+        'url': 'https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0133',
+        'selector': 'div.text_container',
+        'title_selector': 'h1'
+    },
+    'gutenberg': {
+        'url': 'https://www.gutenberg.org/files/2199/2199-h/2199-h.htm',
+        'selector': 'body',
+        'title_selector': 'h1'
+    },
+    'wikisource': {
+        'url': 'https://el.wikisource.org/wiki/Ιλιάς',
+        'selector': 'div.mw-parser-output',
+        'title_selector': 'h1'
+    }
+}

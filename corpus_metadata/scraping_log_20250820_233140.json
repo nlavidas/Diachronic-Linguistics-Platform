@@ -1,0 +1,3670 @@
+{
+  "timestamp": "2025-08-20T23:31:40.628258",
+  "statistics": {
+    "downloaded": 610,
+    "failed": 0,
+    "skipped": 139
+  },
+  "processed_files": [
+    {
+      "filename": "corpus_texts\\greek_texts\\harvested\\Instigations.txt",
+      "title": "Instigations",
+      "category": "greek",
+      "size": 592481
+    },
+    {
+      "filename": "corpus_texts\\greek_texts\\harvested\\Lucian's Dialogues prepared for schools (Modern Greek (1453-)).txt",
+      "title": "Lucian's Dialogues prepared for schools (Modern Greek (1453-))",
+      "category": "greek",
+      "size": 241911
+    },
+    {
+      "filename": "corpus_texts\\greek_texts\\harvested\\Dionysius of Halicarnassus On Literary Composition (Ancient Greek (to 1453)).txt",
+      "title": "Dionysius of Halicarnassus On Literary Composition (Ancient Greek (to 1453))",
+      "category": "greek",
+      "size": 1043276
+    },
+    {
+      "filename": "corpus_texts\\greek_texts\\harvested\\Encyclopaedia Britannica, 11th Edition, Grasshopper to Greek Language.txt",
+      "title": "Encyclopaedia Britannica, 11th Edition, \"Grasshopper\" to \"Greek Language\"",
+      "category": "greek",
+      "size": 1104183
+    },
+    {
+      "filename": "corpus_texts\\greek_texts\\harvested\\On Translating Homer.txt",
+      "title": "On Translating Homer",
+      "category": "greek",
+      "size": 407313
+    },
+    {
+      "filename": "corpus_texts\\greek_texts\\harvested\\The Humour of Homer and Other Essays.txt",
+      "title": "The Humour of Homer and Other Essays",
+      "category": "greek",
+      "size": 522424
+    },
+    {
+      "filename": "corpus_texts\\greek_texts\\harvested\\The pronunciation of Greek; accent and quantity. A philological inquiry.txt",
+      "title": "The pronunciation of Greek; accent and quantity. A philological inquiry",
+      "category": "greek",
+      "size": 117208
+    },
+    {
+      "filename": "corpus_texts\\greek_texts\\harvested\\Greek in a Nutshell.txt",
+      "title": "Greek in a Nutshell",
+      "category": "greek",
+      "size": 65986
+    },
+    {
+      "filename": "corpus_texts\\greek_texts\\harvested\\, ' (Modern Greek (1453-)) (French).txt",
+      "title": "Ρόδα και Μήλα, Τόμος Α' (Modern Greek (1453-)) (French)",
+      "category": "greek",
+      "size": 507247
+    },
+    {
+      "filename": "corpus_texts\\greek_texts\\harvested\\An account of some recent discoveries in hieroglyphical literature, and Egyptian.txt",
+      "title": "An account of some recent discoveries in hieroglyphical literature, and Egyptian antiquities :  including the author's original alphabet, as extended by Mr. Champollion, with a translation of five unpublished Greek and Egyptian manuscripts",
+      "category": "greek",
+      "size": 219641
+    },
+    {
+      "filename": "corpus_texts\\greek_texts\\harvested\\Four Early Pamphlets.txt",
+      "title": "Four Early Pamphlets",
+      "category": "greek",
+      "size": 273794
+    },
+    {
+      "filename": "corpus_texts\\greek_texts\\harvested\\(Modern Greek (1453-)).txt",
+      "title": "Η Βαβυλωνία ή η κατά τόπους διαφθορά της ελληνικής γλώσσης\r (Modern Greek (1453-))",
+      "category": "greek",
+      "size": 99366
+    },
+    {
+      "filename": "corpus_texts\\greek_texts\\harvested\\(Modern Greek (1453-))_1.txt",
+      "title": "Γραφτή και Δημοτική και το Γλωσσικό Ζήτημα στην Ελλάδα (Modern Greek (1453-))",
+      "category": "greek",
+      "size": 51569
+    },
+    {
+      "filename": "corpus_texts\\greek_texts\\harvested\\- - (Modern Greek (1453-)).txt",
+      "title": "Η Φωτεινή - Ο μαγευμένος εργαλειός - Η καλή Νεράιδα (Modern Greek (1453-))",
+      "category": "greek",
+      "size": 49059
+    },
+    {
+      "filename": "corpus_texts\\latin_texts\\Helps to Latin Translation at Sight.txt",
+      "title": "Helps to Latin Translation at Sight",
+      "category": "latin",
+      "size": 842369
+    },
+    {
+      "filename": "corpus_texts\\latin_texts\\Latin Phrase-Book (Latin).txt",
+      "title": "Latin Phrase-Book (Latin)",
+      "category": "latin",
+      "size": 422011
+    },
+    {
+      "filename": "corpus_texts\\latin_texts\\A collection of Latin maxims and phrases literally translated.txt",
+      "title": "A collection of Latin maxims and phrases literally translated",
+      "category": "latin",
+      "size": 104343
+    },
+    {
+      "filename": "corpus_texts\\latin_texts\\Latin for Beginners.txt",
+      "title": "Latin for Beginners",
+      "category": "latin",
+      "size": 776605
+    },
+    {
+      "filename": "corpus_texts\\latin_texts\\The Orbis Pictus.txt",
+      "title": "The Orbis Pictus",
+      "category": "latin",
+      "size": 288854
+    },
+    {
+      "filename": "corpus_texts\\latin_texts\\The Works of Horace, with English Notes (Latin).txt",
+      "title": "The Works of Horace, with English Notes\r (Latin)",
+      "category": "latin",
+      "size": 1609251
+    },
+    {
+      "filename": "corpus_texts\\latin_texts\\Encyclopaedia Britannica, 11th Edition, Latin Language to Lefebvre, Francois-Jos.txt",
+      "title": "Encyclopaedia Britannica, 11th Edition, \"Latin Language\" to \"Lefebvre, François-Joseph\"",
+      "category": "latin",
+      "size": 1220530
+    },
+    {
+      "filename": "corpus_texts\\latin_texts\\Selections from Viri Romae (Latin).txt",
+      "title": "Selections from Viri Romae (Latin)",
+      "category": "latin",
+      "size": 811718
+    },
+    {
+      "filename": "corpus_texts\\latin_texts\\First Oration of Cicero Against Catiline (Latin).txt",
+      "title": "First Oration of Cicero Against Catiline (Latin)",
+      "category": "latin",
+      "size": 205076
+    },
+    {
+      "filename": "corpus_texts\\latin_texts\\Speeches against Catilina (Latin).txt",
+      "title": "Speeches against Catilina (Latin)",
+      "category": "latin",
+      "size": 329237
+    },
+    {
+      "filename": "corpus_texts\\latin_texts\\Roman Sepulchral Inscriptions.txt",
+      "title": "Roman Sepulchral Inscriptions",
+      "category": "latin",
+      "size": 102359
+    },
+    {
+      "filename": "corpus_texts\\latin_texts\\Doderlein's Hand-book of Latin Synonymes (Latin).txt",
+      "title": "Döderlein's Hand-book of Latin Synonymes (Latin)",
+      "category": "latin",
+      "size": 531196
+    },
+    {
+      "filename": "corpus_texts\\latin_texts\\Readings from Latin Verse; With Notes (Latin).txt",
+      "title": "Readings from Latin Verse; With Notes (Latin)",
+      "category": "latin",
+      "size": 174585
+    },
+    {
+      "filename": "corpus_texts\\latin_texts\\Glossarium eroticum linguae Latinae (Latin).txt",
+      "title": "Glossarium eroticum linguae Latinae (Latin)",
+      "category": "latin",
+      "size": 691297
+    },
+    {
+      "filename": "corpus_texts\\latin_texts\\Os dialectos romanicos ou neo-latinos na Africa, Asia e America (Portuguese).txt",
+      "title": "Os dialectos romanicos ou neo-latinos na África, Ásia e América (Portuguese)",
+      "category": "latin",
+      "size": 196877
+    },
+    {
+      "filename": "corpus_texts\\latin_texts\\Dictionnaire erotique Latin-Francais (French).txt",
+      "title": "Dictionnaire érotique Latin-Français (French)",
+      "category": "latin",
+      "size": 256467
+    },
+    {
+      "filename": "corpus_texts\\latin_texts\\Letters Concerning Poetical Translations.txt",
+      "title": "Letters Concerning Poetical Translations",
+      "category": "latin",
+      "size": 103223
+    },
+    {
+      "filename": "corpus_texts\\latin_texts\\A Handbook for Latin Clubs.txt",
+      "title": "A Handbook for Latin Clubs",
+      "category": "latin",
+      "size": 154907
+    },
+    {
+      "filename": "corpus_texts\\latin_texts\\Latin Pronunciation A Short Exposition of the Roman Method.txt",
+      "title": "Latin Pronunciation: A Short Exposition of the Roman Method",
+      "category": "latin",
+      "size": 51434
+    },
+    {
+      "filename": "corpus_texts\\middle_french_texts\\A Polyglot of Foreign Proverbs.txt",
+      "title": "A Polyglot of Foreign Proverbs",
+      "category": "french",
+      "size": 1148203
+    },
+    {
+      "filename": "corpus_texts\\middle_french_texts\\Mark Twain's Speeches.txt",
+      "title": "Mark Twain's Speeches",
+      "category": "french",
+      "size": 517231
+    },
+    {
+      "filename": "corpus_texts\\middle_french_texts\\Le parler populaire des Canadiens francais (French).txt",
+      "title": "Le parler populaire des Canadiens français\r (French)",
+      "category": "french",
+      "size": 1062078
+    },
+    {
+      "filename": "corpus_texts\\middle_french_texts\\Instigations.txt",
+      "title": "Instigations",
+      "category": "french",
+      "size": 592474
+    },
+    {
+      "filename": "corpus_texts\\middle_french_texts\\Dictionnaire erotique moderne (French).txt",
+      "title": "Dictionnaire érotique moderne (French)",
+      "category": "french",
+      "size": 625628
+    },
+    {
+      "filename": "corpus_texts\\middle_french_texts\\Encyclopaedia Britannica, 11th Edition, Franciscans to French Language.txt",
+      "title": "Encyclopaedia Britannica, 11th Edition, \"Franciscans\" to \"French Language\"",
+      "category": "french",
+      "size": 1058682
+    },
+    {
+      "filename": "corpus_texts\\middle_french_texts\\French Idioms and Proverbs.txt",
+      "title": "French Idioms and Proverbs",
+      "category": "french",
+      "size": 423972
+    },
+    {
+      "filename": "corpus_texts\\middle_french_texts\\Dictionnaire d'argot fin-de-siecle (French).txt",
+      "title": "Dictionnaire d'argot fin-de-siècle (French)",
+      "category": "french",
+      "size": 595998
+    },
+    {
+      "filename": "corpus_texts\\middle_french_texts\\The Frontiers of Language and Nationality in Europe.txt",
+      "title": "The Frontiers of Language and Nationality in Europe",
+      "category": "french",
+      "size": 858435
+    },
+    {
+      "filename": "corpus_texts\\middle_french_texts\\French Conversation and Composition (French).txt",
+      "title": "French Conversation and Composition (French)",
+      "category": "french",
+      "size": 388689
+    },
+    {
+      "filename": "corpus_texts\\middle_french_texts\\Dictionnaire de nos fautes contre la langue francaise (French).txt",
+      "title": "Dictionnaire de nos fautes contre la langue française (French)",
+      "category": "french",
+      "size": 637268
+    },
+    {
+      "filename": "corpus_texts\\middle_french_texts\\Dialogues in French and English.txt",
+      "title": "Dialogues in French and English",
+      "category": "french",
+      "size": 241229
+    },
+    {
+      "filename": "corpus_texts\\middle_french_texts\\Dictionnaire de la langue verte (French).txt",
+      "title": "Dictionnaire de la langue verte (French)",
+      "category": "french",
+      "size": 1335449
+    },
+    {
+      "filename": "corpus_texts\\middle_french_texts\\Le Petit Chose (Histoire d'un Enfant).txt",
+      "title": "Le Petit Chose (Histoire d'un Enfant)",
+      "category": "french",
+      "size": 307993
+    },
+    {
+      "filename": "corpus_texts\\middle_french_texts\\The Teaching and Cultivation of the French Language in England during Tudor and.txt",
+      "title": "The Teaching and Cultivation of the French Language in England during Tudor and Stuart Times",
+      "category": "french",
+      "size": 1149411
+    },
+    {
+      "filename": "corpus_texts\\middle_french_texts\\Observations sur l'orthographe ou ortografie francaise, suivies d'une histoire d.txt",
+      "title": "Observations sur l'orthographe ou ortografie française, suivies d'une histoire de la réforme orthographique depuis le XVe siècle jusqu'a nos jours (French)",
+      "category": "french",
+      "size": 1384197
+    },
+    {
+      "filename": "corpus_texts\\middle_french_texts\\Dictionnaire Argot-Francais (French).txt",
+      "title": "Dictionnaire Argot-Français (French)",
+      "category": "french",
+      "size": 65592
+    },
+    {
+      "filename": "corpus_texts\\middle_french_texts\\Dictionnaire etymologique, historique et anecdotique des proverbes et des locuti.txt",
+      "title": "Dictionnaire étymologique, historique et anecdotique des proverbes et des locutions proverbiales de la Langue Française en rapport avec de proverbes et des locutions proverbiales des autres langues (French)",
+      "category": "french",
+      "size": 1437946
+    },
+    {
+      "filename": "corpus_texts\\middle_french_texts\\Le Cabinet des Fees (French).txt",
+      "title": "Le Cabinet des Fées\r (French)",
+      "category": "french",
+      "size": 702243
+    },
+    {
+      "filename": "corpus_texts\\middle_french_texts\\Glossaire franco-canadien et vocabulaire de locutions vicieuses usitees au Canad.txt",
+      "title": "Glossaire franco-canadien et vocabulaire de locutions vicieuses usitées au Canada (French)",
+      "category": "french",
+      "size": 215075
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\The Dance of Death.txt",
+      "title": "The Dance of Death",
+      "category": "biblical",
+      "size": 496379
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\On the Margin Notes and Essays.txt",
+      "title": "On the Margin: Notes and Essays",
+      "category": "biblical",
+      "size": 257557
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Studies of childhood.txt",
+      "title": "Studies of childhood",
+      "category": "biblical",
+      "size": 1079490
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\The Works of Robert G. Ingersoll, Vol. 08 (of 12).txt",
+      "title": "The Works of Robert G. Ingersoll, Vol. 08 (of 12)",
+      "category": "biblical",
+      "size": 1209945
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Old Picture Books, With Other Essays on Bookish Subjects.txt",
+      "title": "Old Picture Books, With Other Essays on Bookish Subjects",
+      "category": "biblical",
+      "size": 411787
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\A manual of the book of Psalms or, The subject-contents of all the Psalms.txt",
+      "title": "A manual of the book of Psalms :  or, The subject-contents of all the Psalms",
+      "category": "biblical",
+      "size": 596509
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\The Story of Dutch Painting.txt",
+      "title": "The Story of Dutch Painting",
+      "category": "biblical",
+      "size": 363756
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Essays in Librarianship and Bibliography.txt",
+      "title": "Essays in Librarianship and Bibliography",
+      "category": "biblical",
+      "size": 529695
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Granny's Chapters (on scriptural subjects).txt",
+      "title": "\"Granny's Chapters\" (on scriptural subjects)",
+      "category": "biblical",
+      "size": 1097816
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Sermons on Various Important Subjects.txt",
+      "title": "Sermons on Various Important Subjects",
+      "category": "biblical",
+      "size": 569879
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\The Popham Colony a discussion of its historical claims, with a bibliography of.txt",
+      "title": "The Popham Colony :  a discussion of its historical claims, with a bibliography of the subject",
+      "category": "biblical",
+      "size": 138899
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\The religious and loyal subject's duty considered with regard to the present Gov.txt",
+      "title": "The religious and loyal subject's duty considered: with regard to the present Government and the Revolution",
+      "category": "biblical",
+      "size": 40784
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\The Sceptical Chymist.txt",
+      "title": "The Sceptical Chymist",
+      "category": "classical",
+      "size": 518126
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Puppets at Large Scenes and Subjects from Mr Punch's Show.txt",
+      "title": "Puppets at Large: Scenes and Subjects from Mr Punch's Show",
+      "category": "classical",
+      "size": 219541
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Einstein's Theories of Relativity and Gravitation.txt",
+      "title": "Einstein's Theories of Relativity and Gravitation",
+      "category": "classical",
+      "size": 554754
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Political and Literary essays, 1908-1913.txt",
+      "title": "Political and Literary essays, 1908-1913",
+      "category": "classical",
+      "size": 601007
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\The Best of the World's Classics, Vol. V (of X) - Great Britain and Ireland III.txt",
+      "title": "The Best of the World's Classics, Vol. V (of X) - Great Britain and Ireland III",
+      "category": "classical",
+      "size": 397243
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\text_d41d8cd9.txt",
+      "title": "Ιλιάς",
+      "category": "uncategorized",
+      "size": 2481
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\text_d41d8cd9_1.txt",
+      "title": "Οδύσσεια",
+      "category": "uncategorized",
+      "size": 4203
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\text_d41d8cd9_2.txt",
+      "title": "Πολιτεία",
+      "category": "uncategorized",
+      "size": 1865
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\Aeneis.txt",
+      "title": "Aeneis",
+      "category": "uncategorized",
+      "size": 2188
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\De Bello Gallico.txt",
+      "title": "De Bello Gallico",
+      "category": "uncategorized",
+      "size": 2223
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\Metamorphoses.txt",
+      "title": "Metamorphoses",
+      "category": "uncategorized",
+      "size": 1667
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\Chanson de Roland.txt",
+      "title": "Chanson de Roland",
+      "category": "uncategorized",
+      "size": 5773
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\Roman de la Rose.txt",
+      "title": "Roman de la Rose",
+      "category": "uncategorized",
+      "size": 2276
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\Beowulf.txt",
+      "title": "Beowulf",
+      "category": "uncategorized",
+      "size": 3244
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\Canterbury Tales.txt",
+      "title": "Canterbury Tales",
+      "category": "uncategorized",
+      "size": 1892
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\Paradise Lost.txt",
+      "title": "Paradise Lost",
+      "category": "uncategorized",
+      "size": 2660
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\text_d41d8cd9.txt",
+      "title": "",
+      "category": "classical",
+      "size": 5267
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Home.txt",
+      "title": "Home",
+      "category": "classical",
+      "size": 2651
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Catalog.txt",
+      "title": "Catalog",
+      "category": "classical",
+      "size": 4456
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\African.txt",
+      "title": "African",
+      "category": "classical",
+      "size": 7610
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Age of Reason.txt",
+      "title": "Age of Reason",
+      "category": "classical",
+      "size": 3285
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Alchemy.txt",
+      "title": "Alchemy",
+      "category": "classical",
+      "size": 3360
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Americana.txt",
+      "title": "Americana",
+      "category": "classical",
+      "size": 4041
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Ancient Near East.txt",
+      "title": "Ancient Near East",
+      "category": "classical",
+      "size": 4379
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Astrology.txt",
+      "title": "Astrology",
+      "category": "classical",
+      "size": 3566
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Asia.txt",
+      "title": "Asia",
+      "category": "classical",
+      "size": 5740
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Atlantis.txt",
+      "title": "Atlantis",
+      "category": "classical",
+      "size": 5337
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Australia.txt",
+      "title": "Australia",
+      "category": "classical",
+      "size": 4720
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Basque.txt",
+      "title": "Basque",
+      "category": "classical",
+      "size": 1920
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Baha'i.txt",
+      "title": "Baha'i",
+      "category": "classical",
+      "size": 3855
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Bible.txt",
+      "title": "Bible",
+      "category": "classical",
+      "size": 7668
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Book of Shadows.txt",
+      "title": "Book of Shadows",
+      "category": "classical",
+      "size": 24908
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Buddhism.txt",
+      "title": "Buddhism",
+      "category": "classical",
+      "size": 10090
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Celtic.txt",
+      "title": "Celtic",
+      "category": "classical",
+      "size": 12697
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Christianity.txt",
+      "title": "Christianity",
+      "category": "classical",
+      "size": 10128
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Aristotle.txt",
+      "title": "Aristotle",
+      "category": "classical",
+      "size": 2070
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Homer.txt",
+      "title": "Homer",
+      "category": "classical",
+      "size": 6594
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Sappho.txt",
+      "title": "Sappho",
+      "category": "classical",
+      "size": 2904
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Hesiod.txt",
+      "title": "Hesiod",
+      "category": "classical",
+      "size": 3379
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Aeschylus.txt",
+      "title": "Aeschylus",
+      "category": "classical",
+      "size": 3055
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Sophocles.txt",
+      "title": "Sophocles",
+      "category": "classical",
+      "size": 2453
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Euripides.txt",
+      "title": "Euripides",
+      "category": "classical",
+      "size": 3572
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Plato.txt",
+      "title": "Plato",
+      "category": "classical",
+      "size": 5299
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Virgil.txt",
+      "title": "Virgil",
+      "category": "classical",
+      "size": 4042
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Ovid.txt",
+      "title": "Ovid",
+      "category": "classical",
+      "size": 2234
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Apollonius.txt",
+      "title": "Apollonius",
+      "category": "classical",
+      "size": 2555
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Plutarch.txt",
+      "title": "Plutarch",
+      "category": "classical",
+      "size": 3034
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Procopius.txt",
+      "title": "Procopius",
+      "category": "classical",
+      "size": 2108
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Lucian.txt",
+      "title": "Lucian",
+      "category": "classical",
+      "size": 2992
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Gibbon.txt",
+      "title": "Gibbon",
+      "category": "classical",
+      "size": 3239
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Archimedes.txt",
+      "title": "Archimedes",
+      "category": "classical",
+      "size": 2158
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Comparative.txt",
+      "title": "Comparative",
+      "category": "classical",
+      "size": 2765
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Confucianism.txt",
+      "title": "Confucianism",
+      "category": "classical",
+      "size": 7537
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\DNA.txt",
+      "title": "DNA",
+      "category": "classical",
+      "size": 2810
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Earth Mysteries.txt",
+      "title": "Earth Mysteries",
+      "category": "classical",
+      "size": 9013
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Egyptian.txt",
+      "title": "Egyptian",
+      "category": "classical",
+      "size": 5146
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\England.txt",
+      "title": "England",
+      "category": "classical",
+      "size": 7626
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\EsotericOccult.txt",
+      "title": "Esoteric/Occult",
+      "category": "classical",
+      "size": 11158
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Evil.txt",
+      "title": "Evil",
+      "category": "classical",
+      "size": 3206
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Fortean.txt",
+      "title": "Fortean",
+      "category": "classical",
+      "size": 2719
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Freemasonry.txt",
+      "title": "Freemasonry",
+      "category": "classical",
+      "size": 3633
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Gothic.txt",
+      "title": "Gothic",
+      "category": "classical",
+      "size": 6042
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Gnosticism.txt",
+      "title": "Gnosticism",
+      "category": "classical",
+      "size": 3612
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Grimoires.txt",
+      "title": "Grimoires",
+      "category": "classical",
+      "size": 5587
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Hinduism.txt",
+      "title": "Hinduism",
+      "category": "classical",
+      "size": 16526
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\I Ching.txt",
+      "title": "I Ching",
+      "category": "classical",
+      "size": 5781
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Islam.txt",
+      "title": "Islam",
+      "category": "classical",
+      "size": 10312
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Icelandic.txt",
+      "title": "Icelandic",
+      "category": "classical",
+      "size": 4005
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Jainism.txt",
+      "title": "Jainism",
+      "category": "classical",
+      "size": 2254
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Journals.txt",
+      "title": "Journals",
+      "category": "classical",
+      "size": 10461
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Judaism.txt",
+      "title": "Judaism",
+      "category": "classical",
+      "size": 8810
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\LegendsSagas.txt",
+      "title": "Legends/Sagas",
+      "category": "classical",
+      "size": 8927
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Legendary Creatures.txt",
+      "title": "Legendary Creatures",
+      "category": "classical",
+      "size": 3627
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\LGBT.txt",
+      "title": "LGBT",
+      "category": "classical",
+      "size": 45117
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Miscellaneous.txt",
+      "title": "Miscellaneous",
+      "category": "classical",
+      "size": 4444
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Mormonism.txt",
+      "title": "Mormonism",
+      "category": "classical",
+      "size": 2586
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Mysticism.txt",
+      "title": "Mysticism",
+      "category": "classical",
+      "size": 5819
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Native American.txt",
+      "title": "Native American",
+      "category": "classical",
+      "size": 3753
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Necronomicon.txt",
+      "title": "Necronomicon",
+      "category": "classical",
+      "size": 5794
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\New Thought.txt",
+      "title": "New Thought",
+      "category": "classical",
+      "size": 4971
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\NeopaganismWicca.txt",
+      "title": "Neopaganism/Wicca",
+      "category": "classical",
+      "size": 8619
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Nostradamus.txt",
+      "title": "Nostradamus",
+      "category": "classical",
+      "size": 6194
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Oahspe.txt",
+      "title": "Oahspe",
+      "category": "classical",
+      "size": 3471
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Pacific.txt",
+      "title": "Pacific",
+      "category": "classical",
+      "size": 4679
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Paleolithic.txt",
+      "title": "Paleolithic",
+      "category": "classical",
+      "size": 1751
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Parapsychology.txt",
+      "title": "Parapsychology",
+      "category": "classical",
+      "size": 2896
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Philosophy.txt",
+      "title": "Philosophy",
+      "category": "classical",
+      "size": 4378
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Piri Re'is Map.txt",
+      "title": "Piri Re'is Map",
+      "category": "classical",
+      "size": 11532
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Prophecy.txt",
+      "title": "Prophecy",
+      "category": "classical",
+      "size": 3676
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Roma.txt",
+      "title": "Roma",
+      "category": "classical",
+      "size": 3019
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Sacred Books of the East.txt",
+      "title": "Sacred Books of the East",
+      "category": "classical",
+      "size": 19614
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Sacred Sexuality.txt",
+      "title": "Sacred Sexuality",
+      "category": "classical",
+      "size": 8677
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Shakespeare.txt",
+      "title": "Shakespeare",
+      "category": "classical",
+      "size": 3036
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Shamanism.txt",
+      "title": "Shamanism",
+      "category": "classical",
+      "size": 3501
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Shinto.txt",
+      "title": "Shinto",
+      "category": "classical",
+      "size": 5226
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Symbolism.txt",
+      "title": "Symbolism",
+      "category": "classical",
+      "size": 3143
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Sikhism.txt",
+      "title": "Sikhism",
+      "category": "classical",
+      "size": 3738
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Sub Rosa.txt",
+      "title": "Sub Rosa",
+      "category": "classical",
+      "size": 5872
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Swedenborg.txt",
+      "title": "Swedenborg",
+      "category": "classical",
+      "size": 5117
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Tantra.txt",
+      "title": "Tantra",
+      "category": "classical",
+      "size": 4662
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Taoism.txt",
+      "title": "Taoism",
+      "category": "classical",
+      "size": 4960
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Tarot.txt",
+      "title": "Tarot",
+      "category": "classical",
+      "size": 4417
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Thelema.txt",
+      "title": "Thelema",
+      "category": "classical",
+      "size": 21328
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Theosophy.txt",
+      "title": "Theosophy",
+      "category": "classical",
+      "size": 2299
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Time.txt",
+      "title": "Time",
+      "category": "classical",
+      "size": 2514
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Tolkien.txt",
+      "title": "Tolkien",
+      "category": "classical",
+      "size": 5062
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\UFOs.txt",
+      "title": "UFOs",
+      "category": "classical",
+      "size": 3629
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Utopia.txt",
+      "title": "Utopia",
+      "category": "classical",
+      "size": 4363
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Women.txt",
+      "title": "Women",
+      "category": "classical",
+      "size": 6926
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Wisdom of the East.txt",
+      "title": "Wisdom of the East",
+      "category": "classical",
+      "size": 5167
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Zoroastrianism.txt",
+      "title": "Zoroastrianism",
+      "category": "classical",
+      "size": 3559
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Buy Books Classics.txt",
+      "title": "Buy Books: Classics",
+      "category": "classical",
+      "size": 1396
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\The Iliad of Homer.txt",
+      "title": "The Iliad of Homer",
+      "category": "classical",
+      "size": 717
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\The Odyssey of Homer.txt",
+      "title": "The Odyssey of Homer",
+      "category": "classical",
+      "size": 904
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\The Homeric Hymn to Demeter.txt",
+      "title": "The Homeric Hymn to Demeter",
+      "category": "classical",
+      "size": 29416
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\The Iliad and Odyssey of Homer in Greek.txt",
+      "title": "The Iliad and Odyssey of Homer in Greek",
+      "category": "classical",
+      "size": 822
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\The Authoress of the Odyssey.txt",
+      "title": "The Authoress of the Odyssey",
+      "category": "classical",
+      "size": 5007
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Hesiod's Theogony.txt",
+      "title": "Hesiod's Theogony",
+      "category": "classical",
+      "size": 60939
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Works and Days.txt",
+      "title": "Works and Days",
+      "category": "classical",
+      "size": 51017
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\The Hymns of Orpheus.txt",
+      "title": "The Hymns of Orpheus",
+      "category": "classical",
+      "size": 3567
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Ancilla to the Pre-Socratic Philosophers.txt",
+      "title": "Ancilla to the Pre-Socratic Philosophers",
+      "category": "classical",
+      "size": 3385
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\The Poems of Sappho.txt",
+      "title": "The Poems of Sappho",
+      "category": "classical",
+      "size": 997
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\The Poems of Sappho (Unicode).txt",
+      "title": "The Poems of Sappho (Unicode)",
+      "category": "classical",
+      "size": 5581
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\The Songs of Bilitis.txt",
+      "title": "The Songs of Bilitis",
+      "category": "classical",
+      "size": 4180
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Aphrodite (Ancient Manners).txt",
+      "title": "Aphrodite (Ancient Manners)",
+      "category": "classical",
+      "size": 2228
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\The History of Herodotus.txt",
+      "title": "The History of Herodotus",
+      "category": "classical",
+      "size": 3092
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\The Fables of Aesop.txt",
+      "title": "The Fables of Aesop",
+      "category": "classical",
+      "size": 8058
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\The Argonautica.txt",
+      "title": "The Argonautica",
+      "category": "classical",
+      "size": 3399
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\The Sand Reckoner.txt",
+      "title": "The Sand Reckoner",
+      "category": "classical",
+      "size": 900
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\The Golden Verses of Pythagoras.txt",
+      "title": "The Golden Verses of Pythagoras",
+      "category": "classical",
+      "size": 1202
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\The Golden Verses of Pythagoras_1.txt",
+      "title": "The Golden Verses of Pythagoras",
+      "category": "classical",
+      "size": 3401
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Pythagoras and the Delphic Mysteries.txt",
+      "title": "Pythagoras and the Delphic Mysteries",
+      "category": "classical",
+      "size": 1094
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Apollonius of Tyana.txt",
+      "title": "Apollonius of Tyana",
+      "category": "classical",
+      "size": 1360
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\The Life of Apollonius of Tyana.txt",
+      "title": "The Life of Apollonius of Tyana",
+      "category": "classical",
+      "size": 2766
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Plutarch's Morals Theosophical Essays.txt",
+      "title": "Plutarch's Morals: Theosophical Essays",
+      "category": "classical",
+      "size": 1216
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\The Roman and Greek Questions.txt",
+      "title": "The Roman and Greek Questions",
+      "category": "classical",
+      "size": 1191
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\The Discourses of Epictetus.txt",
+      "title": "The Discourses of Epictetus",
+      "category": "classical",
+      "size": 6632
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\A True Story.txt",
+      "title": "A True Story",
+      "category": "classical",
+      "size": 1875
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\The Syrian Goddess.txt",
+      "title": "The Syrian Goddess",
+      "category": "classical",
+      "size": 3942
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Fragments that Remain of the Lost Writings of Proclus.txt",
+      "title": "Fragments that Remain of the Lost Writings of Proclus",
+      "category": "classical",
+      "size": 1508
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\The Georgics.txt",
+      "title": "The Georgics",
+      "category": "classical",
+      "size": 1036
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\The Golden Asse.txt",
+      "title": "The Golden Asse",
+      "category": "classical",
+      "size": 1729
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\The Enneads of Plotinus.txt",
+      "title": "The Enneads of Plotinus",
+      "category": "classical",
+      "size": 10052
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Works of Julius Caesar.txt",
+      "title": "Works of Julius Caesar",
+      "category": "classical",
+      "size": 1460
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Meditations.txt",
+      "title": "Meditations",
+      "category": "classical",
+      "size": 241781
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\On The Nature Of Things.txt",
+      "title": "On The Nature Of Things",
+      "category": "classical",
+      "size": 414459
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Metamorphoses.txt",
+      "title": "Metamorphoses",
+      "category": "classical",
+      "size": 928
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Amores, Ars Amatoria, Remedia Amoris and Medicamina Faciei Femineae.txt",
+      "title": "Amores, Ars Amatoria, Remedia Amoris and Medicamina Faciei Femineae",
+      "category": "classical",
+      "size": 5729
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\The Satyricon of Petronius.txt",
+      "title": "The Satyricon of Petronius",
+      "category": "classical",
+      "size": 787
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\The Priapeia.txt",
+      "title": "The Priapeia",
+      "category": "classical",
+      "size": 6480
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\The Works of Tacitus.txt",
+      "title": "The Works of Tacitus",
+      "category": "classical",
+      "size": 5976
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Two Orations of the Emperor Julian.txt",
+      "title": "Two Orations of the Emperor Julian",
+      "category": "classical",
+      "size": 1813
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\The Royal Museum at Naples.txt",
+      "title": "The Royal Museum at Naples",
+      "category": "classical",
+      "size": 5676
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Bulfinch's Mythology.txt",
+      "title": "Bulfinch's Mythology",
+      "category": "classical",
+      "size": 2744
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\The Eleusinian and Bacchic Mysteries.txt",
+      "title": "The Eleusinian and Bacchic Mysteries",
+      "category": "classical",
+      "size": 1126
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\The Heroes, or Greek Fairy Tales for my Children.txt",
+      "title": "The Heroes, or Greek Fairy Tales for my Children",
+      "category": "classical",
+      "size": 1792
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\The Sibylline Oracles.txt",
+      "title": "The Sibylline Oracles",
+      "category": "classical",
+      "size": 2710
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Myths of Crete and Pre-Hellenic Europe.txt",
+      "title": "Myths of Crete and Pre-Hellenic Europe",
+      "category": "classical",
+      "size": 4168
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\The Dionysian Artificers.txt",
+      "title": "The Dionysian Artificers",
+      "category": "classical",
+      "size": 1306
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Ancient Fragments.txt",
+      "title": "Ancient Fragments",
+      "category": "classical",
+      "size": 1890
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\The Mysteries of Mithra.txt",
+      "title": "The Mysteries of Mithra",
+      "category": "classical",
+      "size": 562
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\The Oriental Religions in Roman Paganism.txt",
+      "title": "The Oriental Religions in Roman Paganism",
+      "category": "classical",
+      "size": 1438
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Astrology and Religion Among the Greeks and Romans.txt",
+      "title": "Astrology and Religion Among the Greeks and Romans",
+      "category": "classical",
+      "size": 1434
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Pagan Regeneration.txt",
+      "title": "Pagan Regeneration",
+      "category": "classical",
+      "size": 870
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Taboo, Magic, Spirits.txt",
+      "title": "Taboo, Magic, Spirits",
+      "category": "classical",
+      "size": 653
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\The Religion of Numa.txt",
+      "title": "The Religion of Numa",
+      "category": "classical",
+      "size": 826
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\The Amazons.txt",
+      "title": "The Amazons",
+      "category": "classical",
+      "size": 1460
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Religious Cults Associated with the Amazons.txt",
+      "title": "Religious Cults Associated with the Amazons",
+      "category": "classical",
+      "size": 1669
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Iolaus, An Anthology of Friendship.txt",
+      "title": "Ioläus, An Anthology of Friendship",
+      "category": "classical",
+      "size": 1360
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Pagan and Christian Creeds.txt",
+      "title": "Pagan and Christian Creeds",
+      "category": "classical",
+      "size": 834
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\A Problem in Greek Ethics.txt",
+      "title": "A Problem in Greek Ethics",
+      "category": "classical",
+      "size": 3060
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Intermediate Types Among Primitive Folk.txt",
+      "title": "Intermediate Types Among Primitive Folk",
+      "category": "classical",
+      "size": 1641
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Ancient Art and Ritual.txt",
+      "title": "Ancient Art and Ritual",
+      "category": "classical",
+      "size": 509
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Five Stages of Greek Religion.txt",
+      "title": "Five Stages of Greek Religion",
+      "category": "classical",
+      "size": 1204
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Myths of Greece and Rome.txt",
+      "title": "Myths of Greece and Rome",
+      "category": "classical",
+      "size": 1627
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\The Mycenaean Origin of Greek Mythology.txt",
+      "title": "The Mycenaean Origin of Greek Mythology",
+      "category": "classical",
+      "size": 1499
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Greek Popular Religion.txt",
+      "title": "Greek Popular Religion",
+      "category": "classical",
+      "size": 1898
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Prolegomena to the Study of Greek Religion.txt",
+      "title": "Prolegomena to the Study of Greek Religion",
+      "category": "classical",
+      "size": 1002
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Site copyrights.txt",
+      "title": "Site copyrights",
+      "category": "classical",
+      "size": 11880
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Terms of Service.txt",
+      "title": "Terms of Service",
+      "category": "classical",
+      "size": 8221
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\FAQ.txt",
+      "title": "FAQ",
+      "category": "classical",
+      "size": 15472
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Contact.txt",
+      "title": "Contact",
+      "category": "classical",
+      "size": 2936
+    },
+    {
+      "filename": "corpus_texts\\classical_texts\\Search.txt",
+      "title": "Search",
+      "category": "classical",
+      "size": 2002
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Critical Views.txt",
+      "title": "Critical Views",
+      "category": "biblical",
+      "size": 2757
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\World Bible.txt",
+      "title": "World Bible",
+      "category": "biblical",
+      "size": 4380
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\English Bibles.txt",
+      "title": "English Bibles",
+      "category": "biblical",
+      "size": 3130
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Classics.txt",
+      "title": "Classics",
+      "category": "biblical",
+      "size": 12703
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Apocrypha.txt",
+      "title": "Apocrypha",
+      "category": "biblical",
+      "size": 4935
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Hypertext Qur'an.txt",
+      "title": "Hypertext Qur'an",
+      "category": "biblical",
+      "size": 14684
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Woman's Bible.txt",
+      "title": "Woman's Bible",
+      "category": "biblical",
+      "size": 2922
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Buy books The Bible.txt",
+      "title": "Buy books: The Bible",
+      "category": "biblical",
+      "size": 1381
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Unicode.txt",
+      "title": "Unicode",
+      "category": "biblical",
+      "size": 10458
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\here.txt",
+      "title": "here",
+      "category": "biblical",
+      "size": 5865
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\King James Version.txt",
+      "title": "King James Version",
+      "category": "biblical",
+      "size": 1573
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\the Tanakh.txt",
+      "title": "the Tanakh",
+      "category": "biblical",
+      "size": 3245
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\The Apocrypha.txt",
+      "title": "The Apocrypha",
+      "category": "biblical",
+      "size": 2444
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Vulgate.txt",
+      "title": "Vulgate",
+      "category": "biblical",
+      "size": 2386
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\The Septuagint.txt",
+      "title": "The Septuagint",
+      "category": "biblical",
+      "size": 1911
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Greek New Testament.txt",
+      "title": "Greek New Testament",
+      "category": "biblical",
+      "size": 936
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\the Polyglot Bible.txt",
+      "title": "the Polyglot Bible",
+      "category": "biblical",
+      "size": 2079
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\The Forgotten Books of Eden.txt",
+      "title": "The Forgotten Books of Eden",
+      "category": "biblical",
+      "size": 5323
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\The Lost Books of the Bible.txt",
+      "title": "The Lost Books of the Bible",
+      "category": "biblical",
+      "size": 2715
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\The Chronicles of Jerahmeel.txt",
+      "title": "The Chronicles of Jerahmeel",
+      "category": "biblical",
+      "size": 1868
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\The Biblical Antiquities of Philo.txt",
+      "title": "The Biblical Antiquities of Philo",
+      "category": "biblical",
+      "size": 2126
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\The Book of Enoch.txt",
+      "title": "The Book of Enoch",
+      "category": "biblical",
+      "size": 2937
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\The Book of Enoch the Prophet.txt",
+      "title": "The Book of Enoch the Prophet",
+      "category": "biblical",
+      "size": 1618
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\The Book of Jubilees.txt",
+      "title": "The Book of Jubilees",
+      "category": "biblical",
+      "size": 7828
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\The Legends of Genesis.txt",
+      "title": "The Legends of Genesis",
+      "category": "biblical",
+      "size": 520
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\The Jefferson Bible.txt",
+      "title": "The Jefferson Bible",
+      "category": "biblical",
+      "size": 3686
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\The Holy Scriptures.txt",
+      "title": "The Holy Scriptures",
+      "category": "biblical",
+      "size": 1083
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\The Complete Sayings of Jesus.txt",
+      "title": "The Complete Sayings of Jesus",
+      "category": "biblical",
+      "size": 5422
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\The Biography of the Bible.txt",
+      "title": "The Biography of the Bible",
+      "category": "biblical",
+      "size": 996
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Bible Data Files.txt",
+      "title": "Bible Data Files",
+      "category": "biblical",
+      "size": 6657
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\KJV.txt",
+      "title": "KJV",
+      "category": "biblical",
+      "size": 5384
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Sep.txt",
+      "title": "Sep",
+      "category": "biblical",
+      "size": 5346
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Tan.txt",
+      "title": "Tan",
+      "category": "biblical",
+      "size": 5981
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Vul.txt",
+      "title": "Vul",
+      "category": "biblical",
+      "size": 5339
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Poly.txt",
+      "title": "Poly",
+      "category": "biblical",
+      "size": 772
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\KJV_1.txt",
+      "title": "KJV",
+      "category": "biblical",
+      "size": 4288
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Sep_1.txt",
+      "title": "Sep",
+      "category": "biblical",
+      "size": 4110
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Tan_1.txt",
+      "title": "Tan",
+      "category": "biblical",
+      "size": 4699
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Vul_1.txt",
+      "title": "Vul",
+      "category": "biblical",
+      "size": 4246
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Poly_1.txt",
+      "title": "Poly",
+      "category": "biblical",
+      "size": 632
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\KJV_2.txt",
+      "title": "KJV",
+      "category": "biblical",
+      "size": 3197
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Sep_2.txt",
+      "title": "Sep",
+      "category": "biblical",
+      "size": 3173
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Tan_2.txt",
+      "title": "Tan",
+      "category": "biblical",
+      "size": 3524
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Vul_2.txt",
+      "title": "Vul",
+      "category": "biblical",
+      "size": 3158
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Poly_2.txt",
+      "title": "Poly",
+      "category": "biblical",
+      "size": 589
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\KJV_3.txt",
+      "title": "KJV",
+      "category": "biblical",
+      "size": 4522
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Sep_3.txt",
+      "title": "Sep",
+      "category": "biblical",
+      "size": 4487
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Tan_3.txt",
+      "title": "Tan",
+      "category": "biblical",
+      "size": 4977
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Vul_3.txt",
+      "title": "Vul",
+      "category": "biblical",
+      "size": 4486
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Poly_3.txt",
+      "title": "Poly",
+      "category": "biblical",
+      "size": 637
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\KJV_4.txt",
+      "title": "KJV",
+      "category": "biblical",
+      "size": 3674
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Sep_4.txt",
+      "title": "Sep",
+      "category": "biblical",
+      "size": 3644
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Tan_4.txt",
+      "title": "Tan",
+      "category": "biblical",
+      "size": 4060
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Vul_4.txt",
+      "title": "Vul",
+      "category": "biblical",
+      "size": 3638
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Poly_4.txt",
+      "title": "Poly",
+      "category": "biblical",
+      "size": 774
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\KJV_5.txt",
+      "title": "KJV",
+      "category": "biblical",
+      "size": 2506
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Tan_5.txt",
+      "title": "Tan",
+      "category": "biblical",
+      "size": 2814
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Vul_5.txt",
+      "title": "Vul",
+      "category": "biblical",
+      "size": 2452
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\KJV_6.txt",
+      "title": "KJV",
+      "category": "biblical",
+      "size": 2340
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Tan_6.txt",
+      "title": "Tan",
+      "category": "biblical",
+      "size": 2609
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Vul_6.txt",
+      "title": "Vul",
+      "category": "biblical",
+      "size": 2300
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\KJV_7.txt",
+      "title": "KJV",
+      "category": "biblical",
+      "size": 588
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Sep_5.txt",
+      "title": "Sep",
+      "category": "biblical",
+      "size": 532
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Tan_7.txt",
+      "title": "Tan",
+      "category": "biblical",
+      "size": 583
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Vul_7.txt",
+      "title": "Vul",
+      "category": "biblical",
+      "size": 526
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\KJV_8.txt",
+      "title": "KJV",
+      "category": "biblical",
+      "size": 3413
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Sep_6.txt",
+      "title": "Sep",
+      "category": "biblical",
+      "size": 2911
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Tan_8.txt",
+      "title": "Tan",
+      "category": "biblical",
+      "size": 3434
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Vul_8.txt",
+      "title": "Vul",
+      "category": "biblical",
+      "size": 3018
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Poly_5.txt",
+      "title": "Poly",
+      "category": "biblical",
+      "size": 611
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\KJV_9.txt",
+      "title": "KJV",
+      "category": "biblical",
+      "size": 2958
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Sep_7.txt",
+      "title": "Sep",
+      "category": "biblical",
+      "size": 2612
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Tan_9.txt",
+      "title": "Tan",
+      "category": "biblical",
+      "size": 2970
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Vul_9.txt",
+      "title": "Vul",
+      "category": "biblical",
+      "size": 2608
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Poly_6.txt",
+      "title": "Poly",
+      "category": "biblical",
+      "size": 534
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\KJV_10.txt",
+      "title": "KJV",
+      "category": "biblical",
+      "size": 3236
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Sep_8.txt",
+      "title": "Sep",
+      "category": "biblical",
+      "size": 2759
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Tan_10.txt",
+      "title": "Tan",
+      "category": "biblical",
+      "size": 3311
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Vul_10.txt",
+      "title": "Vul",
+      "category": "biblical",
+      "size": 2917
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\KJV_11.txt",
+      "title": "KJV",
+      "category": "biblical",
+      "size": 3019
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Sep_9.txt",
+      "title": "Sep",
+      "category": "biblical",
+      "size": 2667
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Tan_11.txt",
+      "title": "Tan",
+      "category": "biblical",
+      "size": 3094
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Vul_11.txt",
+      "title": "Vul",
+      "category": "biblical",
+      "size": 2663
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Poly_7.txt",
+      "title": "Poly",
+      "category": "biblical",
+      "size": 518
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\KJV_12.txt",
+      "title": "KJV",
+      "category": "biblical",
+      "size": 3579
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Sep_10.txt",
+      "title": "Sep",
+      "category": "biblical",
+      "size": 3533
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Tan_12.txt",
+      "title": "Tan",
+      "category": "biblical",
+      "size": 4114
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Vul_12.txt",
+      "title": "Vul",
+      "category": "biblical",
+      "size": 3532
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Poly_8.txt",
+      "title": "Poly",
+      "category": "biblical",
+      "size": 758
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\KJV_13.txt",
+      "title": "KJV",
+      "category": "biblical",
+      "size": 3330
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Sep_11.txt",
+      "title": "Sep",
+      "category": "biblical",
+      "size": 3300
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Tan_13.txt",
+      "title": "Tan",
+      "category": "biblical",
+      "size": 3988
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Vul_13.txt",
+      "title": "Vul",
+      "category": "biblical",
+      "size": 3294
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Poly_9.txt",
+      "title": "Poly",
+      "category": "biblical",
+      "size": 851
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\KJV_14.txt",
+      "title": "KJV",
+      "category": "biblical",
+      "size": 1191
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Tan_14.txt",
+      "title": "Tan",
+      "category": "biblical",
+      "size": 1155
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Vul_14.txt",
+      "title": "Vul",
+      "category": "biblical",
+      "size": 1155
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\KJV_15.txt",
+      "title": "KJV",
+      "category": "biblical",
+      "size": 1648
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Tan_15.txt",
+      "title": "Tan",
+      "category": "biblical",
+      "size": 1882
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Vul_15.txt",
+      "title": "Vul",
+      "category": "biblical",
+      "size": 1606
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\KJV_16.txt",
+      "title": "KJV",
+      "category": "biblical",
+      "size": 879
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Sep_12.txt",
+      "title": "Sep",
+      "category": "biblical",
+      "size": 843
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Tan_16.txt",
+      "title": "Tan",
+      "category": "biblical",
+      "size": 1020
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Vul_16.txt",
+      "title": "Vul",
+      "category": "biblical",
+      "size": 1216
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\KJV_17.txt",
+      "title": "KJV",
+      "category": "biblical",
+      "size": 3729
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Sep_13.txt",
+      "title": "Sep",
+      "category": "biblical",
+      "size": 3703
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Tan_17.txt",
+      "title": "Tan",
+      "category": "biblical",
+      "size": 4070
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Vul_17.txt",
+      "title": "Vul",
+      "category": "biblical",
+      "size": 3693
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Poly_10.txt",
+      "title": "Poly",
+      "category": "biblical",
+      "size": 501
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\KJV_18.txt",
+      "title": "KJV",
+      "category": "biblical",
+      "size": 9259
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Sep_14.txt",
+      "title": "Sep",
+      "category": "biblical",
+      "size": 9462
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Tan_18.txt",
+      "title": "Tan",
+      "category": "biblical",
+      "size": 10970
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Vul_18.txt",
+      "title": "Vul",
+      "category": "biblical",
+      "size": 9409
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Poly_11.txt",
+      "title": "Poly",
+      "category": "biblical",
+      "size": 1810
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\KJV_19.txt",
+      "title": "KJV",
+      "category": "biblical",
+      "size": 3385
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Sep_15.txt",
+      "title": "Sep",
+      "category": "biblical",
+      "size": 3289
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Tan_19.txt",
+      "title": "Tan",
+      "category": "biblical",
+      "size": 3734
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Vul_19.txt",
+      "title": "Vul",
+      "category": "biblical",
+      "size": 3349
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Poly_12.txt",
+      "title": "Poly",
+      "category": "biblical",
+      "size": 674
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\KJV_20.txt",
+      "title": "KJV",
+      "category": "biblical",
+      "size": 1188
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Sep_16.txt",
+      "title": "Sep",
+      "category": "biblical",
+      "size": 1162
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Tan_20.txt",
+      "title": "Tan",
+      "category": "biblical",
+      "size": 1327
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Vul_20.txt",
+      "title": "Vul",
+      "category": "biblical",
+      "size": 1140
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\KJV_21.txt",
+      "title": "KJV",
+      "category": "biblical",
+      "size": 951
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Sep_17.txt",
+      "title": "Sep",
+      "category": "biblical",
+      "size": 796
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Tan_21.txt",
+      "title": "Tan",
+      "category": "biblical",
+      "size": 982
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Vul_21.txt",
+      "title": "Vul",
+      "category": "biblical",
+      "size": 804
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\KJV_22.txt",
+      "title": "KJV",
+      "category": "biblical",
+      "size": 4786
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Sep_18.txt",
+      "title": "Sep",
+      "category": "biblical",
+      "size": 4731
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Tan_22.txt",
+      "title": "Tan",
+      "category": "biblical",
+      "size": 5551
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Vul_22.txt",
+      "title": "Vul",
+      "category": "biblical",
+      "size": 4729
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Poly_13.txt",
+      "title": "Poly",
+      "category": "biblical",
+      "size": 895
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\KJV_23.txt",
+      "title": "KJV",
+      "category": "biblical",
+      "size": 4965
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Sep_19.txt",
+      "title": "Sep",
+      "category": "biblical",
+      "size": 4753
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Tan_23.txt",
+      "title": "Tan",
+      "category": "biblical",
+      "size": 5583
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Vul_23.txt",
+      "title": "Vul",
+      "category": "biblical",
+      "size": 4926
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Poly_14.txt",
+      "title": "Poly",
+      "category": "biblical",
+      "size": 870
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\KJV_24.txt",
+      "title": "KJV",
+      "category": "biblical",
+      "size": 862
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Sep_20.txt",
+      "title": "Sep",
+      "category": "biblical",
+      "size": 854
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Tan_24.txt",
+      "title": "Tan",
+      "category": "biblical",
+      "size": 942
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Vul_24.txt",
+      "title": "Vul",
+      "category": "biblical",
+      "size": 825
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\KJV_25.txt",
+      "title": "KJV",
+      "category": "biblical",
+      "size": 4590
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Sep_21.txt",
+      "title": "Sep",
+      "category": "biblical",
+      "size": 4558
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Tan_25.txt",
+      "title": "Tan",
+      "category": "biblical",
+      "size": 5202
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Vul_25.txt",
+      "title": "Vul",
+      "category": "biblical",
+      "size": 4545
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Poly_15.txt",
+      "title": "Poly",
+      "category": "biblical",
+      "size": 761
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\KJV_26.txt",
+      "title": "KJV",
+      "category": "biblical",
+      "size": 1484
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Sep_22.txt",
+      "title": "Sep",
+      "category": "biblical",
+      "size": 1624
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Tan_26.txt",
+      "title": "Tan",
+      "category": "biblical",
+      "size": 1640
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Vul_26.txt",
+      "title": "Vul",
+      "category": "biblical",
+      "size": 1989
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\KJV_27.txt",
+      "title": "KJV",
+      "category": "biblical",
+      "size": 963
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Sep_23.txt",
+      "title": "Sep",
+      "category": "biblical",
+      "size": 943
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Tan_27.txt",
+      "title": "Tan",
+      "category": "biblical",
+      "size": 1115
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Vul_27.txt",
+      "title": "Vul",
+      "category": "biblical",
+      "size": 930
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\KJV_28.txt",
+      "title": "KJV",
+      "category": "biblical",
+      "size": 511
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Tan_28.txt",
+      "title": "Tan",
+      "category": "biblical",
+      "size": 572
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\KJV_29.txt",
+      "title": "KJV",
+      "category": "biblical",
+      "size": 780
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Sep_24.txt",
+      "title": "Sep",
+      "category": "biblical",
+      "size": 738
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Tan_29.txt",
+      "title": "Tan",
+      "category": "biblical",
+      "size": 778
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Vul_28.txt",
+      "title": "Vul",
+      "category": "biblical",
+      "size": 739
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Tan_30.txt",
+      "title": "Tan",
+      "category": "biblical",
+      "size": 532
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\KJV_30.txt",
+      "title": "KJV",
+      "category": "biblical",
+      "size": 646
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Sep_25.txt",
+      "title": "Sep",
+      "category": "biblical",
+      "size": 613
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Tan_31.txt",
+      "title": "Tan",
+      "category": "biblical",
+      "size": 747
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Vul_29.txt",
+      "title": "Vul",
+      "category": "biblical",
+      "size": 607
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Tan_32.txt",
+      "title": "Tan",
+      "category": "biblical",
+      "size": 522
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\KJV_31.txt",
+      "title": "KJV",
+      "category": "biblical",
+      "size": 501
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Tan_33.txt",
+      "title": "Tan",
+      "category": "biblical",
+      "size": 589
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\KJV_32.txt",
+      "title": "KJV",
+      "category": "biblical",
+      "size": 516
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Tan_34.txt",
+      "title": "Tan",
+      "category": "biblical",
+      "size": 578
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\KJV_33.txt",
+      "title": "KJV",
+      "category": "biblical",
+      "size": 1106
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Sep_26.txt",
+      "title": "Sep",
+      "category": "biblical",
+      "size": 1074
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Tan_35.txt",
+      "title": "Tan",
+      "category": "biblical",
+      "size": 1333
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Vul_30.txt",
+      "title": "Vul",
+      "category": "biblical",
+      "size": 1070
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Tan_36.txt",
+      "title": "Tan",
+      "category": "biblical",
+      "size": 570
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Apo.txt",
+      "title": "Apo",
+      "category": "biblical",
+      "size": 1711
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Sep_27.txt",
+      "title": "Sep",
+      "category": "biblical",
+      "size": 1675
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Apo_1.txt",
+      "title": "Apo",
+      "category": "biblical",
+      "size": 3069
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Sep_28.txt",
+      "title": "Sep",
+      "category": "biblical",
+      "size": 2523
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Poly_16.txt",
+      "title": "Poly",
+      "category": "biblical",
+      "size": 521
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Apo_2.txt",
+      "title": "Apo",
+      "category": "biblical",
+      "size": 1130
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Vul_31.txt",
+      "title": "Vul",
+      "category": "biblical",
+      "size": 1275
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Apo_3.txt",
+      "title": "Apo",
+      "category": "biblical",
+      "size": 1422
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Sep_29.txt",
+      "title": "Sep",
+      "category": "biblical",
+      "size": 1415
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Vul_32.txt",
+      "title": "Vul",
+      "category": "biblical",
+      "size": 1427
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Apo_4.txt",
+      "title": "Apo",
+      "category": "biblical",
+      "size": 812
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Apo_5.txt",
+      "title": "Apo",
+      "category": "biblical",
+      "size": 1724
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Sep_30.txt",
+      "title": "Sep",
+      "category": "biblical",
+      "size": 1724
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Vul_33.txt",
+      "title": "Vul",
+      "category": "biblical",
+      "size": 1744
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Apo_6.txt",
+      "title": "Apo",
+      "category": "biblical",
+      "size": 755
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Sep_31.txt",
+      "title": "Sep",
+      "category": "biblical",
+      "size": 755
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Vul_34.txt",
+      "title": "Vul",
+      "category": "biblical",
+      "size": 951
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Apo_7.txt",
+      "title": "Apo",
+      "category": "biblical",
+      "size": 555
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Sep_32.txt",
+      "title": "Sep",
+      "category": "biblical",
+      "size": 555
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Apo_8.txt",
+      "title": "Apo",
+      "category": "biblical",
+      "size": 507
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Apo_9.txt",
+      "title": "Apo",
+      "category": "biblical",
+      "size": 3269
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Sep_33.txt",
+      "title": "Sep",
+      "category": "biblical",
+      "size": 3247
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Vul_35.txt",
+      "title": "Vul",
+      "category": "biblical",
+      "size": 3248
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Apo_10.txt",
+      "title": "Apo",
+      "category": "biblical",
+      "size": 2140
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Sep_34.txt",
+      "title": "Sep",
+      "category": "biblical",
+      "size": 2132
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Vul_36.txt",
+      "title": "Vul",
+      "category": "biblical",
+      "size": 2138
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Sep_35.txt",
+      "title": "Sep",
+      "category": "biblical",
+      "size": 1039
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Sep_36.txt",
+      "title": "Sep",
+      "category": "biblical",
+      "size": 1936
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Poly_17.txt",
+      "title": "Poly",
+      "category": "biblical",
+      "size": 513
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Apo_11.txt",
+      "title": "Apo",
+      "category": "biblical",
+      "size": 4890
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Sep_37.txt",
+      "title": "Sep",
+      "category": "biblical",
+      "size": 4955
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Vul_37.txt",
+      "title": "Vul",
+      "category": "biblical",
+      "size": 5494
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Poly_18.txt",
+      "title": "Poly",
+      "category": "biblical",
+      "size": 778
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Apo_12.txt",
+      "title": "Apo",
+      "category": "biblical",
+      "size": 541
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Sep_38.txt",
+      "title": "Sep",
+      "category": "biblical",
+      "size": 2473
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Sep_39.txt",
+      "title": "Sep",
+      "category": "biblical",
+      "size": 624
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Sep_40.txt",
+      "title": "Sep",
+      "category": "biblical",
+      "size": 2358
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Sep_41.txt",
+      "title": "Sep",
+      "category": "biblical",
+      "size": 2360
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Sep_42.txt",
+      "title": "Sep",
+      "category": "biblical",
+      "size": 1169
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Sep_43.txt",
+      "title": "Sep",
+      "category": "biblical",
+      "size": 1111
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Sep_44.txt",
+      "title": "Sep",
+      "category": "biblical",
+      "size": 1566
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Poly_19.txt",
+      "title": "Poly",
+      "category": "biblical",
+      "size": 669
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Sep_45.txt",
+      "title": "Sep",
+      "category": "biblical",
+      "size": 1703
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Sep_46.txt",
+      "title": "Sep",
+      "category": "biblical",
+      "size": 1235
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\GNT.txt",
+      "title": "GNT",
+      "category": "biblical",
+      "size": 3757
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\KJV_34.txt",
+      "title": "KJV",
+      "category": "biblical",
+      "size": 3772
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Vul_38.txt",
+      "title": "Vul",
+      "category": "biblical",
+      "size": 3736
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Poly_20.txt",
+      "title": "Poly",
+      "category": "biblical",
+      "size": 533
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\GNT_1.txt",
+      "title": "GNT",
+      "category": "biblical",
+      "size": 2409
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\KJV_35.txt",
+      "title": "KJV",
+      "category": "biblical",
+      "size": 2414
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Vul_39.txt",
+      "title": "Vul",
+      "category": "biblical",
+      "size": 2375
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\GNT_2.txt",
+      "title": "GNT",
+      "category": "biblical",
+      "size": 3873
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\KJV_36.txt",
+      "title": "KJV",
+      "category": "biblical",
+      "size": 3886
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Vul_40.txt",
+      "title": "Vul",
+      "category": "biblical",
+      "size": 3852
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\GNT_3.txt",
+      "title": "GNT",
+      "category": "biblical",
+      "size": 3036
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\KJV_37.txt",
+      "title": "KJV",
+      "category": "biblical",
+      "size": 3045
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Vul_41.txt",
+      "title": "Vul",
+      "category": "biblical",
+      "size": 3012
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\GNT_4.txt",
+      "title": "GNT",
+      "category": "biblical",
+      "size": 3482
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\KJV_38.txt",
+      "title": "KJV",
+      "category": "biblical",
+      "size": 3478
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Vul_42.txt",
+      "title": "Vul",
+      "category": "biblical",
+      "size": 3433
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\GNT_5.txt",
+      "title": "GNT",
+      "category": "biblical",
+      "size": 1732
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\KJV_39.txt",
+      "title": "KJV",
+      "category": "biblical",
+      "size": 1721
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Vul_43.txt",
+      "title": "Vul",
+      "category": "biblical",
+      "size": 1685
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\GNT_6.txt",
+      "title": "GNT",
+      "category": "biblical",
+      "size": 1866
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\KJV_40.txt",
+      "title": "KJV",
+      "category": "biblical",
+      "size": 1894
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Vul_44.txt",
+      "title": "Vul",
+      "category": "biblical",
+      "size": 1858
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Poly_21.txt",
+      "title": "Poly",
+      "category": "biblical",
+      "size": 556
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\GNT_7.txt",
+      "title": "GNT",
+      "category": "biblical",
+      "size": 1300
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\KJV_41.txt",
+      "title": "KJV",
+      "category": "biblical",
+      "size": 1310
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Vul_45.txt",
+      "title": "Vul",
+      "category": "biblical",
+      "size": 1271
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Poly_22.txt",
+      "title": "Poly",
+      "category": "biblical",
+      "size": 509
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\GNT_8.txt",
+      "title": "GNT",
+      "category": "biblical",
+      "size": 818
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\KJV_42.txt",
+      "title": "KJV",
+      "category": "biblical",
+      "size": 825
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Vul_46.txt",
+      "title": "Vul",
+      "category": "biblical",
+      "size": 789
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\GNT_9.txt",
+      "title": "GNT",
+      "category": "biblical",
+      "size": 838
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\KJV_43.txt",
+      "title": "KJV",
+      "category": "biblical",
+      "size": 839
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Vul_47.txt",
+      "title": "Vul",
+      "category": "biblical",
+      "size": 803
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\GNT_10.txt",
+      "title": "GNT",
+      "category": "biblical",
+      "size": 678
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\KJV_44.txt",
+      "title": "KJV",
+      "category": "biblical",
+      "size": 685
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Vul_48.txt",
+      "title": "Vul",
+      "category": "biblical",
+      "size": 649
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\GNT_11.txt",
+      "title": "GNT",
+      "category": "biblical",
+      "size": 651
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\KJV_45.txt",
+      "title": "KJV",
+      "category": "biblical",
+      "size": 652
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Vul_49.txt",
+      "title": "Vul",
+      "category": "biblical",
+      "size": 616
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\GNT_12.txt",
+      "title": "GNT",
+      "category": "biblical",
+      "size": 680
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\KJV_46.txt",
+      "title": "KJV",
+      "category": "biblical",
+      "size": 707
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Vul_50.txt",
+      "title": "Vul",
+      "category": "biblical",
+      "size": 669
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\GNT_13.txt",
+      "title": "GNT",
+      "category": "biblical",
+      "size": 538
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\KJV_47.txt",
+      "title": "KJV",
+      "category": "biblical",
+      "size": 546
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Vul_51.txt",
+      "title": "Vul",
+      "category": "biblical",
+      "size": 512
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\GNT_14.txt",
+      "title": "GNT",
+      "category": "biblical",
+      "size": 721
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\KJV_48.txt",
+      "title": "KJV",
+      "category": "biblical",
+      "size": 729
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Vul_52.txt",
+      "title": "Vul",
+      "category": "biblical",
+      "size": 695
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\GNT_15.txt",
+      "title": "GNT",
+      "category": "biblical",
+      "size": 590
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\KJV_49.txt",
+      "title": "KJV",
+      "category": "biblical",
+      "size": 597
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Vul_53.txt",
+      "title": "Vul",
+      "category": "biblical",
+      "size": 561
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\GNT_16.txt",
+      "title": "GNT",
+      "category": "biblical",
+      "size": 1295
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\KJV_50.txt",
+      "title": "KJV",
+      "category": "biblical",
+      "size": 1320
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Vul_54.txt",
+      "title": "Vul",
+      "category": "biblical",
+      "size": 1284
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\GNT_17.txt",
+      "title": "GNT",
+      "category": "biblical",
+      "size": 630
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\KJV_51.txt",
+      "title": "KJV",
+      "category": "biblical",
+      "size": 637
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Vul_55.txt",
+      "title": "Vul",
+      "category": "biblical",
+      "size": 601
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\GNT_18.txt",
+      "title": "GNT",
+      "category": "biblical",
+      "size": 637
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\KJV_52.txt",
+      "title": "KJV",
+      "category": "biblical",
+      "size": 644
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Vul_56.txt",
+      "title": "Vul",
+      "category": "biblical",
+      "size": 608
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\GNT_19.txt",
+      "title": "GNT",
+      "category": "biblical",
+      "size": 622
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\KJV_53.txt",
+      "title": "KJV",
+      "category": "biblical",
+      "size": 637
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Vul_57.txt",
+      "title": "Vul",
+      "category": "biblical",
+      "size": 601
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\GNT_20.txt",
+      "title": "GNT",
+      "category": "biblical",
+      "size": 1783
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\KJV_54.txt",
+      "title": "KJV",
+      "category": "biblical",
+      "size": 1787
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Vul_58.txt",
+      "title": "Vul",
+      "category": "biblical",
+      "size": 1754
+    },
+    {
+      "filename": "corpus_texts\\biblical_texts\\Poly_23.txt",
+      "title": "Poly",
+      "category": "biblical",
+      "size": 562
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\Aquinas.txt",
+      "title": "Aquinas",
+      "category": "christian",
+      "size": 2024
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\Augustine.txt",
+      "title": "Augustine",
+      "category": "christian",
+      "size": 2800
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\Calvin.txt",
+      "title": "Calvin",
+      "category": "christian",
+      "size": 3579
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\Church Fathers.txt",
+      "title": "Church Fathers",
+      "category": "christian",
+      "size": 7257
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\Luther.txt",
+      "title": "Luther",
+      "category": "christian",
+      "size": 2290
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\Shakers.txt",
+      "title": "Shakers",
+      "category": "christian",
+      "size": 2646
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\Journal Articles Christianity.txt",
+      "title": "Journal Articles: Christianity",
+      "category": "christian",
+      "size": 1601
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\Buy books about Christianity.txt",
+      "title": "Buy books about Christianity",
+      "category": "christian",
+      "size": 1416
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\Pistis Sophia.txt",
+      "title": "Pistis Sophia",
+      "category": "christian",
+      "size": 3612
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\Corpus Hermeticum.txt",
+      "title": "Corpus Hermeticum",
+      "category": "christian",
+      "size": 1336
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\The Hymn of Jesus, Echoes from the Gnosis.txt",
+      "title": "The Hymn of Jesus, Echoes from the Gnosis",
+      "category": "christian",
+      "size": 59341
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\Gnostic John the Baptizer.txt",
+      "title": "Gnostic John the Baptizer",
+      "category": "christian",
+      "size": 631
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\The Gospel of Thomas.txt",
+      "title": "The Gospel of Thomas",
+      "category": "christian",
+      "size": 38830
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\The Lord's Prayer.txt",
+      "title": "The Lord's Prayer",
+      "category": "christian",
+      "size": 2393
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\Hail Mary (Ave Maria).txt",
+      "title": "Hail Mary (Ave Maria)",
+      "category": "christian",
+      "size": 810
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\The Apostles' Creed.txt",
+      "title": "The Apostles' Creed",
+      "category": "christian",
+      "size": 827
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\Nicene Creed.txt",
+      "title": "Nicene Creed",
+      "category": "christian",
+      "size": 4069
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\The Athanasian Creed.txt",
+      "title": "The Athanasian Creed",
+      "category": "christian",
+      "size": 3960
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\The Confessions of Saint Augustine.txt",
+      "title": "The Confessions of Saint Augustine",
+      "category": "christian",
+      "size": 995
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\The Works of Dionysius the Areopagite.txt",
+      "title": "The Works of Dionysius the Areopagite",
+      "category": "christian",
+      "size": 2371
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\The Book of the Bee.txt",
+      "title": "The Book of the Bee",
+      "category": "christian",
+      "size": 4254
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\The Book of the Cave of Treasures.txt",
+      "title": "The Book of the Cave of Treasures",
+      "category": "christian",
+      "size": 864
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\The Kebra Nagast.txt",
+      "title": "The Kebra Nagast",
+      "category": "christian",
+      "size": 6704
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\Bede's Ecclesiastical History of England.txt",
+      "title": "Bede's Ecclesiastical History of England",
+      "category": "christian",
+      "size": 15032
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\Works of St. Anselm.txt",
+      "title": "Works of St. Anselm",
+      "category": "christian",
+      "size": 2373
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\The Love Letters of Abelard and Heloise.txt",
+      "title": "The Love Letters of Abelard and Heloise",
+      "category": "christian",
+      "size": 2691
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\The Story of My Misfortunes The Autobiography of Peter Abelard.txt",
+      "title": "The Story of My Misfortunes: The Autobiography of Peter Abelard",
+      "category": "christian",
+      "size": 1542
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\The Writings of St. Francis of Assisi.txt",
+      "title": "The Writings of St. Francis of Assisi",
+      "category": "christian",
+      "size": 1634
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\The Little Flowers of St. Francis.txt",
+      "title": "The Little Flowers of St. Francis",
+      "category": "christian",
+      "size": 7910
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\Summa Theologica.txt",
+      "title": "Summa Theologica",
+      "category": "christian",
+      "size": 43391
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\The Adornment of the Spiritual Marriage.txt",
+      "title": "The Adornment of the Spiritual Marriage",
+      "category": "christian",
+      "size": 8882
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\The Divine Comedy.txt",
+      "title": "The Divine Comedy",
+      "category": "christian",
+      "size": 3226
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\The Cloud of Unknowing.txt",
+      "title": "The Cloud of Unknowing",
+      "category": "christian",
+      "size": 11083
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\Imitation of Christ.txt",
+      "title": "Imitation of Christ",
+      "category": "christian",
+      "size": 8603
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\The Spiritual Exercises of St. Ignatius of Loyola.txt",
+      "title": "The Spiritual Exercises of St. Ignatius of Loyola",
+      "category": "christian",
+      "size": 3601
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\Foxe's Book of Martyrs.txt",
+      "title": "Foxe's Book of Martyrs",
+      "category": "christian",
+      "size": 538
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\Synod of Dordrecht.txt",
+      "title": "Synod of Dordrecht",
+      "category": "christian",
+      "size": 68603
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\Heidelberg Catechism.txt",
+      "title": "Heidelberg Catechism",
+      "category": "christian",
+      "size": 65292
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\The Second Helvetic Confession.txt",
+      "title": "The Second Helvetic Confession",
+      "category": "christian",
+      "size": 187019
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\Church Order.txt",
+      "title": "Church Order",
+      "category": "christian",
+      "size": 34761
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\Liturgy of the Reformed Churches of the Netherlands.txt",
+      "title": "Liturgy of the Reformed Churches of the Netherlands",
+      "category": "christian",
+      "size": 93714
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\Westminster Shorter Catechism.txt",
+      "title": "Westminster Shorter Catechism",
+      "category": "christian",
+      "size": 24853
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\The Westminster Confession of Faith.txt",
+      "title": "The Westminster Confession of Faith",
+      "category": "christian",
+      "size": 79931
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\Westminster Larger Catechism.txt",
+      "title": "Westminster Larger Catechism",
+      "category": "christian",
+      "size": 93174
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\The Works of Stephen Charnock.txt",
+      "title": "The Works of Stephen Charnock",
+      "category": "christian",
+      "size": 1931
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\Pilgrim's Progress.txt",
+      "title": "Pilgrim's Progress",
+      "category": "christian",
+      "size": 1762
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\Bunyan.txt",
+      "title": "Bunyan",
+      "category": "christian",
+      "size": 561
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\Angelus Silesius.txt",
+      "title": "Angelus Silesius",
+      "category": "christian",
+      "size": 1175
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\Selections fromThe Cherubinic Wanderer.txt",
+      "title": "Selections fromThe Cherubinic Wanderer",
+      "category": "christian",
+      "size": 709
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\The Interior Castle.txt",
+      "title": "The Interior Castle",
+      "category": "christian",
+      "size": 1790
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\Ordinary of the Mass.txt",
+      "title": "Ordinary of the Mass",
+      "category": "christian",
+      "size": 1655
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\Evidence from Scripture and History of the Second Coming of Christ.txt",
+      "title": "Evidence from Scripture and History of the Second Coming of Christ",
+      "category": "christian",
+      "size": 2906
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\The Dolorous Passion of Our Lord Jesus Christ.txt",
+      "title": "The Dolorous Passion of Our Lord Jesus Christ",
+      "category": "christian",
+      "size": 6110
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\The Great Controversy.txt",
+      "title": "The Great Controversy",
+      "category": "christian",
+      "size": 2647
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\Notes on the Book of the Revelation.txt",
+      "title": "Notes on the Book of the Revelation",
+      "category": "christian",
+      "size": 741
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\The Man of Sorrows.txt",
+      "title": "The Man of Sorrows",
+      "category": "christian",
+      "size": 1021
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\Hymns of the Eastern Church.txt",
+      "title": "Hymns of the Eastern Church",
+      "category": "christian",
+      "size": 3199
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\The Unknown Life of Jesus Christ.txt",
+      "title": "The Unknown Life of Jesus Christ",
+      "category": "christian",
+      "size": 4155
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\The Baltimore (Catholic) Catechism.txt",
+      "title": "The Baltimore (Catholic) Catechism",
+      "category": "christian",
+      "size": 1025
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\Lives of the Saints.txt",
+      "title": "Lives of the Saints",
+      "category": "christian",
+      "size": 13049
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\The Didache.txt",
+      "title": "The Didache",
+      "category": "christian",
+      "size": 1240
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\Jesus An Essene.txt",
+      "title": "Jesus An Essene",
+      "category": "christian",
+      "size": 1612
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\The Doctrine of the Last Things.txt",
+      "title": "The Doctrine of the Last Things",
+      "category": "christian",
+      "size": 2112
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\The Seeming Unreality of the Spiritual Life.txt",
+      "title": "The Seeming Unreality of the Spiritual Life",
+      "category": "christian",
+      "size": 2817
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\Jesus, the Last Great Initiate.txt",
+      "title": "Jesus, the Last Great Initiate",
+      "category": "christian",
+      "size": 1876
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\Folk-lore of the Holy Land.txt",
+      "title": "Folk-lore of the Holy Land",
+      "category": "christian",
+      "size": 3063
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\Science and Health with Key to the Scriptures.txt",
+      "title": "Science and Health with Key to the Scriptures",
+      "category": "christian",
+      "size": 1177
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\John Wesley's Place in History.txt",
+      "title": "John Wesley's Place in History",
+      "category": "christian",
+      "size": 34292
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\The Book of Revelation.txt",
+      "title": "The Book of Revelation",
+      "category": "christian",
+      "size": 4911
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\The Aquarian Gospel of Jesus the Christ.txt",
+      "title": "The Aquarian Gospel of Jesus the Christ",
+      "category": "christian",
+      "size": 5370
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\The Gist of Swedenborg.txt",
+      "title": "The Gist of Swedenborg",
+      "category": "christian",
+      "size": 89829
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\The Political Aspects of S. Augustine's 'City of God'.txt",
+      "title": "The Political Aspects of S. Augustine's 'City of God'",
+      "category": "christian",
+      "size": 503
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\Human Nature in the Bible.txt",
+      "title": "Human Nature in the Bible",
+      "category": "christian",
+      "size": 834
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\Pageant of the Popes.txt",
+      "title": "Pageant of the Popes",
+      "category": "christian",
+      "size": 2447
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\The Trial of Christ.txt",
+      "title": "The Trial of Christ",
+      "category": "christian",
+      "size": 2175
+    },
+    {
+      "filename": "corpus_texts\\all_texts\\The Theological Declaration of Barmen.txt",
+      "title": "The Theological Declaration of Barmen",
+      "category": "christian",
+      "size": 11064
+    }
+  ]
+}

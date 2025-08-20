@@ -1,0 +1,16 @@
+{
+  "harvest_date": "2025-08-20T22:00:41.997049",
+  "total_urls": 262,
+  "by_period": {
+    "ancient": 196,
+    "medieval": 8,
+    "early_modern": 37,
+    "modern": 21
+  },
+  "by_source": {
+    "gutenberg": 124,
+    "perseus": 20,
+    "archive.org": 118
+  },
+  "unique_titles": 239
+}

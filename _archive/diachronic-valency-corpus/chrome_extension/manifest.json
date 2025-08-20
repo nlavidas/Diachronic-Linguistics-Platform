@@ -1,0 +1,46 @@
+{
+  "manifest_version": 3,
+  "name": "Diachronic Valency Annotator",
+  "version": "1.0",
+  "description": "AI-enhanced phrasal annotation for diachronic corpus with PROIEL-style markup",
+  
+  "permissions": [
+    "activeTab",
+    "storage",
+    "contextMenus"
+  ],
+  
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.perseus.tufts.edu/*",
+        "*://*.gutenberg.org/*",
+        "*://www.thelatinlibrary.com/*",
+        "*://*.proiel.github.io/*",
+        "file:///*"
+      ],
+      "js": ["content.js"],
+      "css": ["annotation.css"]
+    }
+  ],
+  
+  "background": {
+    "service_worker": "background.js"
+  },
+  
+  "web_accessible_resources": [
+    {
+      "resources": ["annotation.css"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

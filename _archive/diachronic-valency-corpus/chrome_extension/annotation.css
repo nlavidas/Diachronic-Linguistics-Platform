@@ -1,0 +1,209 @@
+/* AI-Enhanced Valency Annotator Styles */
+
+#valency-panel {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 300px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  z-index: 10000;
+  font-family: Arial, sans-serif;
+}
+
+.panel-header {
+  background: #2c3e50;
+  color: white;
+  padding: 10px;
+  border-radius: 8px 8px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.panel-header h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.minimize {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 0 5px;
+}
+
+.panel-content {
+  padding: 15px;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.panel-content.hidden {
+  display: none;
+}
+
+.mode-selector {
+  margin-bottom: 15px;
+}
+
+.mode-selector select {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.phrase-controls, .valency-controls {
+  margin-bottom: 15px;
+}
+
+.phrase-controls button, .valency-btn, .actions button {
+  display: inline-block;
+  padding: 8px 12px;
+  margin: 4px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: all 0.3s;
+}
+
+.phrase-controls button {
+  background: #3498db;
+  color: white;
+}
+
+.phrase-controls button:hover {
+  background: #2980b9;
+}
+
+.valency-btn[data-role="verb"] {
+  background: #ff6b6b;
+  color: white;
+}
+
+.valency-btn[data-role="subject"] {
+  background: #4ecdc4;
+  color: white;
+}
+
+.valency-btn[data-role="object"] {
+  background: #ffe66d;
+  color: #333;
+}
+
+.valency-btn[data-role="indirect"] {
+  background: #a8e6cf;
+  color: #333;
+}
+
+.stats {
+  background: #f8f9fa;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  font-size: 12px;
+}
+
+.stats div {
+  margin: 5px 0;
+}
+
+.actions button {
+  background: #27ae60;
+  color: white;
+}
+
+.actions button:hover {
+  background: #229954;
+}
+
+/* Quick menu styles */
+#quick-menu {
+  position: absolute;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  z-index: 10001;
+  padding: 5px 0;
+}
+
+.quick-option {
+  padding: 8px 15px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.quick-option:hover {
+  background: #f0f0f0;
+}
+
+/* Annotation styles */
+.phrase-boundary {
+  border-right: 2px solid #666;
+  padding-right: 5px;
+  margin-right: 5px;
+}
+
+.valency-verb {
+  background-color: #ff6b6b;
+  color: white;
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.valency-subject {
+  background-color: #4ecdc4;
+  color: white;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+.valency-object {
+  background-color: #ffe66d;
+  color: #333;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+.valency-indirect {
+  background-color: #a8e6cf;
+  color: #333;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+/* PROIEL-style colors */
+.proiel-red {
+  color: #ff0000;
+  font-weight: bold;
+}
+
+.proiel-blue {
+  color: #0000ff;
+  font-weight: bold;
+}
+
+/* Hover effects */
+[class^="valency-"]:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+/* Selection highlight */
+::selection {
+  background: rgba(52, 152, 219, 0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  #valency-panel {
+    width: 90%;
+    right: 5%;
+  }
+}

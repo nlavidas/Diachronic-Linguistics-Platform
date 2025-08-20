@@ -1,0 +1,31 @@
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+venv/
+env/
+
+# Databases
+*.db
+*.sqlite
+*.db-journal
+
+# Logs
+*.log
+logs/
+
+# API Keys
+.env
+secrets.json
+
+# Large data files
+texts/collected/*.txt
+texts/preprocessed/*.txt
+texts/rejected/*.txt
+
+# But track some samples
+!texts/samples/
+
+# Stanza models (too large)
+stanza_resources/

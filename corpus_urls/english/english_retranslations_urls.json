@@ -1,0 +1,218 @@
+[
+  {
+    "url": "https://www.gutenberg.org/ebooks/16328.txt.utf-8",
+    "title": "Beowulf: An Anglo-Saxon Epic Poem",
+    "language": "english",
+    "source": "gutenberg",
+    "period": "old_english",
+    "search_term": "Beowulf",
+    "type": "original_work"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/50742.txt.utf-8",
+    "title": "The Story of Beowulf, Translated from Anglo-Saxon into Modern English Prose",
+    "language": "english",
+    "source": "gutenberg",
+    "period": "old_english",
+    "search_term": "Beowulf",
+    "type": "original_work"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/981.txt.utf-8",
+    "title": "Beowulf",
+    "language": "english",
+    "source": "gutenberg",
+    "period": "old_english",
+    "search_term": "Beowulf",
+    "type": "original_work"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/16328.txt.utf-8",
+    "title": "Beowulf: An Anglo-Saxon Epic Poem",
+    "language": "english",
+    "source": "gutenberg",
+    "period": "old_english",
+    "search_term": "Anglo-Saxon",
+    "type": "original_work"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/50742.txt.utf-8",
+    "title": "The Story of Beowulf, Translated from Anglo-Saxon into Modern English Prose",
+    "language": "english",
+    "source": "gutenberg",
+    "period": "old_english",
+    "search_term": "Anglo-Saxon",
+    "type": "original_work"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/2383.txt.utf-8",
+    "title": "The Canterbury Tales, and Other Poems",
+    "language": "english",
+    "source": "gutenberg",
+    "period": "middle_english",
+    "search_term": "Chaucer",
+    "type": "original_work"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/22120.txt.utf-8",
+    "title": "Chaucer's Works, Volume 4 — The Canterbury Tales (Middle English (1100-1500))",
+    "language": "english",
+    "source": "gutenberg",
+    "period": "middle_english",
+    "search_term": "Chaucer",
+    "type": "original_work"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/2383.txt.utf-8",
+    "title": "The Canterbury Tales, and Other Poems",
+    "language": "english",
+    "source": "gutenberg",
+    "period": "middle_english",
+    "search_term": "Canterbury Tales",
+    "type": "original_work"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/22120.txt.utf-8",
+    "title": "Chaucer's Works, Volume 4 — The Canterbury Tales (Middle English (1100-1500))",
+    "language": "english",
+    "source": "gutenberg",
+    "period": "middle_english",
+    "search_term": "Canterbury Tales",
+    "type": "original_work"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/56613.txt.utf-8",
+    "title": "History of English Literature from \"Beowulf\" to Swinburne",
+    "language": "english",
+    "source": "gutenberg",
+    "period": "middle_english",
+    "search_term": "Piers Plowman",
+    "type": "original_work"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/100.txt.utf-8",
+    "title": "The Complete Works of William Shakespeare",
+    "language": "english",
+    "source": "gutenberg",
+    "period": "early_modern",
+    "search_term": "Shakespeare",
+    "type": "complete_works"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/27761.txt.utf-8",
+    "title": "Hamlet, Prince of Denmark",
+    "language": "english",
+    "source": "gutenberg",
+    "period": "early_modern",
+    "search_term": "Shakespeare",
+    "type": "original_work"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/10.txt.utf-8",
+    "title": "The King James Version of the Bible",
+    "language": "english",
+    "source": "gutenberg",
+    "period": "early_modern",
+    "search_term": "King James Bible",
+    "type": "original_work"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/7999.txt.utf-8",
+    "title": "The Bible, King James Version, Complete Contents",
+    "language": "english",
+    "source": "gutenberg",
+    "period": "early_modern",
+    "search_term": "King James Bible",
+    "type": "original_work"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/30.txt.utf-8",
+    "title": "The Bible, King James Version, Complete",
+    "language": "english",
+    "source": "gutenberg",
+    "period": "early_modern",
+    "search_term": "King James Bible",
+    "type": "original_work"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/26.txt.utf-8",
+    "title": "Paradise Lost",
+    "language": "english",
+    "source": "gutenberg",
+    "period": "early_modern",
+    "search_term": "Milton",
+    "type": "original_work"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/10.txt.utf-8",
+    "title": "The King James Version of the Bible",
+    "language": "english",
+    "source": "gutenberg",
+    "period": "biblical_retranslation",
+    "search_term": "King James Bible",
+    "type": "biblical_retranslation"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/7999.txt.utf-8",
+    "title": "The Bible, King James Version, Complete Contents",
+    "language": "english",
+    "source": "gutenberg",
+    "period": "biblical_retranslation",
+    "search_term": "King James Bible",
+    "type": "biblical_retranslation"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/8300.txt.utf-8",
+    "title": "The Bible, Douay-Rheims, Complete",
+    "language": "english",
+    "source": "gutenberg",
+    "period": "biblical_retranslation",
+    "search_term": "Douay Bible",
+    "type": "biblical_retranslation"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/1581.txt.utf-8",
+    "title": "The Bible, Douay-Rheims, Complete",
+    "language": "english",
+    "source": "gutenberg",
+    "period": "biblical_retranslation",
+    "search_term": "Douay Bible",
+    "type": "biblical_retranslation"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/8300.txt.utf-8",
+    "title": "The Bible, Douay-Rheims, Complete",
+    "language": "english",
+    "source": "gutenberg",
+    "period": "biblical_retranslation",
+    "search_term": "Revised Version",
+    "type": "biblical_retranslation"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/1581.txt.utf-8",
+    "title": "The Bible, Douay-Rheims, Complete",
+    "language": "english",
+    "source": "gutenberg",
+    "period": "biblical_retranslation",
+    "search_term": "Revised Version",
+    "type": "biblical_retranslation"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/40935.txt.utf-8",
+    "title": "A Greek-English Lexicon to the New Testament (Modern Greek (1453-))",
+    "language": "english",
+    "source": "gutenberg",
+    "period": "biblical_retranslation",
+    "search_term": "New Testament English",
+    "type": "biblical_retranslation"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/10553.txt.utf-8",
+    "title": "The first New Testament printed in English",
+    "language": "english",
+    "source": "gutenberg",
+    "period": "biblical_retranslation",
+    "search_term": "New Testament English",
+    "type": "biblical_retranslation"
+  }
+]

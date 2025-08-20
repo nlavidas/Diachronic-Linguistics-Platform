@@ -1,0 +1,178 @@
+{
+  "timestamp": "2025-08-20T22:50:16.164076",
+  "categories": {
+    "greek_texts": {
+      "files": 83,
+      "words": 9372116,
+      "size_bytes": 103675672,
+      "duplicates": [],
+      "subdirectories": {
+        "ancient": {
+          "files": 58,
+          "words": 6898067,
+          "size_bytes": 77759579,
+          "duplicates": [],
+          "language_distribution": {
+            "english": 52,
+            "greek": 6
+          },
+          "avg_size_bytes": 1340682.396551724,
+          "min_size_bytes": 87451,
+          "max_size_bytes": 10083581
+        },
+        "medieval": {
+          "files": 4,
+          "words": 1129652,
+          "size_bytes": 12147257,
+          "duplicates": [],
+          "language_distribution": {
+            "english": 4
+          },
+          "avg_size_bytes": 3036814.25,
+          "min_size_bytes": 347123,
+          "max_size_bytes": 5837966
+        },
+        "early_modern": {
+          "files": 14,
+          "words": 829273,
+          "size_bytes": 9169720,
+          "duplicates": [],
+          "language_distribution": {
+            "english": 1,
+            "greek": 13
+          },
+          "avg_size_bytes": 654980.0,
+          "min_size_bytes": 156433,
+          "max_size_bytes": 1827520
+        },
+        "modern": {
+          "files": 7,
+          "words": 515124,
+          "size_bytes": 4599116,
+          "duplicates": [],
+          "language_distribution": {
+            "english": 1,
+            "greek": 6
+          },
+          "avg_size_bytes": 657016.5714285715,
+          "min_size_bytes": 39663,
+          "max_size_bytes": 2424180
+        }
+      }
+    },
+    "latin_texts": {
+      "files": 16,
+      "words": 1669342,
+      "size_bytes": 10313530,
+      "duplicates": [],
+      "subdirectories": {
+        "root": {
+          "files": 16,
+          "words": 1669342,
+          "size_bytes": 10313530,
+          "duplicates": [],
+          "language_distribution": {
+            "english": 16
+          },
+          "avg_size_bytes": 644595.625,
+          "min_size_bytes": 88611,
+          "max_size_bytes": 1446573
+        }
+      }
+    },
+    "middle_french_texts": {
+      "files": 37,
+      "words": 407371,
+      "size_bytes": 5387231,
+      "duplicates": [],
+      "subdirectories": {
+        "root": {
+          "files": 37,
+          "words": 407371,
+          "size_bytes": 5387231,
+          "duplicates": [
+            "LEau au Moyen Age.txt",
+            "The gender question in globalization  changing perspectives and practices.txt",
+            "Vox intexta  orality and textuality in the Middle Ages.txt",
+            "\u00c9tudes dhistoire litt\u00e9raire.txt",
+            "\u0130srail Mossad Hollanda Siyasi ve Hollanda siyasetinde Avrupa Kuzey Amerika ve Amerikada Dubaideki bi.txt",
+            "\u0130srail Mossad ve Hollanda H\u00fck\u00fcmeti \u0130stihbarat Servisleri AIVD httpsenglishaivdnl ve MIVD Hollanda As.txt"
+          ],
+          "language_distribution": {
+            "english": 36,
+            "french": 1
+          },
+          "avg_size_bytes": 145600.83783783784,
+          "min_size_bytes": 153,
+          "max_size_bytes": 675826
+        }
+      }
+    },
+    "english_retranslations": {
+      "files": 18,
+      "words": 6415280,
+      "size_bytes": 37789875,
+      "duplicates": [],
+      "subdirectories": {
+        "root": {
+          "files": 18,
+          "words": 6415280,
+          "size_bytes": 37789875,
+          "duplicates": [
+            "A Greek-English Lexicon to the New Testament (Modern Greek (1453-)).txt",
+            "Chaucer's Works, Volume 4 \u2014 The Canterbury Tales (Middle English (1100-1500)).txt",
+            "The Story of Beowulf, Translated from Anglo-Saxon into Modern English Prose.txt"
+          ],
+          "language_distribution": {
+            "english": 18
+          },
+          "avg_size_bytes": 2099437.5,
+          "min_size_bytes": 175242,
+          "max_size_bytes": 6024741
+        }
+      }
+    },
+    "all_texts": {
+      "files": 16,
+      "words": 1088852,
+      "size_bytes": 7795275,
+      "duplicates": [],
+      "subdirectories": {
+        "root": {
+          "files": 16,
+          "words": 1088852,
+          "size_bytes": 7795275,
+          "duplicates": [],
+          "language_distribution": {
+            "english": 15,
+            "greek": 1
+          },
+          "avg_size_bytes": 487204.6875,
+          "min_size_bytes": 27580,
+          "max_size_bytes": 1328845
+        }
+      }
+    },
+    "ai_filtered_english_diachronic": {
+      "files": 0,
+      "words": 0,
+      "size_bytes": 0,
+      "duplicates": [],
+      "subdirectories": {
+        "root": {
+          "files": 0,
+          "words": 0,
+          "size_bytes": 0,
+          "duplicates": [],
+          "language_distribution": {}
+        }
+      }
+    }
+  },
+  "totals": {
+    "files": 170,
+    "words": 18952961,
+    "unique_hashes": 161,
+    "size_bytes": 164961583
+  }
+}

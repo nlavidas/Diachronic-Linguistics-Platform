@@ -1,0 +1,19 @@
+{
+  "harvest_date": "2025-08-20T22:48:48.411271",
+  "total_urls": 749,
+  "by_source": {
+    "gutenberg": 85,
+    "wikisource": 11,
+    "sacred_texts": 653
+  },
+  "by_category": {
+    "greek": 19,
+    "latin": 22,
+    "french": 25,
+    "biblical": 413,
+    "classical": 177,
+    "epic": 1,
+    "uncategorized": 11,
+    "christian": 81
+  }
+}

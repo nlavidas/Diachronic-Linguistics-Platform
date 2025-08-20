@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AthensDiaLingCorpus - Complete Research Hub</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            bottom: -50%;
+            left: -50%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+            background-size: 50px 50px;
+            animation: move 20s linear infinite;
+        }
+        
+        @keyframes move {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(50px, 50px); }
+        }
+        
+        .header h1 {
+            font-size: 3em;
+            margin-bottom: 15px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .header p {
+            font-size: 1.3em;
+            opacity: 0.9;
+            position: relative;
+            z-index: 1;
+        }
+        
+        /* Navigation */
+        .nav {
+            background: white;
+            padding: 15px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .nav-item {
+            color: #1e3c72;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s;
+            padding: 5px 10px;
+            border-radius: 20px;
+        }
+        
+        .nav-item:hover {
+            background: #e8f5e9;
+            color: #2e7d32;
+        }
+        
+        /* Main Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        /* Welcome Section */
+        .welcome-section {
+            background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 50px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .welcome-section h2 {
+            color: #2e7d32;
+            font-size: 2.2em;
+            margin-bottom: 20px;
+        }
+        
+        .welcome-section p {
+            font-size: 1.2em;
+            color: #388e3c;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        /* Quick Actions */
+        .quick-actions {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-bottom: 50px;
+        }
+        
+        .action-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+            cursor: pointer;
+            border: 3px solid transparent;
+        }
+        
+        .action-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            border-color: #4caf50;
+        }
+        
+        .action-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+        
+        .action-title {
+            font-size: 1.3em;
+            color: #1e3c72;
+            margin-bottom: 10px;
+        }
+        
+        .action-time {
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        /* Tabs */
+        .tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #e0e0e0;
+            overflow-x: auto;
+            padding-bottom: 10px;
+        }
+        
+        .tab {
+            padding: 12px 24px;
+            background: white;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px 10px 0 0;
+            cursor: pointer;
+            transition: all 0.3s;
+            white-space: nowrap;
+            font-weight: 500;
+        }
+        
+        .tab.active {
+            background: #1e3c72;
+            color: white;
+            border-color: #1e3c72;
+            transform: translateY(-2px);
+        }
+        
+        .tab-content {
+            display: none;
+            animation: fadeIn 0.5s;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        /* Modules Grid */
+        .modules-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+        
+        .module {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            border: 3px solid #e0e0e0;
+            transition: all 0.3s;
+        }
+        
+        .module:hover {
+            border-color: #4caf50;
+            transform: translateY(-3px);
+        }
+        
+        .module-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+        
+        .module-icon {
+            font-size: 2em;
+        }
+        
+        .module h3 {
+            color: #1e3c72;
+            font-size: 1.4em;
+        }
+        
+        .module-status {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            margin-left: auto;
+        }
+        
+        .status-ready {
+            background: #c8e6c9;
+            color: #2e7d32;
+        }
+        
+        .status-beta {
+            background: #fff3cd;
+            color: #856404;
+        }
+        
+        .status-soon {
+            background: #cce5ff;
+            color: #004085;
+        }
+        
+        /* Tools Section */
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        
+        .tool-card {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            border: 2px solid #e0e0e0;
+            transition: all 0.3s;
+        }
+        
+        .tool-card:hover {
+            background: white;
+            border-color: #667eea;
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.1);
+        }
+        
+        .tool-name {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 8px;
+        }
+        
+        .tool-description {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+        
+        .tool-link {
+            color: #667eea;
+            text-decoration: none;
+            font-size: 0.9em;
+        }
+        
+        .tool-link:hover {
+            text-decoration: underline;
+        }
+        
+        /* Progress Dashboard */
+        .progress-dashboard {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .stat-card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 2em;
+            color: #1e3c72;
+            font-weight: bold;
+        }
+        
+        .stat-label {
+            color: #666;
+            margin-top: 5px;
+        }
+        
+        /* Code Examples */
+        .code-block {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px;
+            border-radius: 10px;
+            font-family: 'Courier New', monospace;
+            margin: 15px 0;
+            overflow-x: auto;
+        }
+        
+        .code-comment {
+            color: #95a5a6;
+        }
+        
+        /* Buttons */
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s;
+            font-weight: 500;
+        }
+        
+        .btn-primary {
+            background: #1e3c72;
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: #2a5298;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(30, 60, 114, 0.3);
+        }
+        
+        .btn-secondary {
+            background: #e0e0e0;
+            color: #333;
+        }
+        
+        .btn-secondary:hover {
+            background: #d0d0d0;
+        }
+        
+        .btn-success {
+            background: #4caf50;
+            color: white;
+        }
+        
+        .btn-success:hover {
+            background: #45a049;
+        }
+        
+        /* Help Section */
+        .help-section {
+            background: #fff3cd;
+            border: 2px solid #ffeeba;
+            border-radius: 15px;
+            padding: 30px;
+            margin: 40px 0;
+            text-align: center;
+        }
+        
+        .help-section h3 {
+            color: #856404;
+            margin-bottom: 15px;
+        }
+        
+        /* Footer */
+        .footer {
+            background: #1e3c72;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            margin-top: 80px;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .footer-link {
+            color: white;
+            text-decoration: none;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+        }
+        
+        .footer-link:hover {
+            opacity: 1;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .tabs {
+                flex-wrap: wrap;
+            }
+            
+            .modules-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        /* Floating Help Button */
+        .floating-help {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: #4caf50;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5em;
+            cursor: pointer;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+            transition: all 0.3s;
+            z-index: 1000;
+        }
+        
+        .floating-help:hover {
+            transform: scale(1.1);
+            background: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <h1>🏛️ AthensDiaLingCorpus</h1>
+        <p>Your Complete Diachronic Linguistics Research Platform</p>
+    </div>
+    
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="#home" class="nav-item">🏠 Home</a>
+            <a href="#modules" class="nav-item">🧩 Modules</a>
+            <a href="#tools" class="nav-item">🛠️ Tools</a>
+            <a href="#corpus" class="nav-item">📚 Corpus</a>
+            <a href="#progress" class="nav-item">📊 Progress</a>
+            <a href="#help" class="nav-item">❓ Help</a>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <!-- Welcome Section -->
+        <div class="welcome-section" id="home">
+            <h2>🌟 Welcome Back! You're Doing Amazing!</h2>
+            <p>This is your research hub where everything works together seamlessly. Each module is independent, so you can start anywhere you like. Remember: even the smallest step is progress!</p>
+        </div>
+        
+        <!-- Quick Actions -->
+        <div class="quick-actions">
+            <div class="action-card" onclick="quickStart('collect')">
+                <div class="action-icon">📚</div>
+                <div class="action-title">Collect a Text</div>
+                <div class="action-time">~5 minutes</div>
+            </div>
+            
+            <div class="action-card" onclick="quickStart('parse')">
+                <div class="action-icon">🔍</div>
+                <div class="action-title">Parse Something</div>
+                <div class="action-time">~10 minutes</div>
+            </div>
+            
+            <div class="action-card" onclick="quickStart('analyze')">
+                <div class="action-icon">📊</div>
+                <div class="action-title">Quick Analysis</div>
+                <div class="action-time">~15 minutes</div>
+            </div>
+            
+            <div class="action-card" onclick="quickStart('explore')">
+                <div class="action-icon">🌐</div>
+                <div class="action-title">Just Explore</div>
+                <div class="action-time">No pressure!</div>
+            </div>
+        </div>
+        
+        <!-- Main Tabs -->
+        <div class="tabs">
+            <div class="tab active" onclick="showTab('overview')">📋 Overview</div>
+            <div class="tab" onclick="showTab('modules')">🧩 Your Modules</div>
+            <div class="tab" onclick="showTab('tools')">🛠️ All Tools</div>
+            <div class="tab" onclick="showTab('workflow')">🔄 Workflow</div>
+            <div class="tab" onclick="showTab('ai')">🤖 AI Features</div>
+            <div class="tab" onclick="showTab('github')">📁 GitHub</div>
+        </div>
+        
+        <!-- Tab Content: Overview -->
+        <div id="overview" class="tab-content active">
+            <h2>📋 Your Complete Research Platform</h2>
+            
+            <div class="progress-dashboard">
+                <h3>📊 Your Progress Dashboard</h3>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">8</div>
+                        <div class="stat-label">Repositories</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">5</div>
+                        <div class="stat-label">Active Modules</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">∞</div>
+                        <div class="stat-label">Possibilities</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">1</div>
+                        <div class="stat-label">Step at a Time</div>
+                    </div>
+                </div>
+            </div>
+            
+            <h3>🎯 Today's Gentle Suggestions</h3>
+            <ul style="font-size: 1.1em; line-height: 2; color: #555;">
+                <li>Maybe download one text from Perseus? (Just one!)</li>
+                <li>Or try parsing a single sentence?</li>
+                <li>Or simply organize one folder?</li>
+                <li>Or just explore and learn - that counts too!</li>
+            </ul>
+        </div>
+        
+        <!-- Tab Content: Modules -->
+        <div id="modules" class="tab-content">
+            <h2 id="modules">🧩 Your Research Modules</h2>
+            <p style="color: #666; margin-bottom: 30px;">Each module works independently - use what you need, when you need it!</p>
+            
+            <div class="modules-grid">
+                <!-- Text Collection Module -->
+                <div class="module">
+                    <div class="module-header">
+                        <span class="module-icon">📚</span>
+                        <h3>Text Collector</h3>
+                        <span class="module-status status-ready">Ready!</span>
+                    </div>
+                    <p>Collect texts from Perseus, Archive.org, GitHub, and more. Super simple interface!</p>
+                    <div style="margin-top: 20px;">
+                        <button class="btn btn-primary" onclick="openModule('collector')">
+                            Open Collector
+                        </button>
+                        <a href="https://github.com/nlavidas/corpus-builder" class="btn btn-secondary">
+                            View Code
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Parser Module -->
+                <div class="module">
+                    <div class="module-header">
+                        <span class="module-icon">🔍</span>
+                        <h3>LavidasParser Suite</h3>
+                        <span class="module-status status-ready">Ready!</span>
+                    </div>
+                    <p>Parse Greek, Latin, and other texts with multiple parsing options.</p>
+                    <div style="margin-top: 20px;">
+                        <button class="btn btn-primary" onclick="openModule('parser')">
+                            Start Parsing
+                        </button>
+                        <a href="https://github.com/nlavidas/LavidasParser" class="btn btn-secondary">
+                            LavidasParser
+                        </a>
+                        <a href="https://github.com/nlavidas/parserNEW" class="btn btn-secondary">
+                            ParserNEW
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Contact Lab Module -->
+                <div class="module">
+                    <div class="module-header">
+                        <span class="module-icon">🌐</span>
+                        <h3>GlossaContactLab</h3>
+                        <span class="module-status status-beta">Beta</span>
+                    </div>
+                    <p>Analyze language contact, interference patterns, and cross-linguistic influence.</p>
+                    <div style="margin-top: 20px;">
+                        <button class="btn btn-primary" onclick="openModule('contact')">
+                            Open Lab
+                        </button>
+                        <a href="https://github.com/nlavidas/GlossaContactLab" class="btn btn-secondary">
+                            View Code
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- PROIEL Module -->
+                <div class="module">
+                    <div class="module-header">
+                        <span class="module-icon">🌳</span>
+                        <h3>PROIEL Suite</h3>
+                        <span class="module-status status-ready">Ready!</span>
+                    </div>
+                    <p>Work with PROIEL treebank data - syntactic annotations made easy.</p>
+                    <div style="margin-top: 20px;">
+                        <button class="btn btn-primary" onclick="openModule('proiel')">
+                            Process Treebank
+                        </button>
+                        <a href="https://github.com/nlavidas/proiel-treebank-EKPA" class="btn btn-secondary">
+                            Treebank
+                        </a>
+                        <a href="https://github.com/nlavidas/proiel-text-processor" class="btn btn-secondary">
+                            Processor
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Greek Project Module -->
+                <div class="module">
+                    <div class="module-header">
+                        <span class="module-icon">🏺</span>
+                        <h3>Greek Project</h3>
+                        <span class="module-status status-beta">Building</span>
+                    </div>
+                    <p>Specialized tools for Greek diachronic analysis across all periods.</p>
+                    <div style="margin-top: 20px;">
+                        <button class="btn btn-primary" onclick="openModule('greek')">
+                            Open Project
+                        </button>
+                        <a href="https://github.com/nlavidas/GreekProject" class="btn btn-secondary">
+                            View Code
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Website Module -->
+                <div class="module">
+                    <div class="module-header">
+                        <span class="module-icon">🌐</span>
+                        <h3>Web Presence</h3>
+                        <span class="module-status status-soon">Setup</span>
+                    </div>
+                    <p>Your research websites and online presence tools.</p>
+                    <div style="margin-top: 20px;">
+                        <a href="https://github.com/nlavidas/my-site" class="btn btn-secondary">
+                            My Site
+                        </a>
+                        <a href="https://github.com/nlavidas/nlavidas.github.io" class="btn btn-secondary">
+                            GitHub.io
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Tab Content: Tools -->
+        <div id="tools" class="tab-content">
+            <h2>🛠️ Complete Toolkit</h2>
+            
+            <h3>🤖 AI & ML Tools</h3>
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <div class="tool-name">Ancient Greek BERT</div>
+                    <div class="tool-description">Pre-trained language model for Ancient Greek</div>
+                    <code class="code-block">from transformers import AutoModel
+model = AutoModel.from_pretrained("pranaydeeps/Ancient-Greek-BERT")</code>
+                </div>
+                
+                <div class="tool-card">
+                    <div class="tool-name">Latin BERT</div>
+                    <div class="tool-description">BERT model for Classical and Medieval Latin</div>
+                    <code class="code-block">model = AutoModel.from_pretrained("dbmdz/bert-base-italian-xxl-cased")</code>
+                </div>
+                
+                <div class="tool-card">
+                    <div class="tool-name">LightSide</div>
+                    <div class="tool-description">Text classification and feature extraction</div>
+                    <a href="http://ankara.lti.cs.cmu.edu/side/" class="tool-link">Download LightSide →</a>
+                </div>
+            </div>
+            
+            <h3>📝 NLP Processing</h3>
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <div class="tool-name">CLTK</div>
+                    <div class="tool-description">Classical Language Toolkit - comprehensive NLP</div>
+                    <code class="code-block">pip install cltk</code>
+                </div>
+                
+                <div class="tool-card">
+                    <div class="tool-name">Stanza</div>
+                    <div class="tool-description">Stanford NLP with Ancient Greek & Latin</div>
+                    <code class="code-block">pip install stanza</code>
+                </div>
+                
+                <div class="tool-card">
+                    <div class="tool-name">spaCy + GreCy</div>
+                    <div class="tool-description">Industrial-strength NLP with Greek support</div>
+                    <code class="code-block">pip install spacy grecy</code>
+                </div>
+            </div>
+            
+            <h3>📊 Corpus Sources</h3>
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <div class="tool-name">Perseus Digital Library</div>
+                    <div class="tool-description">Classical texts with morphological analysis</div>
+                    <a href="https://scaife.perseus.org/" class="tool-link">Visit Perseus →</a>
+                </div>
+                
+                <div class="tool-card">
+                    <div class="tool-name">OpenGreekAndLatin</div>
+                    <div class="tool-description">First1KGreek & Latin texts in TEI-XML</div>
+                    <a href="https://github.com/OpenGreekAndLatin" class="tool-link">Browse GitHub →</a>
+                </div>
+                
+                <div class="tool-card">
+                    <div class="tool-name">Universal Dependencies</div>
+                    <div class="tool-description">250+ treebanks in 100+ languages</div>
+                    <a href="https://universaldependencies.org/" class="tool-link">Get Treebanks →</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Tab Content: Workflow -->
+        <div id="workflow" class="tab-content">
+            <h2>🔄 Your Research Workflow</h2>
+            
+            <div style="background: #e8f5e9; padding: 30px; border-radius: 15px; margin: 20px 0;">
+                <h3>🌱 Start Small, Grow Naturally</h3>
+                <ol style="font-size: 1.1em; line-height: 2;">
+                    <li><strong>Collect</strong> - Start with just one text</li>
+                    <li><strong>Process</strong> - Parse or annotate when ready</li>
+                    <li><strong>Analyze</strong> - Look for patterns at your pace</li>
+                    <li><strong>Share</strong> - Publish findings when you want</li>
+                </ol>
+            </div>
+            
+            <h3>📋 Sample Workflows</h3>
+            
+            <div class="module" style="background: #f8f9fa;">
+                <h4>Workflow 1: Simple Text Analysis</h4>
+                <code class="code-block"><span class="code-comment"># 1. Collect a text</span>
+python corpus-builder/collector.py --source perseus --text "Homer Iliad"
+
+<span class="code-comment"># 2. Parse it</span>
+python LavidasParser/parse.py --input iliad.txt --language greek
+
+<span class="code-comment"># 3. Analyze</span>
+python analyze_patterns.py --file iliad_parsed.json</code>
+            </div>
+            
+            <div class="module" style="background: #f8f9fa;">
+                <h4>Workflow 2: Diachronic Comparison</h4>
+                <code class="code-block"><span class="code-comment"># 1. Collect texts from different periods</span>
+# Ancient Greek, Byzantine Greek, Modern Greek
+
+<span class="code-comment"># 2. Process with same pipeline</span>
+# Use consistent annotation scheme
+
+<span class="code-comment"># 3. Compare features</span>
+# Track changes over time</code>
+            </div>
+        </div>
+        
+        <!-- Tab Content: AI -->
+        <div id="ai" class="tab-content">
+            <h2>🤖 AI-Powered Features</h2>
+            
+            <div class="module" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white;">
+                <h3 style="color: white;">Claude AI Integration</h3>
+                <p>Get intelligent assistance for your research:</p>
+                <ul style="margin: 20px 0;">
+                    <li>Automatic text classification and dating</li>
+                    <li>Cross-linguistic pattern detection</li>
+                    <li>Research suggestions and insights</li>
+                    <li>Smart corpus recommendations</li>
+                </ul>
+                <button class="btn" style="background: white; color: #f5576c;" onclick="testAI()">
+                    Try AI Assistant
+                </button>
+            </div>
+            
+            <div class="modules-grid" style="margin-top: 30px;">
+                <div class="module">
+                    <h4>🧠 Text Classification</h4>
+                    <p>Automatically classify texts by period, genre, or dialect</p>
+                    <button class="btn btn-primary" onclick="aiFeature('classify')">Classify Texts</button>
+                </div>
+                
+                <div class="module">
+                    <h4>🔍 Pattern Detection</h4>
+                    <p>Find syntactic patterns and linguistic changes</p>
+                    <button class="btn btn-primary" onclick="aiFeature('patterns')">Detect Patterns</button>
+                </div>
+                
+                <div class="module">
+                    <h4>📊 Smart Analysis</h4>
+                    <p>Get AI-powered insights about your corpus</p>
+                    <button class="btn btn-primary" onclick="aiFeature('analyze')">Analyze Corpus</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Tab Content: GitHub -->
+        <div id="github" class="tab-content">
+            <h2>📁 GitHub Repository Management</h2>
+            
+            <div class="help-section" style="background: #e3f2fd; border-color: #90caf9;">
+                <h3 style="color: #1565c0;">🎯 Quick GitHub Setup</h3>
+                <ol style="text-align: left; max-width: 600px; margin: 20px auto; line-height: 2;">
+                    <li>Create main repository: <strong>AthensDiaLingCorpus</strong></li>
+                    <li>Enable GitHub Pages in Settings</li>
+                    <li>Upload this index.html file</li>
+                    <li>Your site will be live at: <code>https://[username].github.io/AthensDiaLingCorpus</code></li>
+                </ol>
+            </div>
+            
+            <h3>📂 Your Repositories</h3>
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <div class="tool-name">📚 AthensDiaCorpus</div>
+                    <div class="tool-description">Original corpus project</div>
+                    <a href="https://github.com/nlavidas/AthensDiaCorpus" class="tool-link">Open Repository →</a>
+                </div>
+                
+                <div class="tool-card">
+                    <div class="tool-name">🔍 LavidasParser</div>
+                    <div class="tool-description">Main parsing toolkit</div>
+                    <a href="https://github.com/nlavidas/LavidasParser" class="tool-link">Open Repository →</a>
+                </div>
+                
+                <div class="tool-card">
+                    <div class="tool-name">🆕 parserNEW</div>
+                    <div class="tool-description">Updated parser version</div>
+                    <a href="https://github.com/nlavidas/parserNEW" class="tool-link">Open Repository →</a>
+                </div>
+                
+                <div class="tool-card">
+                    <div class="tool-name">🌐 GlossaContactLab</div>
+                    <div class="tool-description">Language contact analysis</div>
+                    <a href="https://github.com/nlavidas/GlossaContactLab" class="tool-link">Open Repository →</a>
+                </div>
+                
+                <div class="tool-card">
+                    <div class="tool-name">🏗️ corpus-builder</div>
+                    <div class="tool-description">Corpus construction tools</div>
+                    <a href="https://github.com/nlavidas/corpus-builder" class="tool-link">Open Repository →</a>
+                </div>
+                
+                <div class="tool-card">
+                    <div class="tool-name">🏺 GreekProject</div>
+                    <div class="tool-description">Greek-specific tools</div>
+                    <a href="https://github.com/nlavidas/GreekProject" class="tool-link">Open Repository →</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Help Section -->
+        <div class="help-section" id="help">
+            <h3>💡 Remember: You're Doing Great!</h3>
+            <p>
+                • Each module works independently - no need to use everything<br>
+                • One small step is still progress<br>
+                • It's okay to take breaks<br>
+                • You can always ask for help<br>
+                • There's no "wrong" way to do research!
+            </p>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <div class="footer">
+        <h3>AthensDiaLingCorpus</h3>
+        <p>Athens Diachronic Linguistics Corpus © 2025</p>
+        <div class="footer-links">
+            <a href="https://github.com/nlavidas" class="footer-link">GitHub</a>
+            <a href="#" class="footer-link" onclick="showHelp()">Documentation</a>
+            <a href="#" class="footer-link" onclick="showContact()">Contact</a>
+            <a href="#" class="footer-link" onclick="showAbout()">About</a>
+        </div>
+    </div>
+    
+    <!-- Floating Help Button -->
+    <div class="floating-help" onclick="showQuickHelp()">
+        ?
+    </div>
+    
+    <script>
+        // Tab functionality
+        function showTab(tabName) {
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            document.querySelectorAll('.tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            
+            document.getElementById(tabName).classList.add('active');
+            event.target.classList.add('active');
+        }
+        
+        // Quick start actions
+        function quickStart(action) {
+            const messages = {
+                collect: `Let's collect a text! 📚\n\n1. Open Perseus Digital Library\n2. Find any text you like\n3. Copy it\n4. Save as .txt file\n\nThat's it! You've started your corpus!`,
+                parse: `Ready to parse! 🔍\n\n1. Take any text file\n2. Open LavidasParser\n3. Load your file\n4. Click "Parse"\n\nCongratulations! You're parsing!`,
+                analyze: `Quick analysis time! 📊\n\n1. Choose a parsed text\n2. Look for one pattern\n3. Write down what you notice\n\nEvery observation counts!`,
+                explore: `Just explore! 🌐\n\nClick around, read descriptions, imagine possibilities.\n\nLearning about tools is research too!`
+            };
+            
+            alert(messages[action]);
+        }
+        
+        // Open modules
+        function openModule(module) {
+            const urls = {
+                collector: 'https://github.com/nlavidas/corpus-builder',
+                parser: 'https://github.com/nlavidas/LavidasParser',
+                contact: 'https://github.com/nlavidas/GlossaContactLab',
+                proiel: 'https://github.com/nlavidas/proiel-text-processor',
+                greek: 'https://github.com/nlavidas/GreekProject'
+            };
+            
+            if (urls[module]) {
+                window.open(urls[module], '_blank');
+            } else {
+                alert(`Opening ${module} module... (This will connect to your local installation)`);
+            }
+        }
+        
+        // AI features
+        async function testAI() {
+            try {
+                if (window.claude && window.claude.complete) {
+                    const response = await window.claude.complete(`
+                        Provide encouraging advice for someone starting a diachronic corpus project.
+                        Focus on small, achievable steps. Be warm and supportive.
+                    `);
+                    alert("Claude AI says:\n\n" + response);
+                } else {
+                    alert("AI Assistant says:\n\nYou're starting something amazing! Begin with just one text - even a single paragraph counts. Every great corpus started with someone taking that first small step. You've got this! 🌟");
+                }
+            } catch (error) {
+                alert("AI features work best in the full Claude environment. For now, remember: You're doing great! Start with one tiny thing today. 💚");
+            }
+        }
+        
+        function aiFeature(feature) {
+            const features = {
+                classify: "Text classification will analyze your texts and automatically categorize them by period, genre, and dialect. Start with just one text!",
+                patterns: "Pattern detection will find recurring syntactic structures and track how they change over time. Even spotting one pattern is valuable!",
+                analyze: "Smart analysis will provide insights about your corpus, suggest related texts, and help you discover interesting research questions."
+            };
+            
+            alert(features[feature] || "This feature is coming soon!");
+        }
+        
+        // Help functions
+        function showQuickHelp() {
+            alert(`
+🌟 Quick Help
+
+Feeling overwhelmed? That's normal! Here's what to do:
+
+1. Take a deep breath
+2. Pick just ONE tab to explore
+3. Do ONE tiny thing (even reading counts!)
+4. Celebrate that achievement
+5. Come back tomorrow (or whenever)
+
+Remember: There's no rush, no deadlines, and no "wrong" way to explore.
+
+You're doing great just by being here! 💚
+            `);
+        }
+        
+        function showHelp() {
+            alert("Documentation is being prepared with love and care. For now, explore at your own pace!");
+        }
+        
+        function showContact() {
+            alert("Questions? Reach out through GitHub or take your time figuring things out - both are perfect!");
+        }
+        
+        function showAbout() {
+            alert("AthensDiaLingCorpus: A place where linguistic research meets compassionate design. Built for researchers who value both rigor and self-care. 💙");
+        }
+        
+        // Smooth scroll for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+        
+        // Welcome message
+        console.log(`
+Welcome to AthensDiaLingCorpus! 🏛️
+
+Remember:
+- You don't need to understand everything
+- One small action is enough for today
+- Taking breaks is part of the process
+- You're already succeeding by being here
+
+Happy researching! 💙
+        `);
+    </script>
+</body>
+</html>

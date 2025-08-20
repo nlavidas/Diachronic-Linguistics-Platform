@@ -1,0 +1,22 @@
+# Example Grafana dashboard provisioning for Diachronic Valency Corpus
+apiVersion: 1
+datasources:
+  - name: Postgres
+    type: postgres
+    access: proxy
+    url: db:5432
+    database: corpus
+    user: postgres
+    secureJsonData:
+      password: postgres
+    isDefault: true
+    jsonData:
+      sslmode: disable
+
+dashboards:
+  - name: Valency Patterns Overview
+    orgId: 1
+    folder: ''
+    type: file
+    options:
+      path: /var/lib/grafana/dashboards/valency_patterns.json
