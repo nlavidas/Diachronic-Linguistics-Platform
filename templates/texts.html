@@ -1,0 +1,161 @@
+{% extends "base.html" %}
+
+{% block title %}My Saved Texts{% endblock %}
+
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h2>
+        <i class="fas fa-database me-2"></i>My Saved Texts
+    </h2>
+    <a href="{{ url_for('index') }}" class="btn btn-primary">
+        <i class="fas fa-search me-2"></i>Search More Texts
+    </a>
+</div>
+
+{% if texts.items %}
+<div class="row">
+    {% for text in texts.items %}
+    <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card result-card h-100">
+            <div class="card-body">
+                <h5 class="card-title">{{ text.title }}</h5>
+                <p class="card-text">
+                    <strong>Authors:</strong> {{ text.authors or 'Unknown' }}<br>
+                    <strong>Source:</strong> {{ text.source or 'Unknown' }}<br>
+                    <strong>Language:</strong> {{ text.language or 'Unknown' }}<br>
+                    <strong>Added:</strong> {{ text.created_at.strftime('%Y-%m-%d') }}
+                </p>
+                <p class="card-text">
+                    <small class="text-muted">
+                        {{ text.abstract[:150] + '...' if text.abstract and text.abstract|length > 150 else text.abstract or 'No abstract available' }}
+                    </small>
+                </p>
+                <div class="d-flex flex-wrap gap-2 mb-3">
+                    <span class="stats-badge">
+                        <i class="fas fa-file-word me-1"></i>{{ text.word_count or 0 }} words
+                    </span>
+                    {% if text.readability_score %}
+                    <span class="stats-badge">
+                        <i class="fas fa-chart-line me-1"></i>Readability: {{ text.readability_score }}
+                    </span>
+                    {% endif %}
+                </div>
+                <div class="d-flex gap-2">
+                    <a href="{{ url_for('view_text', text_id=text.id) }}" class="btn btn-primary btn-sm">
+                        <i class="fas fa-eye me-1"></i>View
+                    </a>
+                    <button class="btn btn-outline-secondary btn-sm" onclick="reprocessText({{ text.id }})">
+                        <i class="fas fa-cog me-1"></i>Reprocess
+                    </button>
+                    {% if text.url %}
+                    <a href="{{ text.url }}" target="_blank" class="btn btn-outline-primary btn-sm">
+                        <i class="fas fa-external-link-alt me-1"></i>Source
+                    </a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+<!-- Pagination -->
+{% if texts.pages > 1 %}
+<nav aria-label="Text pagination">
+    <ul class="pagination justify-content-center">
+        {% if texts.has_prev %}
+        <li class="page-item">
+            <a class="page-link" href="{{ url_for('list_texts', page=texts.prev_num) }}">Previous</a>
+        </li>
+        {% endif %}
+        
+        {% for page_num in texts.iter_pages() %}
+            {% if page_num %}
+                {% if page_num != texts.page %}
+                <li class="page-item">
+                    <a class="page-link" href="{{ url_for('list_texts', page=page_num) }}">{{ page_num }}</a>
+                </li>
+                {% else %}
+                <li class="page-item active">
+                    <span class="page-link">{{ page_num }}</span>
+                </li>
+                {% endif %}
+            {% else %}
+            <li class="page-item disabled">
+                <span class="page-link">…</span>
+            </li>
+            {% endif %}
+        {% endfor %}
+        
+        {% if texts.has_next %}
+        <li class="page-item">
+            <a class="page-link" href="{{ url_for('list_texts', page=texts.next_num) }}">Next</a>
+        </li>
+        {% endif %}
+    </ul>
+</nav>
+{% endif %}
+
+{% else %}
+<div class="text-center py-5">
+    <i class="fas fa-database fa-3x text-muted mb-3"></i>
+    <h4 class="text-muted">No texts saved yet</h4>
+    <p class="text-muted">Start by searching for texts and saving them to your collection.</p>
+    <a href="{{ url_for('index') }}" class="btn btn-primary">
+        <i class="fas fa-search me-2"></i>Search for Texts
+    </a>
+</div>
+{% endif %}
+{% endblock %}
+
+{% block scripts %}
+<script>
+async function reprocessText(textId) {
+    try {
+        const response = await axios.post(`/preprocess/${textId}`);
+        
+        if (response.data.success) {
+            showSuccess('Text reprocessed successfully!');
+            // Reload the page to show updated data
+            setTimeout(() => {
+                window.location.reload();
+            }, 1000);
+        } else {
+            showError('Failed to reprocess text: ' + response.data.error);
+        }
+    } catch (error) {
+        showError('Error reprocessing text: ' + error.message);
+    }
+}
+
+function showSuccess(message) {
+    const alert = document.createElement('div');
+    alert.className = 'alert alert-success alert-dismissible fade show position-fixed';
+    alert.style.cssText = 'top: 20px; right: 20px; z-index: 9999; min-width: 300px;';
+    alert.innerHTML = `
+        ${message}
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    `;
+    document.body.appendChild(alert);
+    
+    setTimeout(() => {
+        alert.remove();
+    }, 5000);
+}
+
+function showError(message) {
+    const alert = document.createElement('div');
+    alert.className = 'alert alert-danger alert-dismissible fade show position-fixed';
+    alert.style.cssText = 'top: 20px; right: 20px; z-index: 9999; min-width: 300px;';
+    alert.innerHTML = `
+        ${message}
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    `;
+    document.body.appendChild(alert);
+    
+    setTimeout(() => {
+        alert.remove();
+    }, 5000);
+}
+</script>
+{% endblock %}
