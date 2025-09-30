@@ -1,0 +1,20 @@
+ai_providers:
+  ollama:
+    models:
+      - llama2
+      - mistral
+      - phi
+      - codellama
+      - neural-chat
+      
+  claude:
+    api_key: "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"  # Your key from previous chat
+    model: "claude-3-opus-20240229"
+    
+  gemini:
+    api_key: "AIzaSyCDx_02sPecmZfmGZmbljekOWgv5VV8uJk"  # From Google AI Studio
+    model: "gemini-pro"
+    
+  mistral:
+    api_key: "DDIiCkUB6x9pwsc5yobZAeXnUTuw9Xs8"  # From Mistral AI
+    model: "mistral-large-latest"
