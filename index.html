@@ -9,10 +9,10 @@
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         :root {
-            --primary: #1B5E20;
-            --primary-dark: #0d3d10;
-            --secondary: #2E7D32;
-            --accent: #4CAF50;
+            --primary: #0D47A1;
+            --primary-light: #1565C0;
+            --accent: #42A5F5;
+            --overlay-color: #0D47A1;
             --text-dark: #2d3748;
             --text-light: #718096;
             --bg-light: #E8F5E9;
@@ -22,7 +22,7 @@
         /* Password Protection */
         .password-overlay {
             position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-            background: linear-gradient(135deg, rgba(27,94,32,0.97) 0%, rgba(46,125,50,0.97) 100%);
+            background: linear-gradient(135deg, rgba(13, 71, 161, 0.95) 0%, rgba(21, 101, 192, 0.98) 100%);
             z-index: 20000; display: flex; align-items: center; justify-content: center;
         }
         .password-box {
@@ -46,7 +46,8 @@
         
         /* Hero */
         .hero {
-            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            background: linear-gradient(135deg, rgba(13, 71, 161, 0.85) 0%, rgba(21, 101, 192, 0.85) 100%),
+                        url('https://images.pexels.com/photos/1370295/pexels-photo-1370295.jpeg?auto=compress&cs=tinysrgb&w=1920') center/cover;
             color: white; padding: 8rem 2rem 6rem; text-align: center;
         }
         .hero h1 { font-size: 3rem; font-weight: 900; margin-bottom: 1rem; letter-spacing: -1px; }
