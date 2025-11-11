@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diachronic Linguistics Platform | Computational Corpus Research</title>
+    <meta name="description" content="Open-source platform for diachronic linguistic analysis. Comprehensive corpus collection, preprocessing, and AI-powered analysis of Indo-European languages.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --primary: #667eea;
+            --primary-dark: #5568d3;
+            --secondary: #764ba2;
+            --accent: #27ae60;
+            --text-dark: #2d3748;
+            --text-light: #718096;
+            --bg-light: #f7fafc;
+        }
+        body { font-family: 'Inter', sans-serif; color: var(--text-dark); line-height: 1.6; }
+        
+        /* Password Protection */
+        .password-overlay {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: linear-gradient(135deg, rgba(102,126,234,0.97) 0%, rgba(118,75,162,0.97) 100%);
+            z-index: 20000; display: flex; align-items: center; justify-content: center;
+        }
+        .password-box {
+            background: white; padding: 3rem; border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3); max-width: 400px; width: 90%; text-align: center;
+        }
+        .password-box h2 { color: var(--primary); margin-bottom: 1rem; font-size: 1.8rem; }
+        .password-box p { color: #666; margin-bottom: 2rem; font-size: 0.95rem; }
+        .password-box input {
+            width: 100%; padding: 1rem; border: 2px solid #e0e0e0; border-radius: 10px;
+            font-size: 1rem; margin-bottom: 1rem;
+        }
+        .password-box input:focus { outline: none; border-color: var(--primary); }
+        .password-box button {
+            width: 100%; padding: 1rem; background: var(--primary); color: white;
+            border: none; border-radius: 10px; font-size: 1rem; font-weight: 600; cursor: pointer;
+        }
+        .password-box button:hover { background: var(--primary-dark); }
+        .password-error { color: #d32f2f; font-size: 0.9rem; margin-top: 1rem; display: none; }
+        .password-overlay.hidden { display: none; }
+        
+        /* Hero */
+        .hero {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white; padding: 8rem 2rem 6rem; text-align: center;
+        }
+        .hero h1 { font-size: 3rem; font-weight: 900; margin-bottom: 1rem; letter-spacing: -1px; }
+        .hero .subtitle { font-size: 1.4rem; opacity: 0.95; margin-bottom: 2rem; }
+        .hero .cta-btn {
+            display: inline-block; background: white; color: var(--primary);
+            padding: 1.2rem 3rem; border-radius: 50px; font-weight: 700;
+            text-decoration: none; transition: transform 0.3s;
+        }
+        .hero .cta-btn:hover { transform: translateY(-3px); }
+        
+        /* Container */
+        .container { max-width: 1200px; margin: 0 auto; padding: 4rem 2rem; }
+        .section { margin-bottom: 4rem; }
+        .section-title { font-size: 2rem; font-weight: 800; color: var(--primary); margin-bottom: 1.5rem; }
+        
+        /* Cards */
+        .phase-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem; margin: 3rem 0;
+        }
+        .phase-card {
+            background: var(--bg-light); border-radius: 16px; padding: 2rem;
+            border-left: 4px solid var(--primary);
+        }
+        .phase-card h3 { color: var(--primary); margin-bottom: 1rem; }
+        .phase-status {
+            display: inline-block; padding: 0.3rem 1rem; border-radius: 20px;
+            font-size: 0.85rem; font-weight: 600; margin-top: 0.5rem;
+        }
+        .status-complete { background: #d4edda; color: #155724; }
+        .status-progress { background: #fff3cd; color: #856404; }
+        .status-planned { background: #f8d7da; color: #721c24; }
+        
+        /* Footer */
+        footer {
+            background: var(--text-dark); color: white;
+            padding: 3rem 2rem; text-align: center;
+        }
+        footer a { color: var(--accent); text-decoration: none; }
+        
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Password Protection -->
+    <div class="password-overlay" id="passwordOverlay">
+        <div class="password-box">
+            <h2>🔐 Secure Access</h2>
+            <p>Diachronic Linguistics Platform</p>
+            <input type="password" id="passwordInput" placeholder="Enter access code" onkeypress="if(event.key==='Enter')checkPassword()">
+            <button onclick="checkPassword()">Access Platform</button>
+            <div class="password-error" id="passwordError">Incorrect password</div>
+        </div>
+    </div>
+
+    <!-- Hero -->
+    <section class="hero">
+        <h1>Diachronic Linguistics Platform</h1>
+        <div class="subtitle">Computational Corpus Research & AI-Powered Analysis</div>
+        <a href="web/dashboard_data/progress_dashboard.html" class="cta-btn">View Dashboard →</a>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- About -->
+        <section class="section">
+            <h2 class="section-title">Project Overview</h2>
+            <p style="font-size: 1.1rem; line-height: 1.8;">
+                A comprehensive, <strong>open-source platform</strong> for diachronic linguistic analysis. 
+                The project collects, preprocesses, and analyzes a large corpus of influential texts across 
+                multiple Indo-European languages and chronological periods, with a primary focus on 
+                <strong>verb valency and argument structure</strong>.
+            </p>
+        </section>
+
+        <!-- Project Phases -->
+        <h2 class="section-title">Development Phases</h2>
+        <div class="phase-grid">
+            <div class="phase-card">
+                <h3>Phase 1: Foundation</h3>
+                <p>Portable Python environment and unified GitHub repository</p>
+                <span class="phase-status status-complete">✓ COMPLETED</span>
+            </div>
+            
+            <div class="phase-card">
+                <h3>Phase 2: Data Acquisition</h3>
+                <p>MEGA Scraper Agent for text collection from Project Gutenberg, Perseus, Internet Archive</p>
+                <span class="phase-status status-progress">🔄 IN PROGRESS</span>
+            </div>
+            
+            <div class="phase-card">
+                <h3>Phase 3: Quality Control</h3>
+                <p>Gatekeeper Agent for validation and error detection</p>
+                <span class="phase-status status-planned">📋 PLANNED</span>
+            </div>
+            
+            <div class="phase-card">
+                <h3>Phase 4: AI Preprocessing</h3>
+                <p>PROIEL Engine for linguistic analysis: tokenization, lemmatization, morphology, dependency parsing</p>
+                <span class="phase-status status-progress">🔄 IN PROGRESS</span>
+            </div>
+            
+            <div class="phase-card">
+                <h3>Phase 5: Structured Storage</h3>
+                <p>Unified SQLite database for all harmonized linguistic data</p>
+                <span class="phase-status status-progress">🔄 IN PROGRESS</span>
+            </div>
+            
+            <div class="phase-card">
+                <h3>Phase 6: Digital Tools Platform</h3>
+                <p>Streamlit-based interactive interface for browsing and analyzing the corpus</p>
+                <span class="phase-status status-progress">🔄 IN PROGRESS</span>
+            </div>
+        </div>
+
+        <!-- Tech Stack -->
+        <section class="section">
+            <h2 class="section-title">Technology Stack</h2>
+            <div style="background: var(--bg-light); padding: 2rem; border-radius: 16px;">
+                <ul style="list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+                    <li>🐍 <strong>Python</strong> - Core language</li>
+                    <li>🔧 <strong>PROIEL</strong> - Parsing framework</li>
+                    <li>📊 <strong>Streamlit</strong> - Web interface</li>
+                    <li>🗄️ <strong>SQLite</strong> - Database</li>
+                    <li>🤖 <strong>AI/ML</strong> - NLP analysis</li>
+                    <li>📚 <strong>CoNLL-U</strong> - Data format</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Links -->
+        <section class="section">
+            <h2 class="section-title">Resources</h2>
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                <a href="web/dashboard_data/progress_dashboard.html" style="background: var(--primary); color: white; padding: 1rem 2rem; border-radius: 10px; text-decoration: none; font-weight: 600;">
+                    📊 Progress Dashboard
+                </a>
+                <a href="https://github.com/nlavidas/Diachronic-Linguistics-Platform" target="_blank" style="background: var(--text-dark); color: white; padding: 1rem 2rem; border-radius: 10px; text-decoration: none; font-weight: 600;">
+                    💻 GitHub Repository
+                </a>
+                <a href="https://athdgc.github.io/" target="_blank" style="background: var(--accent); color: white; padding: 1rem 2rem; border-radius: 10px; text-decoration: none; font-weight: 600;">
+                    🏛️ AthDGC Network
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Diachronic Linguistics Platform | Prof. Nikolaos Lavidas</p>
+        <p style="margin-top: 1rem;">
+            <a href="https://athdgc.github.io/">AthDGC Research Network</a> | 
+            <a href="https://github.com/nlavidas/Diachronic-Linguistics-Platform">GitHub</a>
+        </p>
+    </footer>
+
+    <script>
+        const VALID_PASSWORDS = ['nlavi112278'];
+        function checkPassword() {
+            const input = document.getElementById('passwordInput').value;
+            if (VALID_PASSWORDS.includes(input.toLowerCase())) {
+                sessionStorage.setItem('dlp_authenticated', 'true');
+                document.getElementById('passwordOverlay').classList.add('hidden');
+                document.getElementById('passwordError').style.display = 'none';
+            } else {
+                document.getElementById('passwordError').style.display = 'block';
+                document.getElementById('passwordInput').value = '';
+                document.getElementById('passwordInput').focus();
+            }
+        }
+        if (sessionStorage.getItem('dlp_authenticated') === 'true') {
+            document.getElementById('passwordOverlay').classList.add('hidden');
+        }
+    </script>
+</body>
+</html>
