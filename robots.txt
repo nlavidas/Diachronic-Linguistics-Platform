@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nlavidas.github.io/Diachronic-Linguistics-Platform/sitemap.xml
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
