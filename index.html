@@ -94,17 +94,6 @@
     </style>
 </head>
 <body>
-    <!-- Password Protection -->
-    <div class="password-overlay" id="passwordOverlay">
-        <div class="password-box">
-            <h2>🔐 Secure Access</h2>
-            <p>Diachronic Linguistics Platform</p>
-            <input type="password" id="passwordInput" placeholder="Enter access code" onkeypress="if(event.key==='Enter')checkPassword()">
-            <button onclick="checkPassword()">Access Platform</button>
-            <div class="password-error" id="passwordError">Incorrect password</div>
-        </div>
-    </div>
-
     <!-- Hero -->
     <section class="hero">
         <h1>Diachronic Linguistics Platform</h1>
@@ -206,23 +195,5 @@
         </p>
     </footer>
 
-    <script>
-        const VALID_PASSWORDS = ['nlavi112278'];
-        function checkPassword() {
-            const input = document.getElementById('passwordInput').value;
-            if (VALID_PASSWORDS.includes(input.toLowerCase())) {
-                sessionStorage.setItem('dlp_authenticated', 'true');
-                document.getElementById('passwordOverlay').classList.add('hidden');
-                document.getElementById('passwordError').style.display = 'none';
-            } else {
-                document.getElementById('passwordError').style.display = 'block';
-                document.getElementById('passwordInput').value = '';
-                document.getElementById('passwordInput').focus();
-            }
-        }
-        if (sessionStorage.getItem('dlp_authenticated') === 'true') {
-            document.getElementById('passwordOverlay').classList.add('hidden');
-        }
-    </script>
 </body>
 </html>
