@@ -1,0 +1,175 @@
+{
+  "metadata": {
+    "source": "gutenberg",
+    "language": "la",
+    "title": "Caesar Gallic Wars",
+    "author": "Julius Caesar",
+    "text": "Gallia est omnis divisa in partes tres",
+    "collected_date": "2025-11-12T22:43:32.430761",
+    "gutenberg_id": "caesar_gallic_wars"
+  },
+  "lemmatized": [
+    {
+      "id": 1,
+      "text": "Gallia est omnis divisa in partes tres",
+      "tokens": [
+        {
+          "id": 1,
+          "form": "Gallia",
+          "lemma": "gallia",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "root"
+        },
+        {
+          "id": 2,
+          "form": "est",
+          "lemma": "est",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        },
+        {
+          "id": 3,
+          "form": "omnis",
+          "lemma": "omnis",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        },
+        {
+          "id": 4,
+          "form": "divisa",
+          "lemma": "divisa",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        },
+        {
+          "id": 5,
+          "form": "in",
+          "lemma": "in",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        },
+        {
+          "id": 6,
+          "form": "partes",
+          "lemma": "partes",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        },
+        {
+          "id": 7,
+          "form": "tres",
+          "lemma": "tres",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        }
+      ]
+    }
+  ],
+  "parsed": [
+    {
+      "id": 1,
+      "text": "Gallia est omnis divisa in partes tres",
+      "tokens": [
+        {
+          "id": 1,
+          "form": "Gallia",
+          "lemma": "gallia",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "root"
+        },
+        {
+          "id": 2,
+          "form": "est",
+          "lemma": "est",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        },
+        {
+          "id": 3,
+          "form": "omnis",
+          "lemma": "omnis",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        },
+        {
+          "id": 4,
+          "form": "divisa",
+          "lemma": "divisa",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        },
+        {
+          "id": 5,
+          "form": "in",
+          "lemma": "in",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        },
+        {
+          "id": 6,
+          "form": "partes",
+          "lemma": "partes",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        },
+        {
+          "id": 7,
+          "form": "tres",
+          "lemma": "tres",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        }
+      ],
+      "dependencies": []
+    }
+  ],
+  "valency_patterns": [],
+  "statistics": {
+    "token_count": 7,
+    "sentence_count": 1,
+    "pattern_count": 0
+  },
+  "processed_date": "2025-11-12T22:43:32.849950"
+}

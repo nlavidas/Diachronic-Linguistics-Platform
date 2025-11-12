@@ -1,0 +1,195 @@
+{
+  "metadata": {
+    "source": "proiel",
+    "language": "grc",
+    "title": "Greek New Testament - Matthew",
+    "author": "Various",
+    "text": "Βίβλος γενέσεως Ἰησοῦ Χριστοῦ υἱοῦ Δαυὶδ υἱοῦ Ἀβραάμ",
+    "proiel_xml": "<proiel-text></proiel-text>",
+    "collected_date": "2025-11-12T22:43:32.661618"
+  },
+  "lemmatized": [
+    {
+      "id": 1,
+      "text": "Βίβλος γενέσεως Ἰησοῦ Χριστοῦ υἱοῦ Δαυὶδ υἱοῦ Ἀβραάμ",
+      "tokens": [
+        {
+          "id": 1,
+          "form": "Βίβλος",
+          "lemma": "βίβλος",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "root"
+        },
+        {
+          "id": 2,
+          "form": "γενέσεως",
+          "lemma": "γενέσεως",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        },
+        {
+          "id": 3,
+          "form": "Ἰησοῦ",
+          "lemma": "ἰησοῦ",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        },
+        {
+          "id": 4,
+          "form": "Χριστοῦ",
+          "lemma": "χριστοῦ",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        },
+        {
+          "id": 5,
+          "form": "υἱοῦ",
+          "lemma": "υἱοῦ",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        },
+        {
+          "id": 6,
+          "form": "Δαυὶδ",
+          "lemma": "δαυὶδ",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        },
+        {
+          "id": 7,
+          "form": "υἱοῦ",
+          "lemma": "υἱοῦ",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        },
+        {
+          "id": 8,
+          "form": "Ἀβραάμ",
+          "lemma": "ἀβραάμ",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        }
+      ]
+    }
+  ],
+  "parsed": [
+    {
+      "id": 1,
+      "text": "Βίβλος γενέσεως Ἰησοῦ Χριστοῦ υἱοῦ Δαυὶδ υἱοῦ Ἀβραάμ",
+      "tokens": [
+        {
+          "id": 1,
+          "form": "Βίβλος",
+          "lemma": "βίβλος",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "root"
+        },
+        {
+          "id": 2,
+          "form": "γενέσεως",
+          "lemma": "γενέσεως",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        },
+        {
+          "id": 3,
+          "form": "Ἰησοῦ",
+          "lemma": "ἰησοῦ",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        },
+        {
+          "id": 4,
+          "form": "Χριστοῦ",
+          "lemma": "χριστοῦ",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        },
+        {
+          "id": 5,
+          "form": "υἱοῦ",
+          "lemma": "υἱοῦ",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        },
+        {
+          "id": 6,
+          "form": "Δαυὶδ",
+          "lemma": "δαυὶδ",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        },
+        {
+          "id": 7,
+          "form": "υἱοῦ",
+          "lemma": "υἱοῦ",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        },
+        {
+          "id": 8,
+          "form": "Ἀβραάμ",
+          "lemma": "ἀβραάμ",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        }
+      ],
+      "dependencies": []
+    }
+  ],
+  "valency_patterns": [],
+  "statistics": {
+    "token_count": 8,
+    "sentence_count": 1,
+    "pattern_count": 0
+  },
+  "processed_date": "2025-11-12T22:43:33.169465"
+}

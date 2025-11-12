@@ -1,0 +1,255 @@
+{
+  "metadata": {
+    "source": "gutenberg",
+    "language": "grc",
+    "title": "Homer Iliad Book 1",
+    "author": "Homer",
+    "text": "μῆνιν ἄειδε θεὰ Πηληϊάδεω Ἀχιλῆος οὐλομένην, ἣ μυρί᾽ Ἀχαιοῖς ἄλγε᾽ ἔθηκε",
+    "collected_date": "2025-11-12T22:43:30.846491",
+    "gutenberg_id": "homer_iliad_1"
+  },
+  "lemmatized": [
+    {
+      "id": 1,
+      "text": "μῆνιν ἄειδε θεὰ Πηληϊάδεω Ἀχιλῆος οὐλομένην, ἣ μυρί᾽ Ἀχαιοῖς ἄλγε᾽ ἔθηκε",
+      "tokens": [
+        {
+          "id": 1,
+          "form": "μῆνιν",
+          "lemma": "μῆνιν",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "root"
+        },
+        {
+          "id": 2,
+          "form": "ἄειδε",
+          "lemma": "ἄειδε",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        },
+        {
+          "id": 3,
+          "form": "θεὰ",
+          "lemma": "θεὰ",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        },
+        {
+          "id": 4,
+          "form": "Πηληϊάδεω",
+          "lemma": "πηληϊάδεω",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        },
+        {
+          "id": 5,
+          "form": "Ἀχιλῆος",
+          "lemma": "ἀχιλῆος",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        },
+        {
+          "id": 6,
+          "form": "οὐλομένην,",
+          "lemma": "οὐλομένην,",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        },
+        {
+          "id": 7,
+          "form": "ἣ",
+          "lemma": "ἣ",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        },
+        {
+          "id": 8,
+          "form": "μυρί᾽",
+          "lemma": "μυρί᾽",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        },
+        {
+          "id": 9,
+          "form": "Ἀχαιοῖς",
+          "lemma": "ἀχαιοῖς",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        },
+        {
+          "id": 10,
+          "form": "ἄλγε᾽",
+          "lemma": "ἄλγε᾽",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        },
+        {
+          "id": 11,
+          "form": "ἔθηκε",
+          "lemma": "ἔθηκε",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        }
+      ]
+    }
+  ],
+  "parsed": [
+    {
+      "id": 1,
+      "text": "μῆνιν ἄειδε θεὰ Πηληϊάδεω Ἀχιλῆος οὐλομένην, ἣ μυρί᾽ Ἀχαιοῖς ἄλγε᾽ ἔθηκε",
+      "tokens": [
+        {
+          "id": 1,
+          "form": "μῆνιν",
+          "lemma": "μῆνιν",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "root"
+        },
+        {
+          "id": 2,
+          "form": "ἄειδε",
+          "lemma": "ἄειδε",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        },
+        {
+          "id": 3,
+          "form": "θεὰ",
+          "lemma": "θεὰ",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        },
+        {
+          "id": 4,
+          "form": "Πηληϊάδεω",
+          "lemma": "πηληϊάδεω",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        },
+        {
+          "id": 5,
+          "form": "Ἀχιλῆος",
+          "lemma": "ἀχιλῆος",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        },
+        {
+          "id": 6,
+          "form": "οὐλομένην,",
+          "lemma": "οὐλομένην,",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        },
+        {
+          "id": 7,
+          "form": "ἣ",
+          "lemma": "ἣ",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        },
+        {
+          "id": 8,
+          "form": "μυρί᾽",
+          "lemma": "μυρί᾽",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        },
+        {
+          "id": 9,
+          "form": "Ἀχαιοῖς",
+          "lemma": "ἀχαιοῖς",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        },
+        {
+          "id": 10,
+          "form": "ἄλγε᾽",
+          "lemma": "ἄλγε᾽",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        },
+        {
+          "id": 11,
+          "form": "ἔθηκε",
+          "lemma": "ἔθηκε",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        }
+      ],
+      "dependencies": []
+    }
+  ],
+  "valency_patterns": [],
+  "statistics": {
+    "token_count": 11,
+    "sentence_count": 1,
+    "pattern_count": 0
+  },
+  "processed_date": "2025-11-12T22:43:32.855538"
+}

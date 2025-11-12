@@ -1,0 +1,255 @@
+{
+  "metadata": {
+    "source": "perseus",
+    "language": "grc",
+    "title": "Plato Apology",
+    "author": "Plato",
+    "text": "Ὅτι μὲν ὑμεῖς, ὦ ἄνδρες Ἀθηναῖοι, πεπόνθατε ὑπὸ τῶν ἐμῶν κατηγόρων",
+    "collected_date": "2025-11-12T22:43:32.252400",
+    "perseus_id": "plato_apology"
+  },
+  "lemmatized": [
+    {
+      "id": 1,
+      "text": "Ὅτι μὲν ὑμεῖς, ὦ ἄνδρες Ἀθηναῖοι, πεπόνθατε ὑπὸ τῶν ἐμῶν κατηγόρων",
+      "tokens": [
+        {
+          "id": 1,
+          "form": "Ὅτι",
+          "lemma": "ὅτι",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "root"
+        },
+        {
+          "id": 2,
+          "form": "μὲν",
+          "lemma": "μὲν",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        },
+        {
+          "id": 3,
+          "form": "ὑμεῖς,",
+          "lemma": "ὑμεῖς,",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        },
+        {
+          "id": 4,
+          "form": "ὦ",
+          "lemma": "ὦ",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        },
+        {
+          "id": 5,
+          "form": "ἄνδρες",
+          "lemma": "ἄνδρες",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        },
+        {
+          "id": 6,
+          "form": "Ἀθηναῖοι,",
+          "lemma": "ἀθηναῖοι,",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        },
+        {
+          "id": 7,
+          "form": "πεπόνθατε",
+          "lemma": "πεπόνθατε",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        },
+        {
+          "id": 8,
+          "form": "ὑπὸ",
+          "lemma": "ὑπὸ",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        },
+        {
+          "id": 9,
+          "form": "τῶν",
+          "lemma": "τῶν",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        },
+        {
+          "id": 10,
+          "form": "ἐμῶν",
+          "lemma": "ἐμῶν",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        },
+        {
+          "id": 11,
+          "form": "κατηγόρων",
+          "lemma": "κατηγόρων",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        }
+      ]
+    }
+  ],
+  "parsed": [
+    {
+      "id": 1,
+      "text": "Ὅτι μὲν ὑμεῖς, ὦ ἄνδρες Ἀθηναῖοι, πεπόνθατε ὑπὸ τῶν ἐμῶν κατηγόρων",
+      "tokens": [
+        {
+          "id": 1,
+          "form": "Ὅτι",
+          "lemma": "ὅτι",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "root"
+        },
+        {
+          "id": 2,
+          "form": "μὲν",
+          "lemma": "μὲν",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        },
+        {
+          "id": 3,
+          "form": "ὑμεῖς,",
+          "lemma": "ὑμεῖς,",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        },
+        {
+          "id": 4,
+          "form": "ὦ",
+          "lemma": "ὦ",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        },
+        {
+          "id": 5,
+          "form": "ἄνδρες",
+          "lemma": "ἄνδρες",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        },
+        {
+          "id": 6,
+          "form": "Ἀθηναῖοι,",
+          "lemma": "ἀθηναῖοι,",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        },
+        {
+          "id": 7,
+          "form": "πεπόνθατε",
+          "lemma": "πεπόνθατε",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        },
+        {
+          "id": 8,
+          "form": "ὑπὸ",
+          "lemma": "ὑπὸ",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        },
+        {
+          "id": 9,
+          "form": "τῶν",
+          "lemma": "τῶν",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        },
+        {
+          "id": 10,
+          "form": "ἐμῶν",
+          "lemma": "ἐμῶν",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        },
+        {
+          "id": 11,
+          "form": "κατηγόρων",
+          "lemma": "κατηγόρων",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        }
+      ],
+      "dependencies": []
+    }
+  ],
+  "valency_patterns": [],
+  "statistics": {
+    "token_count": 11,
+    "sentence_count": 1,
+    "pattern_count": 0
+  },
+  "processed_date": "2025-11-12T22:43:33.041007"
+}

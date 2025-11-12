@@ -1,0 +1,175 @@
+{
+  "metadata": {
+    "source": "proiel",
+    "language": "la",
+    "title": "Latin Vulgate - Genesis",
+    "author": "Jerome",
+    "text": "In principio creavit Deus caelum et terram",
+    "proiel_xml": "<proiel-text></proiel-text>",
+    "collected_date": "2025-11-12T22:43:32.732891"
+  },
+  "lemmatized": [
+    {
+      "id": 1,
+      "text": "In principio creavit Deus caelum et terram",
+      "tokens": [
+        {
+          "id": 1,
+          "form": "In",
+          "lemma": "in",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "root"
+        },
+        {
+          "id": 2,
+          "form": "principio",
+          "lemma": "principio",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        },
+        {
+          "id": 3,
+          "form": "creavit",
+          "lemma": "creavit",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        },
+        {
+          "id": 4,
+          "form": "Deus",
+          "lemma": "deus",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        },
+        {
+          "id": 5,
+          "form": "caelum",
+          "lemma": "caelum",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        },
+        {
+          "id": 6,
+          "form": "et",
+          "lemma": "et",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        },
+        {
+          "id": 7,
+          "form": "terram",
+          "lemma": "terram",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        }
+      ]
+    }
+  ],
+  "parsed": [
+    {
+      "id": 1,
+      "text": "In principio creavit Deus caelum et terram",
+      "tokens": [
+        {
+          "id": 1,
+          "form": "In",
+          "lemma": "in",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "root"
+        },
+        {
+          "id": 2,
+          "form": "principio",
+          "lemma": "principio",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        },
+        {
+          "id": 3,
+          "form": "creavit",
+          "lemma": "creavit",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        },
+        {
+          "id": 4,
+          "form": "Deus",
+          "lemma": "deus",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        },
+        {
+          "id": 5,
+          "form": "caelum",
+          "lemma": "caelum",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        },
+        {
+          "id": 6,
+          "form": "et",
+          "lemma": "et",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        },
+        {
+          "id": 7,
+          "form": "terram",
+          "lemma": "terram",
+          "upos": "NOUN",
+          "xpos": "_",
+          "feats": "_",
+          "head": 0,
+          "deprel": "dep"
+        }
+      ],
+      "dependencies": []
+    }
+  ],
+  "valency_patterns": [],
+  "statistics": {
+    "token_count": 7,
+    "sentence_count": 1,
+    "pattern_count": 0
+  },
+  "processed_date": "2025-11-12T22:43:33.310987"
+}

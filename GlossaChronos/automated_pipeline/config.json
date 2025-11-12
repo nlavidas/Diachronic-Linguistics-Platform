@@ -1,0 +1,75 @@
+{
+  "system_name": "Diachronic Linguistics Platform v2.0",
+  "configuration_version": "1.0",
+  "created": "2025-11-12T23:13:00",
+  "systems_enabled": {
+    "text_collector": true,
+    "ai_annotator": true,
+    "continuous_trainer": true,
+    "quality_validator": true,
+    "diachronic_analyzer": true,
+    "enhanced_parser": true,
+    "format_exporter": true,
+    "master_orchestrator": true
+  },
+  "text_collection": {
+    "enabled_sources": {
+      "gutenberg": true,
+      "first1kgreek": true,
+      "wikisource": false,
+      "perseus": false,
+      "proiel": true
+    },
+    "limits": {
+      "gutenberg_limit": 10,
+      "first1k_limit": 10,
+      "wikisource_limit": 5
+    }
+  },
+  "ai_annotation": {
+    "preferred_llm": "ollama_local",
+    "fallback_enabled": true,
+    "cost_limit_per_session": 1.0
+  },
+  "training": {
+    "enabled": true,
+    "epochs_per_session": 2,
+    "use_gpu": false
+  },
+  "validation": {
+    "minimum_quality_score": 60.0,
+    "strict_mode": false
+  },
+  "diachronic_analysis": {
+    "detect_novel_shifts": true,
+    "minimum_frequency": 5
+  },
+  "parsing": {
+    "language_models": {
+      "grc": true,
+      "la": true,
+      "en": true
+    }
+  },
+  "export": {
+    "formats": {
+      "conllu": true,
+      "proiel": true,
+      "penn": false,
+      "json": true,
+      "text": true
+    }
+  },
+  "all_night_mode": {
+    "enabled": true,
+    "cycle_interval_minutes": 30,
+    "max_cycles": 30,
+    "generate_reports": true,
+    "save_checkpoints": true
+  },
+  "logging": {
+    "level": "INFO",
+    "save_to_file": true,
+    "console_output": true
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "start_time": "2025-11-12T23:18:58.693031",
+  "cycles_completed": 10,
+  "total_tests": 80,
+  "passed": 61,
+  "failed": 19,
+  "errors": [
+    "System 2: ",
+    "System 1: No texts collected",
+    "System 2: ",
+    "System 1: No texts collected",
+    "System 2: ",
+    "System 1: No texts collected",
+    "System 2: ",
+    "System 1: No texts collected",
+    "System 2: ",
+    "System 1: No texts collected",
+    "System 2: ",
+    "System 1: No texts collected",
+    "System 2: ",
+    "System 1: No texts collected",
+    "System 2: ",
+    "System 1: No texts collected",
+    "System 2: ",
+    "System 1: No texts collected",
+    "System 2: "
+  ],
+  "system_status": {}
+}
