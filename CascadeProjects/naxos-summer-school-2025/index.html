@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11th Naxos Summer School on Diachronic Linguistics 2026</title>
+    <meta name="description"
+        content="Intensive summer school on Historical & Diachronic Linguistics, July 20-25, 2026, Naxos, Greece. Organized by National and Kapodistrian University of Athens.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="images.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #1565C0;
+            --primary-light: #1976D2;
+            --accent: #2196F3;
+            --text-dark: #1f2937;
+            --text-light: #6b7280;
+            --bg-light: #E3F2FD;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: rgba(13, 71, 161, 0.9),
+                url('https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?w=1920&q=80') center/cover;
+            color: white;
+            padding: 8rem 2rem 6rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 900;
+            margin-bottom: 1rem;
+            letter-spacing: -1px;
+        }
+
+        .hero .subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+
+        .hero .dates {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+        }
+
+        .hero .apply-btn {
+            display: inline-block;
+            background: white;
+            color: var(--primary);
+            padding: 1.2rem 3rem;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            text-decoration: none;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .hero .apply-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 4rem;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+        }
+
+        .section-content {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--text-dark);
+        }
+
+        /* Info Cards */
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .info-card {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            border: 1px solid #e0e0e0;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .info-card h3 {
+            color: var(--primary);
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .info-card p {
+            color: var(--text-dark);
+            line-height: 1.7;
+        }
+
+        /* Highlights */
+        .highlights {
+            background: #f0f9ff;
+            border: 2px solid #bae6fd;
+            border-radius: 20px;
+            padding: 3rem;
+            margin: 3rem 0;
+        }
+
+        .highlights ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .highlights li {
+            padding: 1rem 0;
+            padding-left: 2rem;
+            position: relative;
+            font-size: 1.1rem;
+        }
+
+        .highlights li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-weight: bold;
+            font-size: 1.3rem;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: var(--primary);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+            border-radius: 20px;
+            margin: 4rem 0;
+        }
+
+        .cta-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .cta-section .cta-btn {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            padding: 1.2rem 3rem;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.2rem;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .cta-section .cta-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--text-dark);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        footer a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero .subtitle {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html">Naxos Summer School 2025</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="program.html">Program</a></li>
+                <li><a href="speakers.html">Speakers</a></li>
+                <li><a href="registration.html">Registration</a></li>
+                <li><a href="venue.html">Venue</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>11th Naxos Summer School</h1>
+        <div class="subtitle">Diachronic Linguistics: Comparing Diachronies</div>
+        <div class="dates">July 20-25, 2025 | Naxos, Greece</div>
+        <a href="https://forms.gle/1GuNGaHsmVNAE4bx9" class="apply-btn" target="_blank">APPLY NOW</a>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- About Section -->
+        <section class="section">
+            <h2 class="section-title">About the Summer School</h2>
+            <div class="section-content">
+                <p>
+                    The <strong>National and Kapodistrian University of Athens</strong>, in collaboration with
+                    <strong>Arizona State University</strong>, <strong>University of Osnabrück</strong>, and
+                    <strong>University of Cambridge</strong>, coordinates a summer school program, workshop/poster
+                    session,
+                    and master classes on ancient and medieval languages and linguistics.
+                </p>
+                <p style="margin-top: 1.5rem;">
+                    The summer school will offer intensive language classes and linguistic classes on Historical &
+                    Diachronic Linguistics. The aim is to attract students and scholars to study ancient and medieval
+                    languages in a relaxed yet focused and stimulating atmosphere that promotes in-depth analysis and
+                    discussion.
+                </p>
+            </div>
+        </section>
+
+        <!-- Key Information -->
+        <div class="info-grid">
+            <div class="info-card">
+                <h3>Credits</h3>
+                <p>Students will be able to earn up to <strong>6 ECTS</strong> from the summer school.</p>
+                <p style="margin-top: 0.5rem; font-size: 0.9rem;">ECTS approval: 8-2-2021 (law: a90.4692/2020)</p>
+            </div>
+
+            <div class="info-card">
+                <h3>Location</h3>
+                <p><strong>Naxos Island</strong>, Cyclades, Greece</p>
+                <p style="margin-top: 0.5rem;">A beautiful Aegean island offering the perfect setting for focused
+                    academic work and cultural immersion.</p>
+            </div>
+
+            <div class="info-card">
+                <h3>Collaboration</h3>
+                <p>Coordinated with the <strong>CIVIS Course</strong> "Diachronic Linguistics in the 21st century"</p>
+                <p style="margin-top: 0.5rem;"><a
+                        href="https://civis.eu/en/learn/civis-courses/diachronic-linguistics-in-the-21st-century"
+                        target="_blank" style="color: var(--primary);">Learn more →</a></p>
+            </div>
+        </div>
+
+        <!-- Naxos Island Images -->
+        <section class="section">
+            <h2 class="section-title">The Naxos Experience</h2>
+            <div class="image-grid">
+                <div class="image-card">
+                    <img src="https://images.pexels.com/photos/1285625/pexels-photo-1285625.jpeg?auto=compress&cs=tinysrgb&w=800"
+                        alt="Greek Island Architecture">
+                    <div class="image-caption">Traditional Cycladic architecture</div>
+                </div>
+                <div class="image-card">
+                    <img src="https://images.pexels.com/photos/1010657/pexels-photo-1010657.jpeg?auto=compress&cs=tinysrgb&w=800"
+                        alt="Aegean Sea">
+                    <div class="image-caption">Beautiful Aegean coastline</div>
+                </div>
+                <div class="image-card">
+                    <img src="https://images.pexels.com/photos/1285625/pexels-photo-1285625.jpeg?auto=compress&cs=tinysrgb&w=800"
+                        alt="Greek Island Village">
+                    <div class="image-caption">Peaceful island atmosphere for focused study</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Program Highlights -->
+        <section class="section">
+            <div class="highlights">
+                <h2 class="section-title">Program Highlights</h2>
+                <ul>
+                    <li>Intensive language classes in ancient and medieval languages</li>
+                    <li>Linguistic classes on Historical & Diachronic Linguistics</li>
+                    <li>Workshop / Poster session on "Linguistic Diachronies: A Contrastive Approach"</li>
+                    <li>Invited talks from leading scholars in the field</li>
+                    <li>Master classes providing in-depth analysis and discussion</li>
+                    <li>Networking opportunities with international students and faculty</li>
+                    <li>Beautiful island setting conducive to learning and cultural exploration</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <div class="cta-section">
+            <h2>Join Us in Naxos!</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.95;">
+                Applications are now open for the 11th edition of our prestigious summer school
+            </p>
+            <a href="https://forms.gle/1GuNGaHsmVNAE4bx9" class="cta-btn" target="_blank">SUBMIT YOUR APPLICATION</a>
+        </div>
+
+        <!-- Contact -->
+        <section class="section">
+            <h2 class="section-title">Contact Information</h2>
+            <div class="section-content">
+                <p><strong>Organizer:</strong> National and Kapodistrian University of Athens</p>
+                <p><strong>Program Director:</strong> Prof. Nikolaos Lavidas</p>
+                <p><strong>Email:</strong> <a href="mailto:nlavidas@enl.uoa.gr"
+                        style="color: var(--primary);">nlavidas@enl.uoa.gr</a></p>
+                <p style="margin-top: 1.5rem;">
+                    <a href="https://athdgc.github.io/" style="color: var(--primary); font-weight: 600;"
+                        target="_blank">Visit AthDGC Research Network →</a>
+                </p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Licensed under the MIT License</p>
+        <p style="margin-top: 1rem;">
+            <a href="https://conferences.uoa.gr/event/91/page/666-11th-naxos-summer-school-on-diachronic-linguistics"
+                target="_blank">Official Conference Page</a> |
+            <a href="https://athdgc.github.io/" target="_blank">AthDGC Research Network</a>
+        </p>
+    </footer>
+</body>
+
+</html>
