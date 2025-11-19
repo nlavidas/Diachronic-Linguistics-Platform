@@ -1,0 +1,183 @@
+{% extends "base.html" %}
+
+{% block title %}{{ text.title }}{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header">
+                <h2 class="mb-0">{{ text.title }}</h2>
+            </div>
+            <div class="card-body">
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <p><strong>Authors:</strong> {{ text.authors or 'Unknown' }}</p>
+                        <p><strong>Source:</strong> {{ text.source or 'Unknown' }}</p>
+                        <p><strong>Language:</strong> {{ text.language or 'Unknown' }}</p>
+                    </div>
+                    <div class="col-md-6">
+                        <p><strong>DOI:</strong> {{ text.doi or 'Not available' }}</p>
+                        <p><strong>Publication Date:</strong> {{ text.publication_date.strftime('%Y-%m-%d') if text.publication_date else 'Unknown' }}</p>
+                        <p><strong>Added:</strong> {{ text.created_at.strftime('%Y-%m-%d %H:%M') }}</p>
+                    </div>
+                </div>
+                
+                {% if text.subject_areas %}
+                <div class="mb-3">
+                    <strong>Subject Areas:</strong>
+                    {% for area in text.subject_areas.split(',') %}
+                    <span class="badge bg-primary me-1">{{ area.strip() }}</span>
+                    {% endfor %}
+                </div>
+                {% endif %}
+                
+                {% if text.keywords %}
+                <div class="mb-3">
+                    <strong>Keywords:</strong>
+                    {% for keyword in text.keywords.split(',') %}
+                    <span class="badge bg-secondary me-1">{{ keyword.strip() }}</span>
+                    {% endfor %}
+                </div>
+                {% endif %}
+                
+                <div class="mb-3">
+                    <h5>Abstract</h5>
+                    <p>{{ text.abstract or 'No abstract available' }}</p>
+                </div>
+                
+                {% if text.full_text %}
+                <div class="mb-3">
+                    <h5>Full Text</h5>
+                    <div class="border p-3" style="max-height: 400px; overflow-y: auto;">
+                        <p>{{ text.full_text }}</p>
+                    </div>
+                </div>
+                {% endif %}
+                
+                {% if text.processed_text %}
+                <div class="mb-3">
+                    <h5>Processed Text</h5>
+                    <div class="border p-3" style="max-height: 300px; overflow-y: auto;">
+                        <p class="text-muted">{{ text.processed_text }}</p>
+                    </div>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="mb-0">Text Statistics</h5>
+            </div>
+            <div class="card-body">
+                <div class="row text-center">
+                    <div class="col-6 mb-3">
+                        <div class="stats-badge">
+                            <i class="fas fa-file-word me-1"></i>
+                            <div>{{ text.word_count or 0 }}</div>
+                            <small>Words</small>
+                        </div>
+                    </div>
+                    <div class="col-6 mb-3">
+                        <div class="stats-badge">
+                            <i class="fas fa-chart-line me-1"></i>
+                            <div>{{ text.readability_score or 'N/A' }}</div>
+                            <small>Readability</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="d-grid gap-2">
+                    <button class="btn btn-outline-primary" onclick="reprocessText({{ text.id }})">
+                        <i class="fas fa-cog me-2"></i>Reprocess Text
+                    </button>
+                    {% if text.url %}
+                    <a href="{{ text.url }}" target="_blank" class="btn btn-outline-secondary">
+                        <i class="fas fa-external-link-alt me-2"></i>View Original
+                    </a>
+                    {% endif %}
+                    <a href="{{ url_for('list_texts') }}" class="btn btn-secondary">
+                        <i class="fas fa-arrow-left me-2"></i>Back to List
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card mt-3">
+            <div class="card-header">
+                <h5 class="mb-0">Processing Details</h5>
+            </div>
+            <div class="card-body">
+                <p><strong>Last Updated:</strong> {{ text.updated_at.strftime('%Y-%m-%d %H:%M') }}</p>
+                <p><strong>Processing Status:</strong> 
+                    <span class="badge bg-success">Completed</span>
+                </p>
+                {% if text.processed_text %}
+                <p><strong>Text Processing:</strong> 
+                    <span class="badge bg-success">Processed</span>
+                </p>
+                {% else %}
+                <p><strong>Text Processing:</strong> 
+                    <span class="badge bg-warning">Pending</span>
+                </p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+async function reprocessText(textId) {
+    try {
+        const response = await axios.post(`/preprocess/${textId}`);
+        
+        if (response.data.success) {
+            showSuccess('Text reprocessed successfully!');
+            // Reload the page to show updated data
+            setTimeout(() => {
+                window.location.reload();
+            }, 1000);
+        } else {
+            showError('Failed to reprocess text: ' + response.data.error);
+        }
+    } catch (error) {
+        showError('Error reprocessing text: ' + error.message);
+    }
+}
+
+function showSuccess(message) {
+    const alert = document.createElement('div');
+    alert.className = 'alert alert-success alert-dismissible fade show position-fixed';
+    alert.style.cssText = 'top: 20px; right: 20px; z-index: 9999; min-width: 300px;';
+    alert.innerHTML = `
+        ${message}
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    `;
+    document.body.appendChild(alert);
+    
+    setTimeout(() => {
+        alert.remove();
+    }, 5000);
+}
+
+function showError(message) {
+    const alert = document.createElement('div');
+    alert.className = 'alert alert-danger alert-dismissible fade show position-fixed';
+    alert.style.cssText = 'top: 20px; right: 20px; z-index: 9999; min-width: 300px;';
+    alert.innerHTML = `
+        ${message}
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    `;
+    document.body.appendChild(alert);
+    
+    setTimeout(() => {
+        alert.remove();
+    }, 5000);
+}
+</script>
+{% endblock %}

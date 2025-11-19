@@ -1,0 +1,278 @@
+{% extends "base.html" %}
+
+{% block title %}Search Open Access Texts{% endblock %}
+
+{% block content %}
+<div class="search-card">
+    <h1 class="text-center mb-4">
+        <i class="fas fa-search me-3"></i>Search Open Access Texts
+    </h1>
+    <p class="text-center mb-4">Find and analyze open access academic texts from multiple sources</p>
+    
+    <form id="searchForm">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="form-group mb-3">
+                    <label for="query" class="form-label">Search Query</label>
+                    <input type="text" class="form-control form-control-lg" id="query" 
+                           placeholder="Enter your search terms..." required>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group mb-3">
+                    <label for="language" class="form-label">Language</label>
+                    <select class="form-select" id="language">
+                        <option value="">All Languages</option>
+                        <option value="en">English</option>
+                        <option value="es">Spanish</option>
+                        <option value="fr">French</option>
+                        <option value="de">German</option>
+                        <option value="it">Italian</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group mb-3">
+                    <label for="subjectAreas" class="form-label">Subject Areas</label>
+                    <select class="form-select" id="subjectAreas" multiple>
+                        <option value="computer science">Computer Science</option>
+                        <option value="mathematics">Mathematics</option>
+                        <option value="physics">Physics</option>
+                        <option value="biology">Biology</option>
+                        <option value="medicine">Medicine</option>
+                        <option value="chemistry">Chemistry</option>
+                        <option value="economics">Economics</option>
+                        <option value="psychology">Psychology</option>
+                        <option value="engineering">Engineering</option>
+                        <option value="environmental">Environmental Science</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group mb-3">
+                    <label for="wordCount" class="form-label">Word Count Range</label>
+                    <div class="row">
+                        <div class="col-6">
+                            <input type="number" class="form-control" id="minWordCount" 
+                                   placeholder="Min words" min="0">
+                        </div>
+                        <div class="col-6">
+                            <input type="number" class="form-control" id="maxWordCount" 
+                                   placeholder="Max words" min="0">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group mb-3">
+                    <label for="dateFrom" class="form-label">Date From</label>
+                    <input type="date" class="form-control" id="dateFrom">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group mb-3">
+                    <label for="dateTo" class="form-label">Date To</label>
+                    <input type="date" class="form-control" id="dateTo">
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center">
+            <button type="submit" class="btn btn-light btn-lg px-5">
+                <i class="fas fa-search me-2"></i>Search Texts
+            </button>
+        </div>
+    </form>
+</div>
+
+<div class="loading text-center" id="loading">
+    <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Searching...</span>
+    </div>
+    <p class="mt-2">Searching for texts...</p>
+</div>
+
+<div id="searchResults" class="row"></div>
+
+<div class="text-center mt-4">
+    <a href="{{ url_for('list_texts') }}" class="btn btn-outline-primary">
+        <i class="fas fa-database me-2"></i>View Saved Texts
+    </a>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+document.getElementById('searchForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    
+    const loading = document.getElementById('loading');
+    const resultsDiv = document.getElementById('searchResults');
+    
+    // Show loading
+    loading.classList.add('show');
+    resultsDiv.innerHTML = '';
+    
+    // Get form data
+    const formData = {
+        query: document.getElementById('query').value,
+        subject_areas: Array.from(document.getElementById('subjectAreas').selectedOptions).map(option => option.value),
+        language: document.getElementById('language').value,
+        date_from: document.getElementById('dateFrom').value,
+        date_to: document.getElementById('dateTo').value,
+        min_word_count: parseInt(document.getElementById('minWordCount').value) || 0,
+        max_word_count: parseInt(document.getElementById('maxWordCount').value) || 0
+    };
+    
+    try {
+        const response = await axios.post('/search', formData);
+        
+        if (response.data.success) {
+            displayResults(response.data.results);
+        } else {
+            showError('Search failed: ' + response.data.error);
+        }
+    } catch (error) {
+        showError('Error searching: ' + error.message);
+    } finally {
+        loading.classList.remove('show');
+    }
+});
+
+function displayResults(results) {
+    const resultsDiv = document.getElementById('searchResults');
+    
+    if (results.length === 0) {
+        resultsDiv.innerHTML = `
+            <div class="col-12">
+                <div class="alert alert-info text-center">
+                    <i class="fas fa-info-circle me-2"></i>No texts found matching your criteria.
+                </div>
+            </div>
+        `;
+        return;
+    }
+    
+    resultsDiv.innerHTML = `
+        <div class="col-12">
+            <h3 class="mb-3">
+                <i class="fas fa-list me-2"></i>Search Results (${results.length} found)
+            </h3>
+        </div>
+    `;
+    
+    results.forEach(result => {
+        const resultCard = createResultCard(result);
+        resultsDiv.appendChild(resultCard);
+    });
+}
+
+function createResultCard(result) {
+    const col = document.createElement('div');
+    col.className = 'col-md-6 col-lg-4 mb-4';
+    
+    const wordCount = result.word_count || 0;
+    const readability = result.readability_score || 0;
+    
+    col.innerHTML = `
+        <div class="card result-card h-100">
+            <div class="card-body">
+                <h5 class="card-title">${result.title || 'Untitled'}</h5>
+                <p class="card-text">
+                    <strong>Authors:</strong> ${result.authors || 'Unknown'}<br>
+                    <strong>Source:</strong> ${result.source || 'Unknown'}<br>
+                    <strong>Language:</strong> ${result.language || 'Unknown'}
+                </p>
+                <p class="card-text">
+                    <small class="text-muted">
+                        ${result.abstract ? result.abstract.substring(0, 150) + '...' : 'No abstract available'}
+                    </small>
+                </p>
+                <div class="d-flex flex-wrap gap-2 mb-3">
+                    <span class="stats-badge">
+                        <i class="fas fa-file-word me-1"></i>${wordCount} words
+                    </span>
+                    <span class="stats-badge">
+                        <i class="fas fa-chart-line me-1"></i>Readability: ${readability}
+                    </span>
+                </div>
+                <div class="d-flex gap-2">
+                    <button class="btn btn-primary btn-sm" onclick="saveText('${result.title}', '${result.authors}', '${result.abstract}', '${result.source}', '${result.url}', '${result.doi}', '${result.publication_date}', '${result.language}', '${JSON.stringify(result.subject_areas || [])}', '${JSON.stringify(result.keywords || [])}', ${wordCount}, ${readability})">
+                        <i class="fas fa-save me-1"></i>Save
+                    </button>
+                    ${result.url ? `<a href="${result.url}" target="_blank" class="btn btn-outline-primary btn-sm">
+                        <i class="fas fa-external-link-alt me-1"></i>View
+                    </a>` : ''}
+                </div>
+            </div>
+        </div>
+    `;
+    
+    return col;
+}
+
+async function saveText(title, authors, abstract, source, url, doi, publication_date, language, subject_areas, keywords, word_count, readability_score) {
+    try {
+        const response = await axios.post('/save_text', {
+            title: title,
+            authors: authors,
+            abstract: abstract,
+            full_text: abstract, // Using abstract as full text for demo
+            source: source,
+            url: url,
+            doi: doi,
+            publication_date: publication_date,
+            language: language,
+            subject_areas: JSON.parse(subject_areas),
+            keywords: JSON.parse(keywords),
+            word_count: word_count,
+            readability_score: readability_score
+        });
+        
+        if (response.data.success) {
+            showSuccess('Text saved successfully!');
+        } else {
+            showError('Failed to save text: ' + response.data.error);
+        }
+    } catch (error) {
+        showError('Error saving text: ' + error.message);
+    }
+}
+
+function showSuccess(message) {
+    const alert = document.createElement('div');
+    alert.className = 'alert alert-success alert-dismissible fade show position-fixed';
+    alert.style.cssText = 'top: 20px; right: 20px; z-index: 9999; min-width: 300px;';
+    alert.innerHTML = `
+        ${message}
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    `;
+    document.body.appendChild(alert);
+    
+    setTimeout(() => {
+        alert.remove();
+    }, 5000);
+}
+
+function showError(message) {
+    const alert = document.createElement('div');
+    alert.className = 'alert alert-danger alert-dismissible fade show position-fixed';
+    alert.style.cssText = 'top: 20px; right: 20px; z-index: 9999; min-width: 300px;';
+    alert.innerHTML = `
+        ${message}
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    `;
+    document.body.appendChild(alert);
+    
+    setTimeout(() => {
+        alert.remove();
+    }, 5000);
+}
+</script>
+{% endblock %}
